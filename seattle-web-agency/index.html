@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-devonus-black">
+  <head>
+    <title>Devonus Agency | Seattle Web Design & Development</title>
+    <link rel="canonical" href="https://devonus.com/seattle-web-agency" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Custom web solutions helping Seattle businesses grow."
+    />
+    <meta
+      property="og:title"
+      content="Devonus Agency | Seattle Web Design & Development"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://devonus.com/seattle-web-agency" />
+    <meta property="og:image" content="" />
+    <meta
+      property="og:description"
+      content="Custom web solutions helping Seattle businesses grow."
+    />
+    <meta property="og:site_name" content="Devonus" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="fb:app_id" content="61560371114166" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@devonusllc" />
+    <meta name="twitter:creator" content="@devonusllc" />
+    <meta
+      name="twitter:title"
+      content="Seattle Web Design & Development | Devonus Agency"
+    />
+    <meta
+      name="twitter:description"
+      content="Custom web solutions helping Seattle businesses grow."
+    />
+    <meta name="twitter:image" content="" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../public/devonus_logo.png"
+    />
+    <link href="/assets/inter-font.css" rel="stylesheet" />
+    <link rel="icon" href="../public/devonus_logo.png" />
+    <script src="//www.google.com/jsapi"></script>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script src="../scripts/toggle.js" defer loading="lazy"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header
+      class="font-humane bg-devonus-black fixed top-0 z-50 w-full"
+      data-controller="navbar"
+      id="main-navbar"
+    >
+      <nav
+        class="mx-auto flex items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
+        <div class="flex lg:flex-1">
+          <a href="/" class="-m-1.5 p-1.5">
+            <span class="sr-only">Devonus Web Agency</span>
+            <div>
+              <p class="text-white uppercase">
+                <span class="font-garamond text-devonus-orange">Devonus</span>
+              </p>
+            </div>
+            <div>
+              <p class="text-white uppercase">
+                <span class="font-montserrat text-devonus-white">
+                  Web Agency</span
+                >
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="flex lg:hidden"
+          data-action="click->navbar#toggle"
+          id="nav-toggle"
+        >
+          <button
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-devonus-white"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="hidden lg:flex items-center lg:gap-x-12 uppercase text-4xl tracking-wider"
+        >
+          <div class="relative justify-center">
+            <a
+              href="/#top"
+              data-turbo="false"
+              type="button"
+              class="flex items-center gap-x-1 hover:text-devonus-orange text-devonus-white leading-6 text-white"
+              aria-expanded="false"
+              role="button"
+              data-action="click->navbar#toggle"
+            >
+              Home
+            </a>
+          </div>
+
+          <a
+            href="/#about"
+            class="leading-6 text-devonus-white hover:text-devonus-orange text-white"
+            >About</a
+          >
+          <a
+            href="/#work"
+            class="leading-6 text-devonus-white hover:text-devonus-orange text-white"
+            >Work</a
+          >
+          <a
+            href="/#pricing"
+            class="leading-6 text-devonus-white hover:text-devonus-orange text-white"
+            >Pricing</a
+          >
+          <a
+            href="/blog"
+            class="leading-6 text-devonus-white hover:text-devonus-orange text-white"
+            >Blog</a
+          >
+          <a
+            href="/#contact-us"
+            class="contact-btn text-devonus-white rounded-sm border-white hover:text-devonus-black hover:border-devonus-black border-2 bg-devonus-black px-3.5 py-2.5 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 uppercase"
+            >contact us</a
+          >
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu open state. -->
+
+        <div
+          class="hidden bg-devonus-black lg:hidden absolute text-4xl tracking-wider uppercase"
+          id="nav-menu"
+          role="dialog"
+          aria-modal="true"
+          data-controller="navbar"
+        >
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div
+            class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-devonus-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+            data-navbar-target="navbar"
+          >
+            <div class="flex items-center justify-between">
+              <a href="/" class="-m-1.5 p-1.5">
+                <span class="sr-only">Devonus Web Agency</span>
+                <img
+                  class="h-8 w-auto dark:block"
+                  src="../public/devonus_logo_sharp.png"
+                  alt="Devonus Web Agency Logo"
+                />
+              </a>
+              <button
+                type="button"
+                class="rounded-md text-white"
+                role="button"
+                data-action="click->navbar#toggle"
+                id="nav-close"
+              >
+                <span class="sr-only">Close menu</span>
+                <svg
+                  class="h-6 w-6 text-devonus-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root bg-devonus-black">
+              <div class="-my-6 divide-y divide-devonus-grey">
+                <div class="space-y-2 py-6">
+                  <div class="-mx-3">
+                    <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                    <div class="mt-2 space-y-2" id="disclosure-1">
+                      <a
+                        href="/"
+                        class="block rounded-lg py-2 pl-6 pr-3 leading-7 text-devonus-white"
+                        data-navbar-target="link"
+                        >Home</a
+                      >
+                      <a
+                        href="/#about"
+                        class="block rounded-lg py-2 pl-6 pr-3 leading-7 text-devonus-white"
+                        data-navbar-target="link"
+                        >About</a
+                      >
+                      <a
+                        href="/#work"
+                        class="block rounded-lg py-2 pl-6 pr-3 leading-7 text-devonus-white"
+                        data-navbar-target="link"
+                        >Work</a
+                      >
+                      <a
+                        href="/#pricing"
+                        class="block rounded-lg py-2 pl-6 pr-3 leading-7 text-devonus-white"
+                        data-navbar-target="link"
+                        >Pricing</a
+                      >
+                      <a
+                        href="/blog"
+                        class="block rounded-lg py-2 pl-6 pr-3 leading-7 text-devonus-white"
+                        data-navbar-target="link"
+                        >Blog</a
+                      >
+                      <br />
+                      <ul
+                        class="mt-8 flex pl-6 gap-6 sm:justify-start md:gap-8"
+                      >
+                        <li>
+                          <a
+                            href="https://www.facebook.com/"
+                            rel="noreferrer"
+                            target="_blank"
+                            class="text-devonus-orange transition hover:text-devonus-green"
+                          >
+                            <span class="sr-only">Facebook</span>
+                            <svg
+                              class="h-6 w-6"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://www.linkedin.com/"
+                            rel="noreferrer"
+                            target="_blank"
+                            class="text-devonus-orange transition hover:text-devonus-green"
+                          >
+                            <span class="sr-only">Linkedin</span>
+
+                            <svg
+                              class="h-6 w-6"
+                              fill="currentColor"
+                              x="0px"
+                              y="0px"
+                              width="24"
+                              height="50"
+                              viewBox="0 0 50 50"
+                            >
+                              <path
+                                d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+                              ></path>
+                            </svg>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://www.instagram.com/"
+                            rel="noreferrer"
+                            target="_blank"
+                            class="text-devonus-orange transition hover:text-devonus-green"
+                          >
+                            <span class="sr-only">Instagram</span>
+                            <svg
+                              class="h-6 w-6"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://www.twitter.com/"
+                            rel="noreferrer"
+                            target="_blank"
+                            class="text-devonus-orange transition hover:text-devonus-green"
+                          >
+                            <span class="sr-only">Twitter</span>
+                            <svg
+                              class="h-6 w-6"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
+                              <path
+                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://www.tiktok.com/"
+                            rel="noreferrer"
+                            target="_blank"
+                            class="text-devonus-orange transition hover:text-devonus-green"
+                          >
+                            <span class="sr-only">Tik Tok</span>
+                            <svg
+                              class="h-6 w-6"
+                              fill="currentColor"
+                              x="0px"
+                              y="0px"
+                              width="24"
+                              height="50"
+                              viewBox="0 0 50 50"
+                            >
+                              <path
+                                d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z"
+                              ></path>
+                            </svg>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://www.youtube.com/"
+                            rel="noreferrer"
+                            target="_blank"
+                            class="text-devonus-orange transition hover:text-devonus-green"
+                          >
+                            <span class="sr-only">Youtube</span>
+                            <svg
+                              class="h-6 w-6"
+                              x="0px"
+                              y="0px"
+                              fill="currentColor"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 30 30"
+                            >
+                              <path
+                                d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z"
+                              ></path>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-6">
+                  <a
+                    href="/login"
+                    class="block text-devonus-white text-4xl rounded-lg px-3 py-2.5 leading-7 text-white hover:text-white"
+                    >Log in</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-devonus-black text-devonus-white">
+      <section class="bg-devonus-black">
+        <div class="h-40"></div>
+        <div class="max-w-7xl items-center p-6 lg:px-8">
+          <div class="text-white">
+            <div class="font-archivoblack uppercase font-extralight text-6xl">
+              <h1
+                class="text-7xl sm:text-9xl font-humane text-devonus-white tracking-wider"
+              >
+                Seattle Web Design & Development
+              </h1>
+            </div>
+            <div>
+              <p class="max-w-lg text-devonus-white">
+                Helping Seattle businesses dominate online with custom websites.
+              </p>
+              <div class="mt-4 text-devonus-white">
+                <div>Location:</div>
+                <div>Seattle, CA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="../public/seattle.png"
+            class="h-80 w-auto object-cover sm:h-auto sm:w-full"
+            alt="Seattle"
+          />
+        </div>
+      </section>
+
+      <!-- Other Locations -->
+      <div class="text-devonus-grey mx-auto max-w-xl p-6 lg:px-8 text-center">
+        <h2 class="text-xl font-semibold mb-4">Proudly Serving These Cities</h2>
+        <div class="grid grid-cols-2 gap-6 space-between">
+          <ul class="list-none space-y-2">
+            <li class="hover:text-devonus-green">
+              <a href="/san-diego-web-agency">San Diego</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/los-angeles-web-agency">Los Angeles</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/san-francisco-web-agency">San Francisco</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/new-york-web-agency">New York</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/chicago-web-agency">Chicago</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/las-vegas-web-agency">Las Vegas</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/seattle-web-agency">Seattle</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/austin-web-agency">Austin</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/miami-web-agency">Miami</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/atlanta-web-agency">Atlanta</a>
+            </li>
+          </ul>
+          <ul class="list-none space-y-2">
+            <li class="hover:text-devonus-green">
+              <a href="/denver-web-agency">Denver</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/dallas-web-agency">Dallas</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/boston-web-agency">Boston</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/phoenix-web-agency">Phoenix</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/philadelphia-web-agency">Philadelphia</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/portland-web-agency">Portland</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/toronto-web-agency">Toronto</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/london-web-agency">London</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/singapore-web-agency">Singapore</a>
+            </li>
+            <li class="hover:text-devonus-green">
+              <a href="/sydney-web-agency">Sydney</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="z-40 absolute w-full relative bg-devonus-black snap-none md:snap-center text-devonus-grey-400"
+    >
+      <div
+        class="flex flex-col md:flex-row items-stretch mx-auto px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24 text-devonus-grey font-archivoblack"
+      >
+        <div
+          class="border-t border-b text-2xl lg:text-4xl hover:text-devonus-green md:border-r border-gray-300 w-full md:w-1/2 flex items-center justify-center h-32 uppercase"
+        >
+          Seattle, CA
+        </div>
+        <div
+          class="border-t border-b text-2xl lg:text-4xl hover:text-devonus-green md:border-l border-gray-300 w-full md:w-1/2 flex items-center justify-center h-32 uppercase"
+        >
+          hello@devonus.com
+        </div>
+      </div>
+      <div
+        class="bg-devonus-black mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24"
+      >
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <div class="relative">
+            <div
+              class="flex justify-center text-2xl font-garamond text-devonus-orange sm:justify-start"
+            >
+              DEVONUS
+            </div>
+
+            <p
+              class="text-center font-archivoblack uppercase text-devonus-grey leading-relaxed sm:max-w-xs sm:text-left"
+            >
+              A web and tech agency
+            </p>
+            <form
+              action="/submit"
+              method="POST"
+              class="flex justify-center sm:justify-start lg:absolute lg:bottom-0 lg:left-0"
+            >
+              <div class="flex">
+                <label for="name" class="sr-only">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="bg-devonus-black border-2 border-devonus-green uppercase text-devonus-grey"
+                />
+              </div>
+
+              <div class="flex justify-center">
+                <button
+                  type="submit"
+                  class="bg-devonus-grey rounded-none border-2 border-devonus-grey tex-devonus-black uppercase"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div
+            class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 lg:col-span-2 uppercase md:justify-items-end lg:justify-items-end"
+          >
+            <div class="text-center sm:text-left text-devonus-grey">
+              <p class="text-lg font-medium text-white">Company</p>
+
+              <ul class="mt-8 space-y-4 text-sm">
+                <li>
+                  <a class="" href="/"> Home </a>
+                </li>
+
+                <li>
+                  <a class="" href="#about"> About Us </a>
+                </li>
+
+                <li>
+                  <a class="" href="#work"> Services </a>
+                </li>
+
+                <li>
+                  <a class="" href="/blog/categories/case-studies">
+                    Case Studies
+                  </a>
+                </li>
+
+                <li>
+                  <a class="" href="#contact"> Contact </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-center sm:text-left text-devonus-grey">
+              <p class="text-lg font-medium text-white">Media</p>
+
+              <ul class="mt-8 space-y-4 text-sm">
+                <li>
+                  <a class="5" href="/terms-and-conditions">
+                    Terms & Conditions
+                  </a>
+                </li>
+
+                <li>
+                  <a class="" href="/privacy-policy"> Privacy Policy </a>
+                </li>
+
+                <li>
+                  <a class="" href="/blog/categories/trending"> Press </a>
+                </li>
+
+                <li>
+                  <a class="" href="/seattle-web-agency"> Cities </a>
+                </li>
+
+                <li>
+                  <a class="" href="https://www.devonus.com"> Media Kit</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <ul class="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-devonus-orange transition hover:text-indigo-600/75"
+            >
+              <span class="sr-only">Facebook</span>
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.linkedin.com/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-devonus-orange transition hover:text-indigo-600/75"
+            >
+              <span class="sr-only">Linkedin</span>
+
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                x="0px"
+                y="0px"
+                width="24"
+                height="50"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-devonus-orange transition hover:text-indigo-600/75"
+            >
+              <span class="sr-only">Instagram</span>
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.twitter.com/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-devonus-orange transition hover:text-indigo-600/75"
+            >
+              <span class="sr-only">Twitter</span>
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.tiktok.com/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-devonus-orange transition hover:text-indigo-600/75"
+            >
+              <span class="sr-only">Tik Tok</span>
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                x="0px"
+                y="0px"
+                width="24"
+                height="50"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.youtube.com/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-devonus-orange transition hover:text-indigo-600/75"
+            >
+              <span class="sr-only">Youtube</span>
+              <svg
+                class="h-6 w-6"
+                x="0px"
+                y="0px"
+                fill="currentColor"
+                width="24"
+                height="24"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <div class="mt-6 border-t border-devonus-grey pt-6">
+          <div class="text-center sm:flex sm:justify-between sm:text-left">
+            <p class="text-sm text-devonus-grey">
+              <span class="block sm:inline">All rights reserved.</span>
+
+              <a
+                class="inline-block text-devonus-green underline transition hover:text-indigo-600/75"
+                href="/terms-and-conditions"
+              >
+                Terms & Conditions
+              </a>
+
+              <span>&middot;</span>
+
+              <a
+                class="inline-block text-devonus-green underline transition hover:text-indigo-600/75"
+                href="/privacy-policy"
+              >
+                Privacy Policy
+              </a>
+            </p>
+
+            <p class="mt-4 text-sm text-devonus-grey sm:order-first sm:mt-0">
+              &copy; <span id="year"></span> Devonus
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
