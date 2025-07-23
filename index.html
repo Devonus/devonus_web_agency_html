@@ -50,97 +50,6 @@
       href="public/devonus_logo.png"
     />
     <link rel="stylesheet" href="./dist/output.css" />
-    <!-- <link
-      rel="stylesheet"
-      id="silktide-consent-manager-css"
-      href="./styles/silktide-consent-manager.css"
-    />
-    <script src="./scripts/silktide-consent-manager.js"></script> -->
-    <!-- <script>
-      silktideCookieBannerManager.updateCookieBannerConfig({
-        background: {
-          showBackground: true,
-        },
-        cookieIcon: {
-          position: "bottomRight",
-        },
-        cookieTypes: [
-          {
-            id: "necessary",
-            name: "Necessary",
-            description:
-              "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
-            required: true,
-            onAccept: function () {
-              console.log("Add logic for the required Necessary here");
-            },
-          },
-          {
-            id: "analytics",
-            name: "Analytical",
-            description:
-              "<p>These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</p>",
-            defaultValue: true,
-            onAccept: function () {
-              gtag("consent", "update", {
-                analytics_storage: "granted",
-              });
-              dataLayer.push({
-                event: "consent_accepted_analytics",
-              });
-            },
-            onReject: function () {
-              gtag("consent", "update", {
-                analytics_storage: "denied",
-              });
-            },
-          },
-          {
-            id: "advertising",
-            name: "Advertising",
-            description:
-              "<p>These cookies provide extra features and personalization to improve your experience. They may be set by us or by partners whose services we use.</p>",
-            onAccept: function () {
-              gtag("consent", "update", {
-                ad_storage: "granted",
-                ad_user_data: "granted",
-                ad_personalization: "granted",
-              });
-              dataLayer.push({
-                event: "consent_accepted_advertising",
-              });
-            },
-            onReject: function () {
-              gtag("consent", "update", {
-                ad_storage: "denied",
-                ad_user_data: "denied",
-                ad_personalization: "denied",
-              });
-            },
-          },
-        ],
-        text: {
-          banner: {
-            description:
-              '<p>We use cookies on our site to enhance your user experience, provide personalized content, and analyze our traffic. <a href="https://devonus.com/terms-and-conditions" target="_blank">Cookie Policy.</a></p>',
-            acceptAllButtonText: "Accept all",
-            acceptAllButtonAccessibleLabel: "Accept all cookies",
-            rejectNonEssentialButtonText: "Reject non-essential",
-            rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
-            preferencesButtonText: "Preferences",
-            preferencesButtonAccessibleLabel: "Toggle preferences",
-          },
-          preferences: {
-            title: "Customize your cookie preferences",
-            description:
-              "<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>",
-          },
-        },
-        position: {
-          banner: "bottomLeft",
-        },
-      });
-    </script> -->
 
     <!-- CSRF and CSP meta tags would normally be set server-side. You can include them manually if needed -->
     <!-- <meta name="csrf-token" content="YOUR_CSRF_TOKEN_HERE">
@@ -1032,7 +941,7 @@
 
       <section
         id="work"
-        class="relative bg-devonus-black py-16 px-4 md:px-8 bg-devonus-black scroll-mt-40 md:h-full md:h-screen snap-none md:snap-center items-center"
+        class="relative bg-devonus-black py-16 px-4 md:px-8 bg-devonus-black scroll-mt-20 md:h-full md:h-screen snap-none md:snap-center"
       >
         <!-- Glowing Effects (optional visuals) -->
         <div class="absolute inset-0 z-0 pointer-events-none">
@@ -1081,7 +990,7 @@
         >
           <!-- Article Card 1 -->
           <article
-            class="bg-devonus-black rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg sm:hover:scale-105 hover:z-10"
+            class="bg-devonus-black rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105 hover:z-10"
           >
             <img
               src="./public/sinq.png"
@@ -1104,7 +1013,7 @@
 
           <!-- Article Card 2 -->
           <article
-            class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg sm:hover:scale-105 hover:z-10"
+            class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105 hover:z-10"
           >
             <img
               src="./public/jonathan-myers.png"
@@ -1116,7 +1025,7 @@
                 >13th Nov 2023</time
               >
               <h4 class="text-lg text-gray-900 font-semibold mb-2">
-                Websites That Sell the Space
+                Websites that sell the space
               </h4>
               <p class="text-sm text-gray-600 line-clamp-3">
                 An online portfolio is a must for any interior designer. We want
@@ -1126,7 +1035,7 @@
           </article>
 
           <article
-            class="bg-devonus-black rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg sm:hover:scale-105 hover:z-10"
+            class="bg-devonus-black rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105 hover:z-10"
           >
             <img
               src="./public/retrain.png"
@@ -1138,7 +1047,7 @@
                 >7th Jul 2020</time
               >
               <h4 class="text-lg text-devonus-green font-semibold mb-2">
-                Moving the Performance Scale
+                Moving the performance scale
               </h4>
               <p class="text-sm text-devonus-white line-clamp-3">
                 Mobile-first platforms are a must for fitness brands to turn
@@ -1802,7 +1711,12 @@
           <div
             class="border-t border-b text-2xl lg:text-4xl hover:text-devonus-green md:border-l border-gray-300 w-full md:w-1/2 flex items-center justify-center h-32 uppercase"
           >
-            hello@devonus.com
+            <a
+              href="/cdn-cgi/l/email-protection"
+              class="__cf_email__"
+              data-cfemail="4b232e2727240b2f2e3d24253e3865282426"
+              >[email&#160;protected]</a
+            >
           </div>
         </div>
         <div
@@ -2082,6 +1996,10 @@
         </div>
       </footer>
     </main>
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
   </body>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
