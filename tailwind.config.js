@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.html"],
+  content: [
+    "./**/*.html",
+    "./blog/**/*.html",
+    "./_includes/**/*.html",
+    "./_layouts/**/*.html",
+    "./_posts/**/*.md",
+  ],
   safelist: ["text-h1", "md:text-h1", "lg:text-h1"],
   theme: {
     extend: {
