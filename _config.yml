@@ -25,6 +25,9 @@ url: '' # set this later if deployed
 markdown: kramdown
 
 
+
+permalink: /:title/
+
 # title: Your awesome title
 # email: your-email@example.com
 # description: >- # this means to ignore newlines until "baseurl:"
