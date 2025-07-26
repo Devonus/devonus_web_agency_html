@@ -2,23 +2,178 @@
 permalink: /404.html
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 - Page Not Found</title>
 
-<div class="container">
-  <h1>404</h1>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/dist/output.css" />
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+    <style>
+      /* Flicker animation for subtle neon glow */
+      @keyframes flicker {
+        0%,
+        19%,
+        21%,
+        23%,
+        25%,
+        54%,
+        56%,
+        100% {
+          opacity: 1;
+          text-shadow: 0 0 2px #a0f0f0, 0 0 4px #80e0e0, 0 0 8px #60d0d0,
+            0 0 16px #40c0c0, 0 0 32px #30b0b0, 0 0 64px #20a0a0;
+        }
+        20%,
+        24%,
+        55% {
+          opacity: 0.3;
+          text-shadow: none;
+        }
+      }
+
+      .animate-flicker {
+        animation: flicker 3s infinite both;
+      }
+
+      /* Glitch effect */
+      .glitch {
+        position: relative;
+        color: #0ff;
+        font-weight: 900;
+        letter-spacing: 0.05em;
+        /* preserve flicker glow */
+        animation: flicker 3s infinite both;
+      }
+
+      .glitch::before,
+      .glitch::after {
+        content: attr(data-text);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+      }
+
+      .glitch::before {
+        animation: glitchTop 2s infinite linear alternate-reverse;
+        color: #0ff;
+        top: -2px;
+        text-shadow: -2px 0 red;
+        mix-blend-mode: screen;
+      }
+
+      .glitch::after {
+        animation: glitchBottom 1.5s infinite linear alternate-reverse;
+        color: #0ff;
+        top: 2px;
+        text-shadow: -2px 0 blue;
+        mix-blend-mode: screen;
+      }
+
+      @keyframes glitchTop {
+        0% {
+          clip: rect(0, 900px, 0, 0);
+          transform: translate(0);
+        }
+        20% {
+          clip: rect(0, 900px, 20px, 0);
+          transform: translate(-2px, -2px);
+        }
+        40% {
+          clip: rect(0, 900px, 0, 0);
+          transform: translate(0);
+        }
+        60% {
+          clip: rect(0, 900px, 15px, 0);
+          transform: translate(-2px, 2px);
+        }
+        80% {
+          clip: rect(0, 900px, 0, 0);
+          transform: translate(0);
+        }
+        100% {
+          clip: rect(0, 900px, 20px, 0);
+          transform: translate(-2px, -2px);
+        }
+      }
+
+      @keyframes glitchBottom {
+        0% {
+          clip: rect(0, 900px, 0, 0);
+          transform: translate(0);
+        }
+        20% {
+          clip: rect(10px, 900px, 40px, 0);
+          transform: translate(2px, 2px);
+        }
+        40% {
+          clip: rect(0, 900px, 0, 0);
+          transform: translate(0);
+        }
+        60% {
+          clip: rect(5px, 900px, 30px, 0);
+          transform: translate(2px, -2px);
+        }
+        80% {
+          clip: rect(0, 900px, 0, 0);
+          transform: translate(0);
+        }
+        100% {
+          clip: rect(10px, 900px, 40px, 0);
+          transform: translate(2px, 2px);
+        }
+      }
+
+      /* Reset margin/padding & set height for full viewport */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body
+    class="min-h-screen bg-devonus-black text-white flex items-center justify-center px-6 py-12 sm:py-20 text-center"
+  >
+    <div class="max-w-xl w-full">
+      <!-- 404 with glitch + flicker -->
+      <h1
+        class="glitch text-6xl sm:text-9xl font-humane font-extralight tracking-tight"
+        data-text="404"
+      >
+        404
+      </h1>
+
+      <p class="mt-6 text-lg sm:text-2xl font-light">
+        Oops. The page you're looking for doesn’t exist.
+      </p>
+      <p class="mt-2 text-sm sm:text-base text-gray-400">
+        Looks like this page vanished… or maybe it ghosted you. <br />Either
+        way, it’s gone 👻
+      </p>
+
+      <!-- button with subtle ripple -->
+      <div class="mt-8">
+        <a
+          href="/"
+          class="relative inline-block px-6 py-3 bg-white text-black text-sm font-semibold rounded-full overflow-hidden group"
+        >
+          <span
+            class="absolute inset-0 bg-gray-200 opacity-0 group-hover:opacity-100 transition duration-500 scale-150 rounded-full"
+          ></span>
+          <span class="relative z-10">Back&nbsp;to&nbsp;Home</span>
+        </a>
+      </div>
+
+      <div class="mt-12 text-sm italic">
+        "Even the best get lost sometimes. - Devonus"
+      </div>
+    </div>
+  </body>
+</html>

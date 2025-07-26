@@ -21,7 +21,7 @@
 
 title: My Site
 baseurl: '' # leave empty unless hosted in a subfolder
-url: '' # set this later if deployed
+url: 'https://devonus.com'
 markdown: kramdown
 
 
