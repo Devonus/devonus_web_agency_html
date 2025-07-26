@@ -553,15 +553,14 @@
       ></div>
 
       <section class="mx-auto max-w-7xl p-6 lg:px-8 h-full">
-        <!-- Category Buttons Placeholder -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 sm:pt-10">
-          {% for post in display_blogs %}
+          {% for post in site.posts %} {% if post.url != page.url %}
           <div
-            class="flex justify-center sm:px-10 {% if forloop.index0 modulo 2 == 0 %}md:justify-end{% else %}md:justify-start{% endif %}"
+            class="flex justify-center sm:px-10 {% if forloop.index0 % 2 == 0 %}md:justify-end{% else %}md:justify-start{% endif %}"
           >
             <div class="w-full sm:max-w-[380px]">
               <img
-                src="/assets/images/dutch.webp"
+                src="{{ post.image | default: '/assets/images/default.webp' }}"
                 alt="{{ post.title }}"
                 class="w-full h-auto object-cover max-h-[275px] sm:max-h-none"
               />
@@ -573,9 +572,14 @@
                 ' | first %}
                 <p>{{ first_sentence }}…</p>
               </div>
+              <a
+                href="{{ post.url | relative_url }}"
+                class="text-blue-400 mt-2 inline-block"
+                >Read more →</a
+              >
             </div>
           </div>
-          {% endfor %}
+          {% endif %} {% endfor %}
         </div>
       </section>
     </main>

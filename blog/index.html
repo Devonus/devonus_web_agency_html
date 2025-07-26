@@ -559,34 +559,6 @@ permalink: /blog/
         class="border-b border-devonus-grey mx-auto max-w-xl items-center"
       ></div>
 
-      <section class="relative h-full mx-auto max-w-7xl p-6 lg:px-8">
-        <!-- Category Buttons Placeholder -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 sm:pt-10">
-          {% for post in display_blogs %}
-          <div
-            class="flex justify-center sm:px-10 {% if forloop.index0 modulo 2 == 0 %}md:justify-end{% else %}md:justify-start{% endif %}"
-          >
-            <div class="w-full sm:max-w-[380px]">
-              <img
-                src="/assets/images/dutch.webp"
-                alt="{{ post.title }}"
-                class="w-full h-auto object-cover max-h-[275px] sm:max-h-none"
-              />
-              <div class="py-5 text-white">
-                <h2 class="text-6xl font-humane font-extralight uppercase">
-                  {{ post.title }}
-                </h2>
-                {% assign first_sentence = post.excerpt | strip_html | split: '.
-                ' | first %}
-                <p>{{ first_sentence }}…</p>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </section>
-    </main>
-
     <section class="mx-auto max-w-7xl p-6 lg:px-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-10">
         {% for post in site.posts %}
