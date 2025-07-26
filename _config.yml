@@ -26,7 +26,14 @@ markdown: kramdown
 
 
 
-permalink: /:title/
+# _config.yml
+
+permalink: pretty # For static pages like /about/
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
 
 # title: Your awesome title
 # email: your-email@example.com
