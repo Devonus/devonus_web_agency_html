@@ -2,118 +2,41 @@
 <html lang="en" class="justify-center bg-devonus-black">
   <head>
     <meta charset="UTF-8" />
-    <title>Devonus | Modern Web Agency Focused on Strategy & Technology</title>
+    <title>{{ page.title }} | Devonus</title>
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-    <meta
-      name="description"
-      content="Devonus is a modern web agency that blends design, strategic thinking, and advanced technology to build high-performance websites and digital experiences."
-    />
+    <meta name="description" content="{{ page.description }}" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta
-      name="keywords"
-      content="web agency, web design, web development, digital strategy, UX design, custom websites, branding, frontend development, backend development, SEO agency, Devonus"
-    />
-    <meta
-      property="og:title"
-      content="Devonus | Modern Web Agency Focused on Strategy & Technology"
-    />
+    <meta name="keywords" content="{{page.keywords}}" />
+    <meta property="og:title" content="{{ page.title }} | Devonus" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://devonus.com/" />
-    <meta property="og:image" content="/public/devonus_logo.png" />
+    <meta property="og:url" content="{{ site.url }}" />
     <meta
-      property="og:description"
-      content="Devonus is a modern web agency that blends design, strategic thinking, and advanced technology to build high-performance websites and digital experiences."
+      property="og:image"
+      content="{{ page.image | default: '/public/devonus_logo.png' }}"
     />
+    <meta property="og:description" content="{{ page.description }}" />
     <meta property="og:site_name" content="Devonus Web Agency" />
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@devonus" />
     <meta name="twitter:creator" content="@devonus" />
+    <meta name="twitter:title" content="{{ page.title }} | Devonus" />
+    <meta name="twitter:description" content="{{page.description}}" />
     <meta
-      name="twitter:title"
-      content="Devonus | Modern Web Agency Focused on Strategy & Technology"
+      name="twitter:image"
+      content="{{ page.image | default: '/public/devonus_logo.png' }}"
     />
-    <meta
-      name="twitter:description"
-      content="Devonus is a modern web agency that blends design, strategic thinking, and advanced technology to build high-performance websites and digital experiences."
-    />
-    <meta name="twitter:image" content="/public/devonus_logo.png" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/public/devonus_logo.png"
+      href="{{ page.image | default: '/public/devonus_logo.png' }}"
     />
     <link rel="stylesheet" href="/dist/output.css" />
-
-    <!-- CSRF and CSP meta tags would normally be set server-side. You can include them manually if needed -->
-    <!-- <meta name="csrf-token" content="YOUR_CSRF_TOKEN_HERE">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'"> -->
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/public/devonus_logo.png" />
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "Service",
-        "serviceType": "Web Design & Development",
-        "name": "Devonus Web Agency – Web Design & Digital Strategy",
-        "image": "/public/devonus_logo.png",
-        "description": "Custom websites and digital strategy services. From full-scale design and development to ongoing support and ecommerce solutions.",
-        "provider": {
-          "@type": "Organization",
-          "name": "Devonus Web Agency",
-          "url": "https://devonus.com"
-        },
-        "areaServed": {
-          "@type": "Country",
-          "name": "United States"
-        },
-        "offers": [
-          {
-            "@type": "Offer",
-            "name": "Website Lump Sum Package",
-            "price": "4000.00",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": "https://devonus.com/#pricing",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Website Design (One-Time Project)"
-            }
-          },
-          {
-            "@type": "Offer",
-            "name": "Website Monthly Package",
-            "price": "200.00",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "eligibleDuration": {
-              "@type": "QuantitativeValue",
-              "unitCode": "MON",
-              "value": "1"
-            },
-            "url": "https://devonus.com/#pricing",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Ongoing Website Support"
-            }
-          },
-          {
-            "@type": "Offer",
-            "name": "Ecommerce Website Package",
-            "price": "8000.00",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": "https://devonus.com/#pricing",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Ecommerce Web Design (Starting Price)"
-            }
-          }
-        ]
-      }
-    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ page.image | default: '/public/devonus_logo.png' }}"
+    />
   </head>
   <script
     async
@@ -551,37 +474,6 @@
       <div
         class="border-b border-devonus-grey mx-auto max-w-xl items-center"
       ></div>
-
-      <section class="mx-auto max-w-7xl p-6 lg:px-8 h-full">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 sm:pt-10">
-          {% for post in site.posts %} {% if post.url != page.url %}
-          <div
-            class="flex justify-center sm:px-10 {% if forloop.index0 % 2 == 0 %}md:justify-end{% else %}md:justify-start{% endif %}"
-          >
-            <div class="w-full sm:max-w-[380px]">
-              <img
-                src="{{ post.image | default: '/assets/images/default.webp' }}"
-                alt="{{ post.title }}"
-                class="w-full h-auto object-cover max-h-[275px] sm:max-h-none"
-              />
-              <div class="py-5 text-white">
-                <h2 class="text-6xl font-humane font-extralight uppercase">
-                  {{ post.title }}
-                </h2>
-                {% assign first_sentence = post.excerpt | strip_html | split: '.
-                ' | first %}
-                <p>{{ first_sentence }}…</p>
-              </div>
-              <a
-                href="{{ post.url | relative_url }}"
-                class="text-blue-400 mt-2 inline-block"
-                >Read more →</a
-              >
-            </div>
-          </div>
-          {% endif %} {% endfor %}
-        </div>
-      </section>
     </main>
 
     <footer

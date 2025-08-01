@@ -2,6 +2,9 @@
 layout: post
 title: "Your Website Sucks: Why Cookie-Cutter Sites Kill Your Growth"
 date: 2025-07-26
+description: "Just launched your website but no leads? Discover common mistakes like missing analytics, no content strategy, and poor branding that keep your site from converting."
+keywords: "website not getting leads, why no traffic website, website analytics setup, content strategy for websites, website conversion tips, SEO blog importance, unique website branding, website investment ROI, customer experience website, web design mistakes, Devonus web agency, website performance optimization, lead generation website, website user journey, website content marketing"
+image: ""
 ---
 Congrats on launching your website! You’re expecting leads, but get crickets. Now what? There are millions of websites. What makes yours special? Let’s figure out why your site is failing:
 

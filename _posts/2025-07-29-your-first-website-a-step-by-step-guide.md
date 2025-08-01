@@ -2,6 +2,9 @@
 layout: post
 title: 'Your Website: A Step by Step Guide'
 date: 2025-07-29
+description: "Learn the essential steps to build a successful website—from defining goals and choosing a domain to design, hosting, SEO, and ongoing maintenance for 2025 and beyond."
+keywords: "how to build a website, website building basics, choosing a domain name, web hosting options, website design tips, mobile responsive design, SEO-friendly website structure, website maintenance tips, custom website design, website launch checklist, website builder vs CMS, website speed optimization, Google Search Console, website user experience, Devonus web agency"
+image: ""
 ---
 
 
