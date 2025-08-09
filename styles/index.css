@@ -183,7 +183,7 @@ code, pre, .mono {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background: url('/public/background.png') center center / cover no-repeat;
+  background: url('https://res.cloudinary.com/dvufsifir/image/upload/v1754772283/background_qfpzhv.webp') center center / cover no-repeat;
   overflow: hidden;
   display: flex;
   flex-direction: column;      /* stack vertically */
