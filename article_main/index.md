@@ -30,7 +30,7 @@ permalink: /blog/
 
   <div>
     <img
-      src="../public/woods.png"
+      src="https://res.cloudinary.com/dvufsifir/image/upload/v1754765643/woods_eeozyg.webp"
       class="h-80 w-auto object-cover sm:h-auto sm:w-full"
       alt="Woods"
     />

@@ -4,8 +4,10 @@ title: 'Web Design in San Diego: How to Get a Custom Website As A Business'
 date: 2025-07-31
 description: "Discover why investing in a custom website is one of the smartest moves for San Diego businesses. Devonus helps brands grow with strategic, high-converting web design tailored to your goals."
 keywords: "San Diego web design, custom website San Diego, web agency San Diego, small business websites, web development, local web design, SEO San Diego, professional website design, high-converting websites, Devonus"
-image: ""
+image: "https://res.cloudinary.com/dvufsifir/image/upload/v1754726064/web-design-in-san-diego_kvlca8.webp"
+readTime: 3
 ---
+
 
 With everyone and their mothers online, having a web presence is absolutely crucial for any business, big or small. Many small businesses and startups in San Diego know that investing in a professionally designed website is one of the smartest moves you can make to stand out in a competitive market.
 

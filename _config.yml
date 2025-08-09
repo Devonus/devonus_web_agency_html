@@ -37,6 +37,10 @@ collections:
   locations:
     output: true
     permalink: /:title/
+  home:
+    output: true
+    permalink: /
+
 
 # title: Your awesome title
 # email: your-email@example.com

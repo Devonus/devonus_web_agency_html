@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html lang="en" class="flex scroll-smooth justify-center bg-devonus-black">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Devonus | Modern Web Agency Focused on Strategy & Technology</title>
+    <link rel="canonical" href="https://devonus.com/" />
+    <meta
+      name="description"
+      content="Devonus is a modern web agency that blends design, strategic thinking, and advanced technology to build high-performance websites and digital experiences."
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="keywords"
+      content="web agency, web design, web development, digital strategy, UX design, custom websites, branding, frontend development, backend development, SEO agency, Devonus"
+    />
+    <meta
+      property="og:title"
+      content="Devonus | Modern Web Agency Focused on Strategy & Technology"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://devonus.com/" />
+    <meta property="og:image" content="../public/devonus_logo.png" />
+    <meta
+      property="og:description"
+      content="Devonus is a modern web agency that blends design, strategic thinking, and advanced technology to build high-performance websites and digital experiences."
+    />
+    <meta property="og:site_name" content="Devonus Web Agency" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@devonus" />
+    <meta name="twitter:creator" content="@devonus" />
+    <meta
+      name="twitter:title"
+      content="Devonus | Modern Web Agency Focused on Strategy & Technology"
+    />
+    <meta
+      name="twitter:description"
+      content="Devonus is a modern web agency that blends design, strategic thinking, and advanced technology to build high-performance websites and digital experiences."
+    />
+    <meta name="twitter:image" content="../public/devonus_logo.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../public/devonus_logo.png"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <!-- CSRF and CSP meta tags would normally be set server-side. You can include them manually if needed -->
+    <!-- <meta name="csrf-token" content="YOUR_CSRF_TOKEN_HERE">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'"> -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../public/devonus_logo.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Service",
+        "serviceType": "Web Design & Development",
+        "name": "Devonus Web Agency – Web Design & Digital Strategy",
+        "image": "../public/devonus_logo.png",
+        "description": "Custom websites and digital strategy services. From full-scale design and development to ongoing support and ecommerce solutions.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Devonus Web Agency",
+          "url": "https://devonus.com"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Website Lump Sum Package",
+            "price": "4000.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://devonus.com/#pricing",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Website Design (One-Time Project)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Website Monthly Package",
+            "price": "200.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "eligibleDuration": {
+              "@type": "QuantitativeValue",
+              "unitCode": "MON",
+              "value": "1"
+            },
+            "url": "https://devonus.com/#pricing",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ongoing Website Support"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Ecommerce Website Package",
+            "price": "8000.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://devonus.com/#pricing",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ecommerce Web Design (Starting Price)"
+            }
+          }
+        ]
+      }
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-P2F20W9MQW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-P2F20W9MQW");
+    </script>
+  </head>
+
+  <body class="index flex justify-center">
+    <script
+      src="https://cdn.jsdelivr.net/npm/d3-interpolate@3/dist/d3-interpolate.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"
+      defer
+    ></script>
+
+    <header
+      class="font-humane fixed top-0 z-50 w-full transition-colors duration-1000 ease-in-out justify-center"
+      data-controller="navbar"
+      id="main-navbar"
+    >
+      <nav
+        class="mx-auto flex items-center justify-between p-6 lg:px-8 bg-devonus-black md:bg-transparent"
+        aria-label="Global"
+      >
+        <div class="flex lg:flex-1">
+          <a href="/" class="-m-1.5 p-1.5">
+            <span class="sr-only">Devonus Web Agency</span>
+            <div>
+              <p class="text-white uppercase">
+                <span class="font-garamond text-devonus-orange">Devonus</span>
+              </p>
+            </div>
+            <div>
+              <p class="text-white uppercase">
+                <span class="font-montserrat text-devonus-white">
+                  Web Agency</span
+                >
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="flex lg:hidden"
+          data-action="click->navbar#toggle"
+          id="nav-toggle"
+        >
+          <button
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-devonus-white"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="hidden lg:flex items-center lg:gap-x-12 uppercase text-3xl tracking-wider"
+        >
+          <div class="relative justify-center">
+            <a
+              href="/#top"
+              data-turbo="false"
+              type="button"
+              class="flex items-center gap-x-1 hover:text-devonus-orange text-devonus-white leading-6 text-white"
+              aria-expanded="false"
+              role="button"
+              data-action="click->navbar#toggle"
+            >
+              Home
+            </a>
+          </div>
+
+          <a
+            href="/#about"
+            class="leading-6 text-devonus-white hover:text-devonus-orange text-white"
+            >About</a
+          >
+          <a
+            href="/#services"
+            class="leading-6 text-devonus-white hover:text-devonus-orange text-white"
+            >Services</a
+          >
+          <a
+            href="/#work"
+            class="leading-6 text-devonus-white hover:text-devonus-orange text-white"
+            >Work</a
+          >
+          <a
+            href="/#testimonials"
+            class="leading-6 text-devonus-white hover:text-devonus-orange text-white"
+            >Testimonials</a
+          >
+          <a
+            href="/#pricing"
+            class="leading-6 text-devonus-white hover:text-devonus-orange text-white"
+            >Pricing</a
+          >
+          <a
+            href="/san-diego-web-agency/"
+            class="leading-6 text-devonus-white hover:text-devonus-orange text-white"
+            >Cities</a
+          >
+          <a
+            href="/#contact-us"
+            class="contact-btn text-devonus-white rounded-sm border-white hover:text-devonus-black hover:border-devonus-black border-2 bg-devonus-black px-3.5 py-2.5 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 uppercase"
+            >contact us</a
+          >
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu open state. -->
+
+        <div
+          class="hidden bg-devonus-black lg:hidden absolute text-4xl tracking-wider uppercase"
+          id="nav-menu"
+          role="dialog"
+          aria-modal="true"
+          data-controller="navbar"
+        >
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div
+            class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-devonus-black px-6 py-6 md:max-w-sm md:ring-1 md:ring-gray-900/10"
+            data-navbar-target="navbar"
+          >
+            <div class="flex items-center justify-between">
+              <a href="/" class="-m-1.5 p-1.5">
+                <span class="sr-only">Devonus Web Agency</span>
+                <img
+                  class="h-8 w-auto dark:block"
+                  src="public/devonus_logo_sharp.png"
+                  alt="Devonus Web Agency Logo"
+                />
+              </a>
+              <button
+                type="button"
+                class="rounded-md text-white"
+                role="button"
+                data-action="click->navbar#toggle"
+                id="nav-close"
+              >
+                <span class="sr-only">Close menu</span>
+                <svg
+                  class="h-6 w-6 text-devonus-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root bg-devonus-black">
+              <div class="-my-6 divide-y divide-devonus-grey">
+                <div class="space-y-2 py-6">
+                  <div class="-mx-3">
+                    <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                    <div class="mt-2 space-y-2" id="disclosure-1">
+                      <a
+                        href="/"
+                        class="block rounded-lg py-2 pl-6 pr-3 leading-7 text-devonus-white"
+                        data-navbar-target="link"
+                        >Home</a
+                      >
+                      <a
+                        href="/#about"
+                        class="block rounded-lg py-2 pl-6 pr-3 leading-7 text-devonus-white"
+                        data-navbar-target="link"
+                        >About</a
+                      >
+                      <a
+                        href="/#services"
+                        class="block rounded-lg py-2 pl-6 pr-3 leading-7 text-devonus-white"
+                        data-navbar-target="link"
+                        >Services</a
+                      >
+                      <a
+                        href="/#work"
+                        class="block rounded-lg py-2 pl-6 pr-3 leading-7 text-devonus-white"
+                        data-navbar-target="link"
+                        >Work</a
+                      >
+                      <a
+                        href="/#testimonials"
+                        class="block rounded-lg py-2 pl-6 pr-3 leading-7 text-devonus-white"
+                        data-navbar-target="link"
+                        >Testimonials</a
+                      >
+                      <a
+                        href="/#pricing"
+                        class="block rounded-lg py-2 pl-6 pr-3 leading-7 text-devonus-white"
+                        data-navbar-target="link"
+                        >Pricing</a
+                      >
+                      <a
+                        href="/san-diego-web-agency/"
+                        class="block rounded-lg py-2 pl-6 pr-3 leading-7 text-devonus-white"
+                        data-navbar-target="link"
+                        >Cities</a
+                      >
+                      <a
+                        href="/#contact-us"
+                        class="block rounded-lg py-2 pl-6 pr-3 leading-7 text-devonus-white"
+                        data-navbar-target="link"
+                        >Contact Us</a
+                      >
+                      <br />
+                      <ul
+                        class="mt-8 flex pl-6 gap-6 md:justify-start md:gap-8"
+                      >
+                        <li>
+                          <a
+                            href="https://www.facebook.com/"
+                            rel="noreferrer"
+                            target="_blank"
+                            class="text-devonus-orange transition hover:text-devonus-green"
+                          >
+                            <span class="sr-only">Facebook</span>
+                            <svg
+                              class="h-6 w-6"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://www.linkedin.com/"
+                            rel="noreferrer"
+                            target="_blank"
+                            class="text-devonus-orange transition hover:text-devonus-green"
+                          >
+                            <span class="sr-only">Linkedin</span>
+
+                            <svg
+                              class="h-6 w-6"
+                              fill="currentColor"
+                              x="0px"
+                              y="0px"
+                              width="24"
+                              height="50"
+                              viewBox="0 0 50 50"
+                            >
+                              <path
+                                d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+                              ></path>
+                            </svg>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://www.instagram.com/"
+                            rel="noreferrer"
+                            target="_blank"
+                            class="text-devonus-orange transition hover:text-devonus-green"
+                          >
+                            <span class="sr-only">Instagram</span>
+                            <svg
+                              class="h-6 w-6"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://www.twitter.com/"
+                            rel="noreferrer"
+                            target="_blank"
+                            class="text-devonus-orange transition hover:text-devonus-green"
+                          >
+                            <span class="sr-only">Twitter</span>
+                            <svg
+                              class="h-6 w-6"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
+                              <path
+                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://www.tiktok.com/"
+                            rel="noreferrer"
+                            target="_blank"
+                            class="text-devonus-orange transition hover:text-devonus-green"
+                          >
+                            <span class="sr-only">Tik Tok</span>
+                            <svg
+                              class="h-6 w-6"
+                              fill="currentColor"
+                              x="0px"
+                              y="0px"
+                              width="24"
+                              height="50"
+                              viewBox="0 0 50 50"
+                            >
+                              <path
+                                d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z"
+                              ></path>
+                            </svg>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://www.youtube.com/"
+                            rel="noreferrer"
+                            target="_blank"
+                            class="text-devonus-orange transition hover:text-devonus-green"
+                          >
+                            <span class="sr-only">Youtube</span>
+                            <svg
+                              class="h-6 w-6"
+                              x="0px"
+                              y="0px"
+                              fill="currentColor"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 30 30"
+                            >
+                              <path
+                                d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z"
+                              ></path>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-6">
+                  <a
+                    href="/login"
+                    class="block text-devonus-white text-4xl rounded-lg px-3 py-2.5 leading-7 text-white hover:text-white"
+                    >Log in</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      id="circle"
+      class="w-8 h-8 bg-devonus-orange border-2 border-devonus-black z-50 rounded-full absolute hidden md:block pointer-events-none"
+    ></div>
+
+    <main
+      class="h-screen w-screen overflow-y-auto snap-y overflow-hidden md:snap-mandatory scroll-smooth"
+    >
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const circle = document.getElementById("circle");
+          let mouseX = 0,
+            mouseY = 0;
+          let currentX = 0,
+            currentY = 0;
+          const speed = 0.15; // smaller = more delay
+
+          document.addEventListener("mousemove", (e) => {
+            mouseX = e.pageX;
+            mouseY = e.pageY;
+          });
+
+          function animate() {
+            currentX += (mouseX - currentX) * speed;
+            currentY += (mouseY - currentY) * speed;
+
+            circle.style.left = currentX - circle.offsetWidth / 2 + "px";
+            circle.style.top = currentY - circle.offsetHeight / 2 + "px";
+
+            requestAnimationFrame(animate);
+          }
+
+          animate();
+        });
+      </script>
+      <div id="globeViz" class="fixed z-0 top-0 pointer-events-none"></div>
+      <section
+        class="h-screen snap-start flex items-center px-4 md:px-6 lg:px-8 max-w-7xl"
+        id="top"
+      >
+        <div class="text-left pb-10 pl-4 md:pr-0">
+          <h1
+            class="font-bold z-40 relative text-6xl md:text-[135px] lg:text-[135px] leading-none"
+          >
+            <span
+              class="block text-devonus-orange font-medium font-garamond uppercase tracking-wider leading-none"
+              id="title-name"
+            ></span>
+            <span
+              class="block font-montserrat font-medium text-4xl md:text-[110px] lg:text-[110px] text-devonus-grey-400 uppercase tracking-wider leading-none mt-[-0.5rem]"
+            ></span>
+          </h1>
+          <div
+            class="transform md:translate-x-24 flex flex-col my-10 md:mb-0 justify-center gap-x-6 text-white md:w-[760px]"
+          >
+            <div class="w-full text-left">
+              <div class="flex flex-col">
+                <h2
+                  class="leading-none relative text-devonus-white z-40 text-5xl md:text-6xl lg:tracking-wide mt-[-1.5rem]"
+                >
+                  Beautiful<br />
+                  <span
+                    class="block md:hidden text-devonus-orange font-garamond text-6xl lg:text-[120px]"
+                  >
+                    <i>websites</i>
+                  </span>
+
+                  <!-- Tablet/Desktop: "custom websites" -->
+                  <span
+                    class="hidden md:block text-devonus-orange font-garamond text-6xl"
+                  >
+                    <i>custom websites</i> <br />
+                  </span>
+                  engineered for
+                  <span
+                    class="text-devonus-green inline-block min-w-[11ch]"
+                    id="word"
+                    >performance</span
+                  >
+                </h2>
+              </div>
+              <p
+                class="pt-4 pb-6 text-[18px] relative z-40 leading-8 pr-8 text-devonus-white"
+              >
+                From layout to launch we'll take care of it all so you can focus
+                on what matters: your business. No stress, no headaches, just a
+                beautiful website that you can rely on.
+              </p>
+
+              <script>
+                const words = [
+                  "performance.",
+                  "precision.",
+                  "speed.",
+                  "innovation.",
+                  "scalability.",
+                  "reliability.",
+                  "efficiency.",
+                  "elegance.",
+                  "craftsmanship.",
+                  "resilience.",
+                ];
+
+                const el = document.getElementById("word");
+                let currentWordIndex = 0;
+                let currentText = "";
+                let adding = true; // true = adding letters, false = deleting letters
+
+                function typeLoop() {
+                  const fullWord = words[currentWordIndex];
+
+                  if (adding) {
+                    // Add one letter
+                    currentText = fullWord.slice(0, currentText.length + 1);
+                    el.textContent = currentText;
+
+                    if (currentText === fullWord) {
+                      // Finished typing the full word, wait then start deleting
+                      adding = false;
+                      setTimeout(typeLoop, 1000); // pause 1 second before deleting
+                    } else {
+                      setTimeout(typeLoop, 50); // speed of typing letters
+                    }
+                  } else {
+                    // Delete one letter
+                    currentText = currentText.slice(0, -1);
+                    el.textContent = currentText;
+
+                    if (currentText.length === 0) {
+                      // Move to next word after deleting
+                      adding = true;
+                      currentWordIndex = (currentWordIndex + 1) % words.length;
+                      setTimeout(typeLoop, 100); // short pause before next word
+                    } else {
+                      setTimeout(typeLoop, 100); // speed of deleting letters
+                    }
+                  }
+                }
+
+                // Start typing loop
+                typeLoop();
+              </script>
+            </div>
+
+            <div class="pt-5">
+              <a
+                href="#contact-us"
+                data-turbo="false"
+                id="contact-btn"
+                class="contact-btn rounded-sm border-white border-2 bg-devonus-black px-6 py-4 text-base font-semibold text-devonus-white hover:text-devonus-black hover:border-devonus-black shadow-sm uppercase"
+              >
+                contact us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About-->
+      <section
+        class="flex items-center justify-end md:pt-0 h-screen mx-auto px-4 md:px-6 lg:px-8 snap-center"
+        id="about"
+      >
+        <div class="text-right pb-10">
+          <h1 class="font-bold z-40 relative text-6xl leading-none">
+            <span
+              class="block text-devonus-orange font-medium font-garamond uppercase tracking-wider leading-none"
+              id="title-name"
+            ></span>
+            <span
+              class="block font-montserrat font-medium text-4xl md:text-[110px] lg:text-[110px] text-devonus-grey-400 uppercase tracking-wider leading-none mt-[-0.5rem]"
+            ></span>
+          </h1>
+          <div
+            class="transform md:-translate-x-24 flex flex-col my-10 md:mb-0 justify-center gap-x-6 text-white md:w-[760px] pr-4 md:pr-0"
+          >
+            <div class="w-full text-right">
+              <div class="flex flex-col">
+                <h2
+                  class="leading-none text-devonus-white relative z-40 text-5xl md:text-6xl lg:tracking-wide mt-[-1.5rem]"
+                >
+                  We’re
+                  <span class="text-devonus-orange font-garamond text-6xl"
+                    ><i>passionate</i></span
+                  ><br />
+                  with what we do.<br />
+                  <span
+                    id="service"
+                    class="text-devonus-green transition-opacity duration-500 opacity-100 relative inline-block"
+                  >
+                    <span class="invisible absolute whitespace-nowrap">
+                      Performance <br />Optimization
+                    </span>
+                    Web<br />Design
+                  </span>
+                </h2>
+              </div>
+              <p
+                class="pt-4 pb-6 text-right text-[18px] relative z-40 leading-8 pl-8 text-devonus-white"
+              >
+                Driven by a timeless design and technical precision, we craft
+                websites built for lasting impact. Distinct, refined, and
+                unmistakably yours.
+              </p>
+
+              <script>
+                const services = [
+                  "web<br>animation",
+                  "search engine<br> optimization",
+                  "web<br>development",
+                  "UX/UI<br>strategy",
+                  "responsive<br>design",
+                  "performance <br> optimization",
+                  "domain &<br>hosting",
+                  "accessibility <br>services",
+                  "CMS<br>Integration",
+                  "analytics <br>& tracking",
+                ];
+
+                let index = 0;
+                const serviceSpan = document.getElementById("service");
+
+                function updateService() {
+                  serviceSpan.classList.remove("opacity-100");
+                  serviceSpan.classList.add("opacity-0");
+
+                  setTimeout(() => {
+                    index = (index + 1) % services.length;
+                    serviceSpan.innerHTML = services[index]; // use innerHTML for <br> to work
+                    serviceSpan.classList.remove("opacity-0");
+                    serviceSpan.classList.add("opacity-100");
+                  }, 500);
+                }
+
+                setInterval(updateService, 3000);
+              </script>
+            </div>
+
+            <div class="pt-5">
+              <a
+                href="#contact-us"
+                data-turbo="false"
+                id="contact-btn"
+                class="contact-btn rounded-sm border-white border-2 bg-devonus-black px-6 py-4 text-base font-semibold text-devonus-white hover:text-devonus-black hover:border-devonus-black shadow-sm uppercase"
+              >
+                contact us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- services -->
+      <section
+        class="relative flex items-center justify-center scroll-mt-20 md:scroll-mt-0 md:h-screen snap-start"
+        id="services"
+      >
+        <div
+          class="text-devonus-white font-sans z-40 md:h-screen w-full overflow-hidden rounded-lg"
+        >
+          <div class="grid grid-cols-1 lg:grid-cols-3 h-full">
+            <!-- Left Image: 1/3 of width -->
+            <div class="hidden lg:block col-span-1 h-full">
+              <img
+                src="public/laptop.png"
+                alt="Laptop"
+                class="object-cover invisible w-full h-full"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </div>
+
+            <!-- Right Content: 2/3 of width -->
+            <div
+              class="col-span-2 bg-devonus-black md:bg-transparent p-8 md:p-16 md:p-0 md:px-20 md:px-0 flex flex-col justify-center h-full"
+            >
+              <div class="xl:w-3/4 md:mx-auto md:p-8 xl:p-0">
+                <div class="md:h-12"></div>
+                <h2
+                  class="md:hidden text-7xl md:text-9xl text-devonus-white font-humane tracking-wide flex flex-col leading-none md:text-left uppercase"
+                >
+                  <div>
+                    What We<span class="text-devonus-orange"> Offer</span>
+                  </div>
+                </h2>
+                <h2
+                  class="hidden md:block text-9xl md:text-7xl text-devonus-orange font-humane md:mb-4 tracking-wider"
+                >
+                  WHAT WE OFFER
+                </h2>
+
+                <p class="text-lg md:text-2xl mb-10">
+                  Get a custom-built, lightning-fast website for just
+                  <span class="text-devonus-green">$189.99/ month</span> with a
+                  12-month minimum commitment. Every site is crafted to fit your
+                  business, optimized for SEO, and secured with industry-best
+                  privacy and protection.
+                </p>
+
+                <div class="text-xl grid grid-cols-1 md:grid-cols-2 md:gap-8">
+                  <div>
+                    <div
+                      class="flex items-start mb-4 border border-devonus-grey-700 p-4 rounded-md shadow-devonus-green-sm md:border-0 md:p-0 md:rounded-none md:shadow-none"
+                    >
+                      <img
+                        src="public/Checkmark.svg"
+                        class="w-4 h-4 text-devonus-green mt-2 mr-2"
+                        alt="checkmark"
+                        loading="lazy"
+                        width="600"
+                        height="400"
+                      />
+
+                      <div>
+                        <h3 class="font-bold">Lightning-Fast Websites</h3>
+                        <p class="text-base font-light">
+                          Beat out the competition with pages that load
+                          instantly, boost SEO, and keep your customers sticking
+                          around.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex items-start mb-4 border border-devonus-grey-700 p-4 rounded-md shadow-devonus-green-sm md:border-0 md:p-0 md:rounded-none md:shadow-none"
+                    >
+                      <img
+                        src="public/Checkmark.svg"
+                        class="w-4 h-4 text-devonus-green mt-2 mr-2"
+                        alt="checkmark"
+                        loading="lazy"
+                        width="600"
+                        height="400"
+                      />
+
+                      <div>
+                        <h3 class="font-bold">Reliability and Security</h3>
+                        <p class="text-base font-light">
+                          Worry less. We protect you with SSL certifications and
+                          strict privacy standards so your site and customer
+                          data stay secure.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex items-start mb-4 border border-devonus-grey-700 p-4 rounded-md shadow-devonus-green-sm md:border-0 md:p-0 md:rounded-none md:shadow-none"
+                    >
+                      <img
+                        src="public/Checkmark.svg"
+                        class="w-4 h-4 text-devonus-green mt-2 mr-2"
+                        alt="checkmark"
+                        loading="lazy"
+                        width="600"
+                        height="400"
+                      />
+                      <div>
+                        <h3 class="font-bold">Unparalleled Support</h3>
+                        <p class="text-base font-light">
+                          No tickets, No tiers. Just real answers from from our
+                          team. Text, call or email anytime.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div
+                      class="flex items-start mb-4 border border-devonus-grey-700 p-4 rounded-md shadow-devonus-green-sm md:border-0 md:p-0 md:rounded-none md:shadow-none"
+                    >
+                      <img
+                        src="public/Checkmark.svg"
+                        class="w-4 h-4 text-devonus-green mt-2 mr-2"
+                        alt="checkmark"
+                        loading="lazy"
+                        width="600"
+                        height="400"
+                      />
+
+                      <div>
+                        <h3 class="font-bold">SEO Services</h3>
+                        <p class="text-base font-light">
+                          We make sure your site ranks and gets seen by the
+                          right customers.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex items-start mb-4 border border-devonus-grey-700 p-4 rounded-md shadow-devonus-green-sm md:border-0 md:p-0 md:rounded-none md:shadow-none"
+                    >
+                      <img
+                        src="public/Checkmark.svg"
+                        class="w-4 h-4 text-devonus-green mt-2 mr-2"
+                        alt="checkmark"
+                        loading="lazy"
+                        width="600"
+                        height="400"
+                      />
+
+                      <div>
+                        <h3 class="font-bold">Custom Built Websites</h3>
+                        <p class="text-base font-light">
+                          No more blending in. We'll help your site stand out
+                          with a custom design that reflects your business.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="mt-10 flex justify-center md:flex-none md:justify-start"
+                    >
+                      <button
+                        class="contact-btn text-devonus-white rounded-sm border-white hover:text-devonus-green hover:border-devonus-green border-2 bg-devonus-black px-3.5 py-2.5 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 uppercase"
+                      >
+                        Get Started Today
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="work"
+        class="relative bg-devonus-black py-16 px-4 md:px-8 bg-devonus-black scroll-mt-20 md:h-full md:h-screen snap-none md:snap-center"
+      >
+        <!-- Glowing Effects (optional visuals) -->
+        <div class="absolute inset-0 z-0 pointer-events-none">
+          <div
+            class="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500 opacity-30 rounded-full blur-3xl"
+          ></div>
+          <div
+            class="absolute bottom-1/4 right-1/4 w-72 h-72 bg-green-500 opacity-20 rounded-full blur-2xl"
+          ></div>
+          <div
+            class="absolute top-1/3 right-1/3 w-80 h-80 bg-blue-500 opacity-20 rounded-full blur-2xl"
+          ></div>
+          <div
+            class="absolute bottom-1/3 left-1/5 w-72 h-72 bg-purple-500 opacity-20 rounded-full blur-3xl"
+          ></div>
+          <div
+            class="absolute top-1/5 right-1/5 w-64 h-64 bg-pink-500 opacity-20 rounded-full blur-2xl"
+          ></div>
+        </div>
+
+        <!-- Section Header -->
+        <div class="relative z-10 max-w-6xl mx-auto text-center mb-12">
+          <h2
+            class="text-devonus-green font-humane text-4xl md:text-5xl lg:text-6xl tracking-wide mb-4"
+            id="sd-heading"
+          >
+            Case Studies
+          </h2>
+          <h3
+            class="text-7xl md:text-9xl text-devonus-white font-humane tracking-wide flex flex-col leading-none uppercase"
+          >
+            Our work over the years
+          </h3>
+          <p class="text-devonus-white text-base md:text-lg max-w-2xl mx-auto">
+            Get a custom-built, lightning-fast website for just $189.99/month
+            with a 12-month minimum commitment. Every site is crafted to fit
+            your business, optimized for SEO, and secured with industry-best
+            protection.
+          </p>
+        </div>
+
+        <!-- Articles Grid -->
+        <div
+          class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
+          id="case-study-grid"
+        >
+          <!-- Article Card 1 -->
+          <article
+            class="bg-devonus-black rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105 hover:z-10"
+          >
+            <img
+              src="./public/sinq.png"
+              alt="Case Study 3"
+              class="h-56 w-full"
+            />
+            <div class="p-6">
+              <time class="block text-xs text-devonus-white mb-1"
+                >22nd Dec 2024</time
+              >
+              <h4 class="text-lg text-devonus-green font-semibold mb-2">
+                Breaking Barriers in Crypto Web Presence
+              </h4>
+              <p class="text-sm text-devonus-white line-clamp-3">
+                We helped this blockchain startup disrupt the status quo with a
+                high-converting, ultra-sleek website.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article Card 2 -->
+          <article
+            class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105 hover:z-10"
+          >
+            <img
+              src="./public/jonathan-myers.png"
+              alt="Case Study 2"
+              class="h-56 w-full object-cover"
+            />
+            <div class="p-6">
+              <time class="block text-xs text-gray-500 mb-1"
+                >13th Nov 2023</time
+              >
+              <h4 class="text-lg text-gray-900 font-semibold mb-2">
+                Websites that sell the space
+              </h4>
+              <p class="text-sm text-gray-600 line-clamp-3">
+                An online portfolio is a must for any interior designer. We want
+                your site to be as elegant as your work.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="bg-devonus-black rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105 hover:z-10"
+          >
+            <img
+              src="./public/retrain.png"
+              alt="Case Study 3"
+              class="h-56 w-full"
+            />
+            <div class="p-6">
+              <time class="block text-xs text-devonus-white mb-1"
+                >7th Jul 2020</time
+              >
+              <h4 class="text-lg text-devonus-green font-semibold mb-2">
+                Moving the performance scale
+              </h4>
+              <p class="text-sm text-devonus-white line-clamp-3">
+                Mobile-first platforms are a must for fitness brands to turn
+                those workouts into daily habits.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- <section class="bg-devonus-black flex items-center justify-end md:pt-0 h-screen mx-auto px-4 md:px-6 lg:px-8 snap-center" id="new-york">
+        <h2 class="p-8 text-devonus-white leading-none relative  text-5xl md:text-6xl lg:text-[100px] lg:tracking-wide mt-[-1.5rem] text-white w-full md:w-1/2 text-end md:translate-x-24">also <br><span class="text-devonus-orange">New York</span>
+        </h2>
+    </section>
+
+    <section class="bg-devonus-black flex items-center justify-start md:pt-0 h-screen mx-auto px-4 md:px-6 lg:px-8 snap-center" id="england">
+        <h2 class="p-8 text-devonus-white leading-none relative  text-5xl md:text-6xl lg:text-[100px] lg:tracking-wide mt-[-1.5rem] text-white w-full md:w-1/2 md:translate-x-24">even <br><span class="text-devonus-orange">England</span>
+        </h2>
+    </section>
+ -->
+
+      <!--Testimonials-->
+      <section
+        id="testimonials"
+        class="md:h-screen items-center relative scroll-mt-20 md:scroll-mt-40 px-8 md:py-16 pt-16 max-w-7xl mx-auto z-40 snap-none md:snap-center md:flex md:gap-12 px-4 md:px-0"
+      >
+        <div
+          class="relative md:px-8 pb-16 max-w-5xl mx-auto md:flex md:items-start md:gap-12 w-full"
+        >
+          <!-- Left Content -->
+          <div class="md:w-1/2 md:mb-0 flex flex-col justify-center">
+            <h2
+              class="text-7xl md:text-9xl text-devonus-white font-humane tracking-wide flex flex-col leading-none md:text-left"
+            >
+              <div>BUSINESSES</div>
+              <div class="-mt-2">
+                <span class="text-devonus-orange">TRUST</span>
+              </div>
+              <div class="-mt-2">OUR SERVICES</div>
+            </h2>
+            <div class="items-center md:mt-10 pb-4 md:pb-0 max-w-md">
+              <p
+                class="font-garamond italic text-lg md:text-2xl text-devonus-white"
+              >
+                <i>“Best San Diego Website<br />Design Companies”</i>
+              </p>
+
+              <a
+                href="https://www.designrush.com/agency/website-design-development/california/san-diego"
+                class="inline-block mt-4"
+              >
+                <img
+                  src="./public/designrush.svg"
+                  alt="Devonus' rating on DesignRush, the industry-leading B2B Marketplace connecting brands with agencies"
+                  style="width: 12rem; height: auto"
+                  class="pb-4"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div
+            class="md:w-1/2 flex flex-col items-start gap-4 md:gap-8 md:gap-10 text-devonus-white md:mt-0"
+          >
+            <!-- Testimonial Card 1 -->
+            <div
+              class="w-full md:max-w-lg border border-devonus-white rounded-md p-6 bg-devonus-black hover:bg-devonus-white hover:text-devonus-black transition duration-300 hover:shadow-[0_0_5px_5px_rgba(255,255,255,0.7)]"
+            >
+              <p class="font-playfair italic text-lg leading-relaxed">
+                “Our old site made us feel like we were stuck in 2008. Devonus
+                delivered a sleek and professional design that reflects the
+                level of service we provide.”
+              </p>
+              <div class="mt-6">
+                <p class="font-semibold">Head of Sales, Justin A.</p>
+                <p
+                  class="text-sm text-gray-300 hover:text-gray-900 transition-colors duration-300"
+                >
+                  IGA Travel Agency
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial Card 2 -->
+            <div
+              class="w-full md:max-w-lg border border-devonus-green rounded-md p-6 bg-devonus-black hover:bg-devonus-green hover:text-devonus-black transition duration-300 hover:shadow-[0_0_5px_5px_rgba(184,247,62,0.7)]"
+            >
+              <p class="font-playfair italic text-lg leading-relaxed">
+                "We were nervous about hiring an agency as a small business, but
+                Devonus made the process simple and personal. Our bookings
+                increased when we launched our new site!"
+              </p>
+              <div class="mt-6">
+                <p class="font-semibold">Linda S.</p>
+                <p
+                  class="text-sm text-gray-300 hover:text-gray-900 transition-colors duration-300"
+                >
+                  Founder, SDS Healing
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Price-->
+      <section
+        id="pricing"
+        class="relative bg-devonus-black md:bg-transparent z-40 pt-10 md:pt-0 scroll-mt-24"
+      >
+        <div
+          class="relative md:h-12 z-40 mx-auto text-left md:text-center px-4 md:px-0"
+        >
+          <h2
+            class="md:hidden text-7xl md:text-9xl text-devonus-white font-humane tracking-wide flex flex-col leading-none text-center md:text-left uppercase"
+          >
+            <div>Our <span class="text-devonus-orange">pricing</span></div>
+          </h2>
+          <h2
+            class="hidden md:block pt-10 md:hidden text-7xl text-devonus-orange uppercase font-humane md:mb-4 tracking-wider"
+          >
+            Our Pricing
+          </h2>
+        </div>
+        <div
+          class="relative z-40 flex md:h-screen lg:h-screen items-center justify-center mx-auto px-4 pb-8 md:px-6 md:py-12 lg:px-8 snap-none md:snap-center"
+          id="pricing"
+        >
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:items-center"
+          >
+            <div
+              class="rounded-sm border border-devonus-white bg-devonus-black text-devonus-white p-6 mb-5 md:mb-0 shadow-sm md:px-8 lg:p-12 lg:py-20"
+            >
+              <div class="">
+                <h2
+                  class="text-5xl font-medium font-bold font-humane uppercase tracking-wider"
+                >
+                  Lump Sum
+                  <span class="sr-only">Lump Sum</span>
+                </h2>
+              </div>
+
+              <ul class="mt-6 space-y-2">
+                <li class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-devonus-orange"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <span class="">Custom Design And Development</span>
+                </li>
+
+                <li class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-devonus-orange"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <span class="">$20/month Hosting</span>
+                </li>
+
+                <li class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-devonus-orange"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <span class=""
+                    >Includes 5 Pages - additional pages: $100 each</span
+                  >
+                </li>
+
+                <li class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-devonus-orange"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <span class="">Unlimited Edits Add-On: +$50/month</span>
+                </li>
+
+                <li class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-devonus-orange"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <span class="">Add a Blog: +$250 one-time fee</span>
+                </li>
+              </ul>
+              <p class="mt-2 md:mt-4">
+                <strong class="text-3xl font-bold md:text-4xl">
+                  $3,999<span class="text-lg">.99</span>
+                </strong>
+
+                <span class="text-sm font-medium">+ 25/month hosting</span>
+              </p>
+
+              <a
+                href="https://buy.stripe.com/aFafZi5SX9mZcpY2uN9R604"
+                class="mt-8 block rounded-sm border border-devonus-green bg-devonus-green px-12 py-3 text-center text-devonus-black text-sm font-medium text-indigo-600 hover:ring-1 hover:ring-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+              >
+                Get Started
+              </a>
+            </div>
+
+            <div
+              class="rounded-sm border bg-devonus-green border-devonus-green p-6 shadow-sm ring-1 ring-indigo-600 mb-5 md:mb-0 md:px-8 lg:p-12 lg:py-20"
+            >
+              <div class="text-devonus-black">
+                <h2
+                  class="text-5xl font-medium font-humane uppercase tracking-wider"
+                >
+                  Monthly
+                  <span class="sr-only">Monthly</span>
+                </h2>
+              </div>
+
+              <ul class="mt-6 space-y-2">
+                <li class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-indigo-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <span class="">Custom Design And Development</span>
+                </li>
+
+                <li class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-indigo-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <span class="">Hosting Included</span>
+                </li>
+
+                <li class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-indigo-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <span class=""
+                    >Includes 5 Pages - additional pages: $100 each</span
+                  >
+                </li>
+
+                <li class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-indigo-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <span class="">Unlimited Edits</span>
+                </li>
+
+                <li class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-indigo-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <span class="">Add a Blog: +$250 one-time</span>
+                </li>
+
+                <li class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-indigo-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <span class="">24/7 Support</span>
+                </li>
+
+                <li class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-indigo-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <span class="">Lifetime Updates</span>
+                </li>
+              </ul>
+              <p class="mt-2 md:mt-4">
+                <strong class="text-3xl font-bold md:text-4xl">
+                  $189<span class="text-lg">.99</span>
+                </strong>
+
+                <span class="text-sm font-medium">/month</span>
+              </p>
+              <a
+                href="https://buy.stripe.com/7sY5kE1CHeHjgGe4CV9R605"
+                class="mt-8 block rounded-sm border border-devonus-black bg-devonus-black px-12 py-3 text-center text-sm font-medium text-devonus-white hover:bg-indigo-600 hover:ring-1 hover:ring-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+              >
+                Get Started
+              </a>
+            </div>
+
+            <div
+              class="bg-devonus-black rounded-sm border border-devonus-white text-devonus-white p-6 shadow-sm mb-5 md:mb-0 md:px-8 lg:p-12 lg:py-20"
+            >
+              <div class="text-devonus-white">
+                <h2
+                  class="text-5xl font-medium font-humane uppercase tracking-wider"
+                >
+                  Ecommerce
+                  <span class="sr-only">Ecommerce</span>
+                </h2>
+              </div>
+
+              <ul class="mt-6 space-y-2">
+                <li class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-devonus-orange"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <span class="">Bigger ambitions? contact us today! </span>
+                </li>
+
+                <li class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-devonus-orange"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <span class="">Custom Design and Development </span>
+                </li>
+
+                <li class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-devonus-orange"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <span class="">SEO Services</span>
+                </li>
+
+                <li class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-devonus-orange"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <span class="">Mobile and Browser </span>
+                </li>
+              </ul>
+              <p class="mt-2 md:mt-4">
+                <strong
+                  class="text-3xl font-bold text-devonus-white md:text-4xl"
+                >
+                  $9,999<span class="text-lg">.99</span>
+                </strong>
+
+                <span class="text-sm font-medium text-devonus-white"
+                  >Starting</span
+                >
+              </p>
+
+              <a
+                href="https://buy.stripe.com/3cIdRa2GL1Uxdu21qJ9R606"
+                class="mt-8 block rounded-sm border border-devonus-green bg-devonus-green px-12 py-3 text-center text-sm font-medium text-devonus-black hover:ring-1 hover:ring-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+              >
+                Get Started
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--contact us-->
+      <section
+        id="contact-us"
+        class="relative z-40 grid md:h-screen lg:h-screen mx-auto px-4 py-8 md:px-6 md:py-12 lg:px-8 items-center snap-none md:snap-center scroll-mt-20"
+      >
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+          <h2
+            class="mb-4 text-4xl tracking-tight font-extrabold text-center text-devonus-white dark:text-white uppercase focus:border-none"
+          >
+            let's <span class="text-devonus-orange">work</span> together
+          </h2>
+          <p
+            class="mb-8 lg:mb-8 font-light text-center text-devonus-grey-400 dark:text-gray-400 md:text-xl"
+          >
+            Have a project in mind? <br />Let's connect to bring your vision to
+            life. Whether it's a question or a quote, we're here to help.
+          </p>
+
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="space-y-4"
+            name="contact"
+            data-netlify="true"
+            onSubmit="submit"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="f82d720c-8bd7-4083-9001-3401c8f3d493"
+            />
+
+            <div class="uppercase">
+              <label
+                for="name"
+                class="sr-only block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 uppercase"
+                >Your Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="your name"
+                autocomplete="name"
+                required
+                class="shadow-sm bg-devonus-black border-0 border-b-2 focus:outline-none focus:border-b-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 text-devonus-white text-sm block w-full p-2.5 placeholder:uppercase"
+              />
+            </div>
+
+            <div>
+              <label
+                for="email"
+                class="sr-only block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your email address"
+                autocomplete="email"
+                required
+                class="shadow-sm bg-devonus-black border-0 border-b-2 focus:outline-none focus:border-b-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 text-devonus-white text-sm block w-full p-2.5 placeholder:uppercase"
+              />
+            </div>
+
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none"
+            />
+
+            <div>
+              <label
+                for="subject"
+                class="sr-only block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >Subject</label
+              >
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Your Subject"
+                required
+                class="shadow-sm bg-devonus-black border-0 border-b-2 focus:outline-none focus:border-b-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 text-devonus-white text-sm block w-full p-2.5 placeholder:uppercase"
+              />
+            </div>
+
+            <div class="md:col-span-2">
+              <label
+                for="message"
+                class="sr-only block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                >Your Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Add your inquiry"
+                rows="6"
+                required
+                class="shadow-sm bg-devonus-black border-2 border-devonus-green focus:outline-none focus:border-b-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 text-devonus-white text-sm block w-full p-2.5 placeholder:uppercase"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="text-devonus-white rounded-sm border-white hover:text-devonus-green hover:border-devonus-green border-2 bg-devonus-black px-3.5 py-2.5 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 uppercase"
+            >
+              Send message
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!--Blog-->
+      <footer
+        class="z-40 absolute w-full relative bg-devonus-black snap-none md:snap-center"
+      >
+        <div
+          class="flex flex-col md:flex-row items-stretch mx-auto px-4 pb-6 pt-16 md:px-6 lg:px-8 lg:pt-24 text-devonus-grey-400 font-archivoblack"
+        >
+          <div
+            class="border-t border-b text-2xl lg:text-4xl hover:text-devonus-green md:border-r border-gray-300 w-full md:w-1/2 flex items-center justify-center h-32 uppercase"
+          >
+            San Diego, CA
+          </div>
+          <div
+            class="border-t border-b text-2xl lg:text-4xl hover:text-devonus-green md:border-l border-gray-300 w-full md:w-1/2 flex items-center justify-center h-32 uppercase"
+          >
+            hello@devonus.com
+          </div>
+        </div>
+        <div
+          class="bg-devonus-black mx-auto max-w-screen-xl px-4 pb-6 pt-16 md:px-6 lg:px-8 lg:pt-24"
+        >
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            <div class="relative">
+              <div
+                class="flex justify-center text-2xl font-garamond text-devonus-orange md:justify-start"
+              >
+                DEVONUS
+              </div>
+
+              <p
+                class="text-center font-archivoblack uppercase text-devonus-grey-400 leading-relaxed md:max-w-xs md:text-left"
+              >
+                A web and tech agency
+              </p>
+              <form
+                action="/submit"
+                method="POST"
+                class="flex justify-center md:justify-start lg:absolute lg:bottom-0 lg:left-0"
+              >
+                <div class="flex">
+                  <label for="email" class="sr-only">Email</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="email"
+                    autocomplete="email"
+                    class="bg-devonus-black border-2 border-devonus-green uppercase text-devonus-grey-400"
+                  />
+                </div>
+
+                <div class="flex justify-center">
+                  <button
+                    type="submit"
+                    class="bg-devonus-grey-50 rounded-none border-2 font-bold border-devonus-grey-50 tex-devonus-black uppercase py-2 px-5"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div
+              class="grid grid-cols-1 gap-8 md:grid-cols-2 md:grid-cols-2 lg:col-span-2 uppercase md:justify-items-end lg:justify-items-end"
+            >
+              <div class="text-center md:text-left text-devonus-grey-400">
+                <p class="text-lg font-medium text-white">Company</p>
+
+                <ul class="mt-8 space-y-4 text-sm">
+                  <li>
+                    <a class="" href="/"> Home </a>
+                  </li>
+
+                  <li>
+                    <a class="" href="#about"> About Us </a>
+                  </li>
+
+                  <li>
+                    <a class="" href="#services"> Services </a>
+                  </li>
+
+                  <li>
+                    <a class="" href="/blog/categories/case-studies">
+                      Case Studies
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="" href="#contact"> Contact </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="text-center md:text-left text-devonus-grey-400">
+                <p class="text-lg font-medium text-white">Media</p>
+
+                <ul class="mt-8 space-y-4 text-sm">
+                  <li>
+                    <a class="5" href="/terms-and-conditions">
+                      Terms & Conditions
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="" href="/privacy-policy"> Privacy Policy </a>
+                  </li>
+
+                  <li>
+                    <a class="" href="/blog/categories/trending"> Press </a>
+                  </li>
+
+                  <li>
+                    <a class="" href="/san-diego-web-agency"> Cities </a>
+                  </li>
+
+                  <li>
+                    <a class="" href="https://www.devonus.com"> Media Kit</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <ul class="mt-8 flex justify-center gap-6 md:justify-start md:gap-8">
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                rel="noreferrer"
+                target="_blank"
+                class="text-devonus-orange transition hover:text-indigo-600/75"
+              >
+                <span class="sr-only">Facebook</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.linkedin.com/"
+                rel="noreferrer"
+                target="_blank"
+                class="text-devonus-orange transition hover:text-indigo-600/75"
+              >
+                <span class="sr-only">Linkedin</span>
+
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  x="0px"
+                  y="0px"
+                  width="24"
+                  height="50"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                rel="noreferrer"
+                target="_blank"
+                class="text-devonus-orange transition hover:text-indigo-600/75"
+              >
+                <span class="sr-only">Instagram</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.twitter.com/"
+                rel="noreferrer"
+                target="_blank"
+                class="text-devonus-orange transition hover:text-indigo-600/75"
+              >
+                <span class="sr-only">Twitter</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.tiktok.com/"
+                rel="noreferrer"
+                target="_blank"
+                class="text-devonus-orange transition hover:text-indigo-600/75"
+              >
+                <span class="sr-only">Tik Tok</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  x="0px"
+                  y="0px"
+                  width="24"
+                  height="50"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.youtube.com/"
+                rel="noreferrer"
+                target="_blank"
+                class="text-devonus-orange transition hover:text-indigo-600/75"
+              >
+                <span class="sr-only">Youtube</span>
+                <svg
+                  class="h-6 w-6"
+                  x="0px"
+                  y="0px"
+                  fill="currentColor"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 30 30"
+                >
+                  <path
+                    d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <div class="mt-6 border-t border-devonus-grey pt-6">
+            <div class="text-center md:flex md:justify-between md:text-left">
+              <p class="text-sm text-devonus-grey-400">
+                <span class="block md:inline">All rights reserved.</span>
+
+                <a
+                  class="inline-block text-devonus-green underline transition hover:text-indigo-600/75"
+                  href="/terms-and-conditions"
+                >
+                  Terms & Conditions
+                </a>
+
+                <span>&middot;</span>
+
+                <a
+                  class="inline-block text-devonus-green underline transition hover:text-indigo-600/75"
+                  href="/privacy-policy"
+                >
+                  Privacy Policy
+                </a>
+              </p>
+
+              <p
+                class="mt-4 text-sm text-devonus-grey-400 md:order-first md:mt-0"
+              >
+                &copy; <span id="year"></span> Devonus
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+  </body>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="scripts/shooting_star.js"></script>
+  <script src="globe.js" defer loading="lazy"></script>
+  <script src="scripts/observer.js" defer loading="lazy"></script>
+  <script src="scripts/toggle.js" defer loading="lazy"></script>
+</html>
