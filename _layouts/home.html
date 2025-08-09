@@ -270,6 +270,7 @@
           <img
             src="https://res.cloudinary.com/dvufsifir/image/upload/v1754772285/carousel4_cycba1.webp"
             alt="Clone Project 4"
+            loading="lazy"
           />
           <div class="caption">
             <h3>Revive & Retrain</h3>
@@ -282,6 +283,7 @@
           <img
             src="https://res.cloudinary.com/dvufsifir/image/upload/v1754772283/carousel1_wihzea.webp"
             alt="Project 1"
+            loading="lazy"
           />
           <div class="caption">
             <h3>Identity & Intention</h3>
@@ -295,6 +297,7 @@
           <img
             src="https://res.cloudinary.com/dvufsifir/image/upload/v1754772282/carousel2_m9vo97.webp"
             alt="Project 2"
+            loading="lazy"
           />
           <div class="caption">
             <h3>Collapse & Creation</h3>
@@ -308,6 +311,7 @@
           <img
             src="https://res.cloudinary.com/dvufsifir/image/upload/v1754772286/carousel3_kognjq.webp"
             alt="Project 3"
+            loading="lazy"
           />
           <div class="caption">
             <h3>Brick & Boundless</h3>
@@ -321,6 +325,7 @@
           <img
             src="https://res.cloudinary.com/dvufsifir/image/upload/v1754772285/carousel4_cycba1.webp"
             alt="Project 4"
+            loading="lazy"
           />
           <div class="caption">
             <h3>Revive & Retrain</h3>
@@ -333,6 +338,7 @@
           <img
             src="https://res.cloudinary.com/dvufsifir/image/upload/v1754772283/carousel1_wihzea.webp"
             alt="Clone Project 1"
+            loading="lazy"
           />
           <div class="caption">
             <h3>Identity & Intention</h3>
@@ -418,7 +424,11 @@
             {% if post.image %}
             <img src="{{ post.image }}" alt="{{ post.title }}" />
             {% else %}
-            <img src="/public/background.png" alt="Default blog image" />
+            <img
+              src="/public/background.png"
+              alt="Default blog image"
+              loading="lazy"
+            />
             {% endif %}
             <div class="blog-content">
               <h3 class="blog-title">{{ post.title }}</h3>
