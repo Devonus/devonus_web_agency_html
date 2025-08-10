@@ -115,6 +115,72 @@ buttons.forEach((button) => {
   });
 });
 
+const sections = document.querySelectorAll("section");
+
+sections.forEach((section) => {
+  let targetX = 0;
+  let targetY = 0;
+  let currentX = 0;
+  let currentY = 0;
+  let opacity = 0;
+
+  function updatePosition(x, y) {
+    targetX = x;
+    targetY = y;
+    opacity = 1;
+  }
+
+  section.addEventListener("mousemove", (e) => {
+    const rect = section.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    updatePosition(x, y);
+  });
+
+  section.addEventListener(
+    "touchmove",
+    (e) => {
+      if (!e.touches.length) return;
+      const touch = e.touches[0];
+      const rect = section.getBoundingClientRect();
+      const x = touch.clientX - rect.left;
+      const y = touch.clientY - rect.top;
+      updatePosition(x, y);
+    },
+    { passive: true }
+  );
+
+  section.addEventListener("mouseleave", () => {
+    opacity = 0;
+  });
+
+  section.addEventListener("touchend", () => {
+    opacity = 0;
+  });
+
+  section.addEventListener("touchcancel", () => {
+    opacity = 0;
+  });
+
+  function animate() {
+    // Easing factor: adjust between 0 and 1 (0.1 = smooth lag)
+    const ease = 0.05;
+
+    // Move current toward target
+    currentX += (targetX - currentX) * ease;
+    currentY += (targetY - currentY) * ease;
+
+    // Update CSS vars
+    section.style.setProperty("--x", `${currentX}px`);
+    section.style.setProperty("--y", `${currentY}px`);
+    section.style.setProperty("--opacity", opacity);
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+});
+
 const navlinks = document.querySelectorAll(".nav-links");
 
 navlinks.forEach((navlinks) => {
