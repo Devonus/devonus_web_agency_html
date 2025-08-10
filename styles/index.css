@@ -829,7 +829,7 @@ text-decoration: none;
 
 .blog-meta {
   font-size: 0.9rem;
-  color: #999;
+  color: #333333;
   display: flex;
   gap: 1rem;
   align-items: center;

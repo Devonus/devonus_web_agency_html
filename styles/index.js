@@ -153,7 +153,8 @@ const items = carousel.querySelectorAll(".carousel-item");
 
 // Get the gap value from the CSS
 const style = getComputedStyle(carousel);
-const gap = parseFloat(style.gap); // This will be 32 if 1rem is 16px
+const gapValue = style.getPropertyValue("gap"); // get the 'gap' CSS property as a string, e.g. "32px"
+const gap = parseFloat(gapValue); // parse the numeric value from the string
 
 let itemWidth;
 function updateItemWidth() {
