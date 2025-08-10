@@ -149,16 +149,16 @@ Array.from(sanDiegoHeadings).forEach((el) => {
 const carousel = document.getElementById("carousel");
 const nextBtn = document.querySelector(".carousel-btn.next");
 const prevBtn = document.querySelector(".carousel-btn.prev");
-const items = carousel.querySelectorAll(".carousel-item");
+const items = carousel ? carousel.querySelectorAll(".carousel-item") : [];
 
-// Get the gap value from the CSS
-const style = getComputedStyle(carousel);
-const gapValue = style.getPropertyValue("gap"); // get the 'gap' CSS property as a string, e.g. "32px"
-const gap = parseFloat(gapValue); // parse the numeric value from the string
-
+// Initialize itemWidth
 let itemWidth;
+
 function updateItemWidth() {
-  // itemWidth is the item's offsetWidth plus the gap
+  if (!carousel || !items.length) return;
+  const style = getComputedStyle(carousel);
+  const gapValue = style.getPropertyValue("gap"); // e.g. "32px"
+  const gap = parseFloat(gapValue) || 0;
   itemWidth = items[0].offsetWidth + gap;
 }
 
@@ -184,7 +184,7 @@ function prevSlide() {
 }
 
 // Event listener for scroll end to handle infinite loop logic
-carousel.addEventListener("scrollend", () => {
+carousel?.addEventListener("scrollend", () => {
   if (index === items.length - 1) {
     index = 1;
     goToIndex(index, true);
@@ -195,13 +195,13 @@ carousel.addEventListener("scrollend", () => {
 });
 
 // Event listeners for buttons
-nextBtn.addEventListener("click", () => {
+nextBtn?.addEventListener("click", () => {
   stopAutoplay();
   nextSlide();
   startAutoplay();
 });
 
-prevBtn.addEventListener("click", () => {
+prevBtn?.addEventListener("click", () => {
   stopAutoplay();
   prevSlide();
   startAutoplay();
@@ -229,6 +229,7 @@ window.addEventListener("resize", () => {
   updateItemWidth();
   goToIndex(index, true);
 });
+
 /**
  * Smoothly scrolls the viewport to center the given element.
  * @param {string} selector - The CSS selector for the element to scroll to (e.g., '#contact').
