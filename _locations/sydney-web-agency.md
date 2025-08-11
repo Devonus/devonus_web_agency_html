@@ -7,7 +7,7 @@ page_title: Sydney Web Design & Development
 page_description: Helping Sydney companies shine online with tailored design and development.
 location: Sydney, New South Wales, AU
 city: Sydney
-main_image: ../public/sydney.jpg
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765657/sydney_rtmpzj.webp
 
 box_1_title: Custom Web Design
 box_1_description: Bold, modern websites tailored for Sydney’s creative, competitive business landscape.

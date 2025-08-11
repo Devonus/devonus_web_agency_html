@@ -7,7 +7,7 @@ page_title: Dallas Web Design & Development
 page_description: Helping businesses across Dallas launch sleek, modern websites.
 location: Dallas, Texas, US
 city: Dallas
-main_image: ../public/dallas.png
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765650/dallas_oujo5l.webp
 
 box_1_title: Custom Web Design
 box_1_description: Big, bold designs built for Dallas businesses who take their digital presence seriously.

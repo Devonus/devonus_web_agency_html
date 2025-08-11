@@ -7,7 +7,7 @@ page_title: London Web Design & Development
 page_description: Helping London businesses dominate online with custom websites.
 location: London, England, GB
 city: London
-main_image: ../public/london.jpg
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765648/london_bzy0k2.webp
 
 box_1_title: Custom Web Design
 box_1_description: Beautiful, brand-aligned websites built for London businesses who want to stand out — from startups to established enterprises.

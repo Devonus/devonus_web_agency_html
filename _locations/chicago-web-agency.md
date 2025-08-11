@@ -7,7 +7,7 @@ page_title: Chicago Web Design & Development
 page_description: Building powerful digital platforms for brands across the Windy City.
 location: Chicago, Illinois, US
 city: Chicago
-main_image: ../public/chicago.png
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765647/chicago_g3dpfv.webp
 
 box_1_title: Custom Web Design
 box_1_description: Strong, modern web design that reflects the heart and grit of Chicago brands.

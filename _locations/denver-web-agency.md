@@ -7,7 +7,7 @@ page_title: Denver Web Design & Development
 page_description: Creating robust digital experiences for fast-moving Denver brands.
 location: Denver, Colorado, US
 city: Denver
-main_image: ../public/denver.png
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765641/denver_by4t12.webp
 
 box_1_title: Custom Web Design
 box_1_description: Modern, mountain-fresh design tailored for Denver brands who want to stand tall online.

@@ -7,7 +7,7 @@ page_title: Toronto Web Design & Development
 page_description: Supporting Toronto businesses with fast, responsive, and modern websites.
 location: Toronto, Ontario, CA
 city: Toronto
-main_image: ../public/toronto.jpg
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765662/toronto_ommpsr.webp
 
 box_1_title: Custom Web Design
 box_1_description: Innovative, user-focused websites crafted for Toronto businesses aiming to lead their markets.

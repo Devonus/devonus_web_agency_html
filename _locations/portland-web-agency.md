@@ -7,7 +7,7 @@ page_title: Portland Web Design & Development
 page_description: Websites built with clarity, purpose, and personality for Portland companies.
 location: Portland, Oregon, US
 city: Portland
-main_image: ../public/portland.jpg
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765643/portland_aepfby.webp
 id_name: mobile-visible
 
 box_1_title: Custom Web Design

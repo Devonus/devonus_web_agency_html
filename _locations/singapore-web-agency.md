@@ -7,7 +7,7 @@ page_title: Singapore Web Design & Development
 page_description: Helping Singapore companies grow global with strategic, scalable web solutions.
 location: Singapore, SG
 city: Singapore
-main_image: ../public/singapore.jpg
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765660/singapore_keedmq.webp
 
 box_1_title: Custom Web Design
 box_1_description: Sharp, scalable web design for fast-growing Singapore brands ready to stand out online.

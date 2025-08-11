@@ -7,7 +7,7 @@ page_title: Las Vegas Web Design & Development
 page_description: Make your online presence shine in Vegas with bold, custom web design.
 location: Las Vegas, Nevada, US
 city: Las Vegas
-main_image: ../public/las-vegas.png
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765645/las-vegas_tmmz6s.webp
 id_name: mobile-visible
 
 box_1_title: Custom Web Design

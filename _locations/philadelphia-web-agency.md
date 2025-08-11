@@ -7,7 +7,7 @@ page_title: Philadelphia Web Design & Development
 page_description: Helping Philadelphia companies launch high-impact digital platforms.
 location: Philadelphia, Pennsylvania, US
 city: Philadelphia
-main_image: ../public/philadelphia.png
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765659/philadelphia_b4j88z.webp
 
 box_1_title: Custom Web Design
 box_1_description: Authentic, impactful design for Philadelphia brands who want to stand out online.

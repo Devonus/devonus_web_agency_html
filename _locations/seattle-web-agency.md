@@ -7,7 +7,7 @@ page_title: Seattle Web Design & Development
 page_description: Helping Seattle’s top brands grow with user-first web development.
 location: Seattle, Washington, US
 city: Seattle
-main_image: ../public/seattle.png
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765652/seattle_xj0xtz.webp
 id_name: mobile-visible
 
 box_1_title: Custom Web Design

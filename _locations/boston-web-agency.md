@@ -7,7 +7,7 @@ page_title: Boston Web Design & Development
 page_description: From Back Bay to Cambridge — websites that represent Boston’s best.
 location: Boston, Massachusetts, US
 city: Boston
-main_image: ../public/boston.png
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765642/boston_u33yvs.webp
 
 box_1_title: Custom Web Design
 box_1_description: Refined, strategic websites for Boston’s thriving business and academic ecosystem.

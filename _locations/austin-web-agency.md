@@ -7,7 +7,7 @@ page_title: Austin Web Design & Development
 page_description: Creative, responsive web design for startups and companies across Austin.
 location: Austin, Texas, US
 city: Austin
-main_image: ../public/austin.jpg
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765654/austin_xlc8e1.webp
 
 box_1_title: Custom Web Design
 box_1_description: Unique and energetic web design for Austin’s creative and entrepreneurial scene.

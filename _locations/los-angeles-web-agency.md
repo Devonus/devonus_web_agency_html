@@ -7,7 +7,7 @@ page_title: Los Angeles Web Design & Development
 page_description: Supporting Los Angeles businesses with lightning-fast, design-forward websites.
 location: Los Angeles, California, US
 city: Los Angeles
-main_image: ../public/los-angeles.jpg
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765658/los-angeles_z8fw6k.webp
 
 box_1_title: Custom Web Design
 box_1_description: Show-stopping websites for LA’s boldest brands, from influencers to institutions.

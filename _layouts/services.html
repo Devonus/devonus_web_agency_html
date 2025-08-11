@@ -32,6 +32,13 @@
     <noscript>
       <link rel="stylesheet" href="{{ '/styles/index.css' | relative_url }}" />
     </noscript>
+    <link rel="stylesheet" href="{{ '/styles/services.css' | relative_url }}" />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="{{ '/styles/services.css' | relative_url }}"
+      />
+    </noscript>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -188,7 +195,10 @@
           </div>
 
           <div class="hero-center">
-            <a href="#contact" class="contact-btn" id="scroll-to-contact"
+            <a
+              href="{{site.url}}/#contact"
+              class="contact-btn-services"
+              id="scroll-to-contact"
               ><span>Contact</span></a
             >
           </div>
@@ -206,147 +216,6 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="under-one-roof" id="about">
-      <div class="inner-wrapper">
-        <h2 class="section-title">All your needs<br />under one roof</h2>
-
-        <div class="content-grid">
-          <div class="text-block">
-            Get everything you need and more including newsletters, contact
-            forms, design, integration and more. Get everything you need and
-            more including newsletters, contact forms, design.
-          </div>
-
-          <div class="service-boxes">
-            <div class="service-box">
-              <img src="/public/laptop.svg" alt="Consultation" class="icon" />
-              <span>Web Development</span>
-            </div>
-            <div class="service-box">
-              <img
-                src="/public/paint_palette.svg"
-                alt="Consultation"
-                class="icon"
-              />
-              <span>Web Design</span>
-            </div>
-            <div class="service-box">
-              <img
-                src="/public/handshake.svg"
-                alt="Consultation"
-                class="icon"
-              />
-              <span>CMS Integration</span>
-            </div>
-            <div class="service-box">
-              <img
-                src="/public/consultation.svg"
-                alt="Consultation"
-                class="icon"
-              />
-              <span>Tech Strategy and Advisory</span>
-            </div>
-            <div class="service-box">
-              <img src="/public/pen.svg" alt="Consultation" class="icon" />
-              <span>SEO & Blogging</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="carousel-section" id="case-studies">
-      <button class="carousel-btn prev">‹</button>
-
-      <div class="carousel" id="carousel">
-        <!-- Clone of last item (for infinite loop) -->
-        <div class="carousel-item clone">
-          <img
-            src="https://res.cloudinary.com/dvufsifir/image/upload/v1754772285/carousel4_cycba1.webp"
-            alt="Clone Project 4"
-            loading="lazy"
-          />
-          <div class="caption">
-            <h3>Revive & Retrain</h3>
-            <p>A site reborn to inspire movement and growth.</p>
-          </div>
-        </div>
-
-        <!-- Actual items -->
-        <div class="carousel-item">
-          <img
-            src="https://res.cloudinary.com/dvufsifir/image/upload/v1754772283/carousel1_wihzea.webp"
-            alt="Project 1"
-            loading="lazy"
-          />
-          <div class="caption">
-            <h3>Identity & Intention</h3>
-            <p>
-              We designed out own website as a place to explore our voice and
-              define our standards.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://res.cloudinary.com/dvufsifir/image/upload/v1754772282/carousel2_m9vo97.webp"
-            alt="Project 2"
-            loading="lazy"
-          />
-          <div class="caption">
-            <h3>Collapse & Creation</h3>
-            <p>
-              Fusing cohesion and chaos, we pushed the design forward while
-              balancing functionality and 3d visuals.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://res.cloudinary.com/dvufsifir/image/upload/v1754772286/carousel3_kognjq.webp"
-            alt="Project 3"
-            loading="lazy"
-          />
-          <div class="caption">
-            <h3>Brick & Boundless</h3>
-            <p>
-              Built with architectural strength and creative freedom. We are
-              grounded. We are limitless.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://res.cloudinary.com/dvufsifir/image/upload/v1754772285/carousel4_cycba1.webp"
-            alt="Project 4"
-            loading="lazy"
-          />
-          <div class="caption">
-            <h3>Revive & Retrain</h3>
-            <p>A site reborn to inspire movement and growth.</p>
-          </div>
-        </div>
-
-        <!-- Clone of first item (for infinite loop) -->
-        <div class="carousel-item clone">
-          <img
-            src="https://res.cloudinary.com/dvufsifir/image/upload/v1754772283/carousel1_wihzea.webp"
-            alt="Clone Project 1"
-            loading="lazy"
-          />
-          <div class="caption">
-            <h3>Identity & Intention</h3>
-            <p>
-              We designed out own website as a place to explore our voice and
-              define our standards.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <button class="carousel-btn next">›</button>
     </section>
 
     <!-- SOLUTIONS SECTION-->
@@ -463,150 +332,6 @@
       </div>
       <div class="view-all-container">
         <a href="/blog" class="view-all-btn">View all of our blogs</a>
-      </div>
-    </section>
-
-    <!-- PRICING SECTION -->
-    <section id="pricing" class="pricing-section">
-      <div class="pricing-container">
-        <div class="pricing-header">
-          <h2 class="pricing-title-mobile">
-            Packages for <br />
-            all sizes & budgets
-          </h2>
-          <h2 class="pricing-title-desktop">
-            Packages for <br />
-            all sizes & budgets
-          </h2>
-        </div>
-
-        <div class="pricing-cards">
-          <!-- Lump Sum -->
-          <div class="pricing-card card-dark">
-            <h2 class="pricing-card-title">Lump Sum</h2>
-            <ul class="pricing-card-list">
-              <li>Custom Design And Development</li>
-              <li>$20/month Hosting</li>
-              <li>Includes 5 Pages - additional pages: $100 each</li>
-              <li>Unlimited Edits Add-On: +$50/month</li>
-              <li>Add a Blog: +$250 one-time fee</li>
-            </ul>
-            <p class="pricing-card-price">
-              <strong>$3,999<span>.99</span></strong>
-              <span class="sub-price">+ $25/month hosting</span>
-            </p>
-            <a
-              href="https://buy.stripe.com/aFafZi5SX9mZcpY2uN9R604"
-              class="pricing-card-button light"
-              >Get Started</a
-            >
-          </div>
-
-          <!-- Monthly -->
-          <div class="pricing-card green">
-            <h2 class="pricing-card-title">Monthly</h2>
-            <ul class="pricing-card-list">
-              <li>Custom Design And Development</li>
-              <li>Hosting Included</li>
-              <li>Includes 5 Pages - additional pages: $100 each</li>
-              <li>Unlimited Edits</li>
-              <li>Add a Blog: +$250 one-time</li>
-              <li>24/7 Support</li>
-              <li>Lifetime Updates</li>
-            </ul>
-            <p class="pricing-card-price">
-              <strong>$189<span>.99</span></strong>
-              <span class="sub-price">/month</span>
-            </p>
-            <a
-              href="https://buy.stripe.com/7sY5kE1CHeHjgGe4CV9R605"
-              class="pricing-card-button yellow"
-              >Get Started</a
-            >
-          </div>
-
-          <!-- Ecommerce -->
-          <div class="pricing-card card-dark">
-            <h2 class="pricing-card-title">Ecommerce</h2>
-            <ul class="pricing-card-list">
-              <li>Bigger ambitions? Contact us today!</li>
-              <li>Custom Design and Development</li>
-              <li>SEO Services</li>
-              <li>Mobile and Browser</li>
-            </ul>
-            <p class="pricing-card-price">
-              <strong>$9,999<span>.99</span></strong>
-              <span class="sub-price">Starting</span>
-            </p>
-            <a
-              href="https://buy.stripe.com/3cIdRa2GL1Uxdu21qJ9R606"
-              class="pricing-card-button light"
-              >Get Started</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- contact form-->
-    <section class="contact-section" id="contact">
-      <div class="contact-container">
-        <!-- Left side -->
-        <div class="contact-info">
-          <h2>Let's get your website working for you</h2>
-          <p>We will be in touch with you as soon as possible.</p>
-        </div>
-
-        <!-- Right side: Form -->
-        <form class="contact-form">
-          <div class="input-row">
-            <input
-              type="text"
-              name="first_name"
-              placeholder="First Name"
-              required
-            />
-            <input
-              type="text"
-              name="last_name"
-              placeholder="Last Name"
-              required
-            />
-          </div>
-
-          <div class="input-row">
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-            />
-            <input type="tel" name="phone" placeholder="Phone Number" />
-          </div>
-
-          <div class="input-row">
-            <input type="text" name="company" placeholder="Company" />
-            <input type="text" name="job_title" placeholder="Job Title" />
-          </div>
-
-          <div class="textarea-row">
-            <textarea
-              name="comments"
-              rows="5"
-              placeholder="Write your message here..."
-            ></textarea>
-          </div>
-
-          <div class="checkbox-row">
-            <label>
-              <input type="checkbox" name="newsletter" />
-              I would like to sign up to receive Devonus News and Insights
-            </label>
-          </div>
-
-          <button type="submit" class="submit-btn">Get Started!</button>
-        </form>
-        <div class="devonus-mark">DV<br />NS</div>
       </div>
     </section>
 

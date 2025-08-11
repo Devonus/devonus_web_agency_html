@@ -7,7 +7,7 @@ page_title: San Francisco Web Design & Development
 page_description: Helping Bay Area companies build sleek, scalable digital experiences.
 location: San Francisco, California, US
 city: San Francisco
-main_image: ../public/san-francisco.png
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765651/san-francisco_rfnpah.webp
 id_name: mobile-visible
 
 box_1_title: Custom Web Design

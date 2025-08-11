@@ -7,7 +7,7 @@ page_title: Miami Web Design & Development
 page_description: Stylish, mobile-first websites made for Miami’s vibrant business scene.
 location: Miami, Florida, US
 city: Miami
-main_image: ../public/miami.png
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765649/miami_gaupux.webp
 
 box_1_title: Custom Web Design
 box_1_description: Vibrant, high-impact designs for Miami brands that want to turn heads and build trust.

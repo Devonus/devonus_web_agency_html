@@ -7,7 +7,7 @@ page_title: Phoenix Web Design & Development
 page_description: Clean, performance-optimized websites for Arizona brands.
 location: Phoenix, Arizona, US
 city: Phoenix
-main_image: ../public/phoenix.png
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765640/phoenix_rywmwf.webp
 
 box_1_title: Custom Web Design
 box_1_description: Warm, vibrant websites designed for Phoenix businesses rising fast.

@@ -7,7 +7,7 @@ page_title: New York Web Design & Development
 page_description: Web development built for NYC speed, style, and scale.
 location: New York, New York, US
 city: New York
-main_image: ../public/new-york.png
+main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765654/new-york_d0urmz.webp
 
 box_1_title: Custom Web Design
 box_1_description: Bold, refined, and built for impact — websites that match the energy and ambition of NYC.
