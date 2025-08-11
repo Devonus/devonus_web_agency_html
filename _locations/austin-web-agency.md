@@ -6,6 +6,7 @@ meta_description: Custom digital solutions for Austin businesses.
 page_title: Austin Web Design & Development
 page_description: Creative, responsive web design for startups and companies across Austin.
 location: Austin, Texas, US
+city: Austin
 main_image: ../public/austin.jpg
 
 box_1_title: Custom Web Design

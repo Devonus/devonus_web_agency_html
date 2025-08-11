@@ -49,6 +49,35 @@ window.addEventListener("scroll", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("DOM fully loaded, script running");
+
+  const navItems = document.querySelectorAll(".nav-item");
+
+  navItems.forEach((item) => {
+    const link = item.querySelector("a");
+    link.addEventListener("click", (e) => {
+      // Check if the viewport width is 1020px or less
+      if (window.innerWidth <= 1020) {
+        // Prevent the default link behavior
+        e.preventDefault();
+        console.log("Clicked:", link.textContent.trim());
+
+        // Loop through all nav items and close them
+        navItems.forEach((otherItem) => {
+          // Close the other dropdowns, but not the one that was just clicked
+          if (otherItem !== item) {
+            otherItem.classList.remove("open");
+          }
+        });
+
+        // Toggle the 'open' class for the clicked item
+        item.classList.toggle("open");
+      }
+    });
+  });
+});
+
 //change words
 const words = [
   " performance.",
@@ -115,83 +144,83 @@ buttons.forEach((button) => {
   });
 });
 
-const sections = document.querySelectorAll("section");
+// const sections = document.querySelectorAll("section");
 
-sections.forEach((section) => {
-  let targetX = 0;
-  let targetY = 0;
-  let currentX = 0;
-  let currentY = 0;
-  let opacity = 0;
+// sections.forEach((section) => {
+//   let targetX = 0;
+//   let targetY = 0;
+//   let currentX = 0;
+//   let currentY = 0;
+//   let opacity = 0;
 
-  function updatePosition(x, y) {
-    targetX = x;
-    targetY = y;
-    opacity = 1;
-  }
+//   function updatePosition(x, y) {
+//     targetX = x;
+//     targetY = y;
+//     opacity = 1;
+//   }
 
-  section.addEventListener("mousemove", (e) => {
-    const rect = section.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    updatePosition(x, y);
-  });
+//   section.addEventListener("mousemove", (e) => {
+//     const rect = section.getBoundingClientRect();
+//     const x = e.clientX - rect.left;
+//     const y = e.clientY - rect.top;
+//     updatePosition(x, y);
+//   });
 
-  section.addEventListener(
-    "touchmove",
-    (e) => {
-      if (!e.touches.length) return;
-      const touch = e.touches[0];
-      const rect = section.getBoundingClientRect();
-      const x = touch.clientX - rect.left;
-      const y = touch.clientY - rect.top;
-      updatePosition(x, y);
-    },
-    { passive: true }
-  );
+//   section.addEventListener(
+//     "touchmove",
+//     (e) => {
+//       if (!e.touches.length) return;
+//       const touch = e.touches[0];
+//       const rect = section.getBoundingClientRect();
+//       const x = touch.clientX - rect.left;
+//       const y = touch.clientY - rect.top;
+//       updatePosition(x, y);
+//     },
+//     { passive: true }
+//   );
 
-  section.addEventListener("mouseleave", () => {
-    opacity = 0;
-  });
+//   section.addEventListener("mouseleave", () => {
+//     opacity = 0;
+//   });
 
-  section.addEventListener("touchend", () => {
-    opacity = 0;
-  });
+//   section.addEventListener("touchend", () => {
+//     opacity = 0;
+//   });
 
-  section.addEventListener("touchcancel", () => {
-    opacity = 0;
-  });
+//   section.addEventListener("touchcancel", () => {
+//     opacity = 0;
+//   });
 
-  function animate() {
-    // Easing factor: adjust between 0 and 1 (0.1 = smooth lag)
-    const ease = 0.05;
+//   function animate() {
+//     // Easing factor: adjust between 0 and 1 (0.1 = smooth lag)
+//     const ease = 0.05;
 
-    // Move current toward target
-    currentX += (targetX - currentX) * ease;
-    currentY += (targetY - currentY) * ease;
+//     // Move current toward target
+//     currentX += (targetX - currentX) * ease;
+//     currentY += (targetY - currentY) * ease;
 
-    // Update CSS vars
-    section.style.setProperty("--x", `${currentX}px`);
-    section.style.setProperty("--y", `${currentY}px`);
-    section.style.setProperty("--opacity", opacity);
+//     // Update CSS vars
+//     section.style.setProperty("--x", `${currentX}px`);
+//     section.style.setProperty("--y", `${currentY}px`);
+//     section.style.setProperty("--opacity", opacity);
 
-    requestAnimationFrame(animate);
-  }
+//     requestAnimationFrame(animate);
+//   }
 
-  animate();
-});
+//   animate();
+// });
 
-const navlinks = document.querySelectorAll(".nav-links");
+// const navlinks = document.querySelectorAll(".nav-links");
 
-navlinks.forEach((navlinks) => {
-  navlinks.addEventListener("mousemove", (e) => {
-    const x = event.offsetX;
-    const y = event.offsetY;
+// navlinks.forEach((navlinks) => {
+//   navlinks.addEventListener("mousemove", (e) => {
+//     const x = event.offsetX;
+//     const y = event.offsetY;
 
-    navlinks.style.setProperty("--x", `${x}px`);
-    navlinks.style.setProperty("--y", `${y}px`);
-  });
-});
+//     navlinks.style.setProperty("--x", `${x}px`);
+//     navlinks.style.setProperty("--y", `${y}px`);
+//   });
+// });
 
 const sanDiegoHeadings = document.getElementsByClassName("content-grid");
 
@@ -315,10 +344,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Wait for the page to be fully loaded before running script
 document.addEventListener("DOMContentLoaded", () => {
   // Find the button that triggers the scroll
-  const scrollButton = document.getElementById("contact-nav");
+  const scrollButton = document.getElementById("pricing-nav");
 
   if (scrollButton) {
     scrollButton.addEventListener("click", (e) => {
@@ -326,9 +354,21 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
 
       // Call our new function to perform the centered scroll
-      scrollToCenter("#contact");
+      scrollToCenter("#pricing");
     });
   }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Get all elements with that class
+  const scrollButtons = document.querySelectorAll(".contact-btn");
+
+  scrollButtons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+      scrollToCenter("#contact");
+    });
+  });
 });
 
 //fun console

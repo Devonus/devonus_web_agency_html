@@ -6,6 +6,7 @@ meta_description: Custom web solutions helping London businesses grow.
 page_title: London Web Design & Development
 page_description: Helping London businesses dominate online with custom websites.
 location: London, England, GB
+city: London
 main_image: ../public/london.jpg
 
 box_1_title: Custom Web Design

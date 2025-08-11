@@ -40,6 +40,9 @@ collections:
   home:
     output: true
     permalink: /
+  services:
+    output: true
+    permalink: /title/
 
 
 # title: Your awesome title

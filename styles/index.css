@@ -29,6 +29,10 @@ font-family: 'Fira Mono', Consolas, 'Courier New', Courier, monospace;
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--color-light-green);
+}
+
 h1, h2, h3, h4, h5, h6 {  
   font-family: 'Playfair Display', serif;
 }  
@@ -83,7 +87,13 @@ code, pre, .mono {
   }
 }
   
-/* Hamburger button - hidden on desktop */
+
+/* -------------------------
+|                          |
+|      NAV SECTION         |
+|                          |
+|--------------------------*/
+
 .nav-toggle {
   background: none;
   border: none;
@@ -173,7 +183,111 @@ code, pre, .mono {
   color: var(--color-orange);
 }
 
+/* Dropdown container */
+.nav-item {
+  position: relative;
+}
 
+/* Arrow styling */
+.arrow {
+  font-size: 0.7rem;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow on hover */
+.nav-item:hover .arrow {
+  transform: rotate(180deg);
+}/* Shared dropdown menu styles */
+.dropdown,
+#locations-item .dropdown-locations {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(36, 36, 36, 0.75),
+    rgba(36, 36, 36, 1)
+  );
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  padding: 2rem 0rem 1rem 0rem;
+  z-index: 999;
+}
+
+
+/* -------------------------
+|                          |
+|    DROPDOWN  SECTION     |
+|                          |
+|--------------------------*/
+
+/* Shared link styling for both dropdown types */
+.dropdown a,
+#locations-item .dropdown-locations a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--color-grey);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-family: 'Playfair Display';
+  white-space: nowrap;
+}
+
+.dropdown a:hover,
+#locations-item .dropdown-locations a:hover {
+  background: var(--color-orange);
+  color: white;
+}
+
+/* Base dropdown style */
+.dropdown,
+#locations-item .dropdown-locations {
+  display: none; /* Hidden until hover */
+  background: linear-gradient(
+    to bottom,
+    rgba(36, 36, 36, 0.75),
+    rgba(36, 36, 36, 1)
+  );
+  padding: 2rem 0 1rem 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  border-radius: 4px;
+}
+
+/* Regular dropdown: 2 equal columns */
+.dropdown {
+  left: 0;
+  min-width: 240px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+border-width: 0 1px 1px 1px; 
+border-style: solid;
+border-color: #333333;
+}
+
+.nav-item:hover .dropdown {
+  display: grid;
+}
+
+/* Locations dropdown: 3 equal columns */
+#locations-item .dropdown-locations {
+  right: 0;
+  left: auto;
+  max-width: 600px;
+  width: max-content;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  z-index: 1000;
+}
+
+#locations-item:hover .dropdown-locations {
+  display: grid;
+}
+
+/* -------------------------
+|                          |
+|      HERO  SECTION       |
+|                          |
+|--------------------------*/
 
 .hero {
   position: relative;
@@ -406,9 +520,9 @@ code, pre, .mono {
   pointer-events: none;
 }
 
+/*  
 section {
   position: relative;
-  /* Optional: set overflow if needed */
   overflow: visible;
   --x: 50%;
   --y: 50%;
@@ -430,9 +544,9 @@ section::after {
   opacity: var(--opacity);
   transition: opacity 0.3s ease-in-out;
   pointer-events: none;
-  z-index: 10; /* Make sure it’s above section content */
+  z-index: 10;
 }
-
+  */
 
 .contact-btn:hover::after {
   opacity: 0.7;
@@ -672,13 +786,17 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #ccc;
 }
 
+.card h3 {
+  color: var(--color-white);
+}
+
 .card:hover {
   background: var(--color-white);
 }
 
-.card:hover p {
+.card:hover p,
+.card:hover h3 {
     color: var(--color-dark);
-
 }
   
 
@@ -1333,7 +1451,13 @@ text-decoration: none;
     overflow: hidden;
     background-color: var(--color-white);
     padding-left: 1rem;
+    border-bottom: 1rem solid var(--color-green);
+
   }
+
+#solutions-nav, #locations-nav {
+          margin: 0.75rem 0;
+}
 
   .nav-links.open {
     display: flex;
@@ -1346,12 +1470,84 @@ text-decoration: none;
   .nav-links a {
     margin: 0.75rem 0;
     font-size: 1rem;    width: 100%;
-    padding: 0.75rem 0;
+    padding: 0;
   }
+
+/* -------------------------
+|                          |
+|    DROPDOWN SECTION      |
+|                          |
+|--------------------------*/  
+
+   .nav-item:hover .dropdown,
+  #locations-item:hover .dropdown-locations {
+    display: none;
+  }
+  
+  /* Hide dropdowns by default */
+  .dropdown,
+  #locations-item .dropdown-locations {
+    display: none !important;
+    position: static; /* so dropdown stacks inside nav flow */
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+    border: none;
+    grid-template-columns: 1fr !important;
+    max-width: none !important;
+  }
+
+  .dropdown a, #locations-item .dropdown-locations a {
+    padding: 0rem 1rem;
+}
+  
+  /* Show dropdown when .open class added */
+  .nav-item.open > .dropdown,
+  #locations-item.open > .dropdown-locations {
+    display: block !important;
+    background: rgba(36, 36, 36, 0.9);
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  /* Make arrow rotate when open */
+  .nav-item.open > a > .arrow,
+  #locations-item.open > a > .arrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+ .dropdown-locations a {
+    display:none !important ;
+  }
+  #mobile-visible {
+    display: block !important;
+  }
+
 }
 
 
+@media (max-width: 1020px) and (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+      margin: 0 0 1rem 0;
+  }
+
+  .hero-overlay {
+      padding: 1rem 2rem;
+  }
+
+  .hero-left {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
+  /* -------------------------
+|                          |
+|      CIRCLE SECTION       |
+|                          |
+|--------------------------*/  
   #circle {
     display: none;
   }
@@ -1463,7 +1659,9 @@ text-decoration: none;
   .carousel-btn {
     display: none;
   }
-
+  .carousel-item.clone {
+    display: none;
+  }
 
 /* -------------------------
 |                          |

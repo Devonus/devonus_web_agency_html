@@ -2,41 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Devonus | Modern Web Agency Focused on Strategy & Technology</title>
-    <link rel="canonical" href="https://devonus.com/" />
-    <meta
-      name="description"
-      content="Devonus is a modern web agency that blends design, strategic thinking, and advanced technology to build high-performance websites and digital experiences."
-    />
+    <title>{{page.title}}</title>
+    <link rel="canonical" href="{{site.url}}{{ page.permalink }}" />
+    <meta name="description" content="{{page.meta_description}}" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta
       name="keywords"
       content="web agency, web design, web development, digital strategy, UX design, custom websites, branding, frontend development, backend development, SEO agency, Devonus"
     />
-    <meta
-      property="og:title"
-      content="Devonus | Modern Web Agency Focused on Strategy & Technology"
-    />
+    <meta property="og:title" content="{{page.title}}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://devonus.com/" />
+    <meta property="og:url" content="{{site.url}}{{ page.permalink }}" />
     <meta property="og:image" content="../public/devonus_logo.png" />
-    <meta
-      property="og:description"
-      content="Devonus is a modern web agency that blends design, strategic thinking, and advanced technology to build high-performance websites and digital experiences."
-    />
+    <meta property="og:description" content="{{page.meta_description}}" />
     <meta property="og:site_name" content="Devonus Web Agency" />
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@devonus" />
     <meta name="twitter:creator" content="@devonus" />
-    <meta
-      name="twitter:title"
-      content="Devonus | Modern Web Agency Focused on Strategy & Technology"
-    />
-    <meta
-      name="twitter:description"
-      content="Devonus is a modern web agency that blends design, strategic thinking, and advanced technology to build high-performance websites and digital experiences."
-    />
+    <meta name="twitter:title" content="{{page.title}}" />
+    <meta name="twitter:description" content="{{page.meta_description}}" />
     <meta name="twitter:image" content="../public/devonus_logo.png" />
     <link
       rel="apple-touch-icon"
@@ -138,7 +123,7 @@
         </button>
       </div>
       <nav class="nav-links" id="nav-links">
-        <a href="#home" id="home-nav">home</a>
+        <a href="{{ '/' | relative_url }}" id="home">home</a>
         <a href="#about" id="about-nav">about</a>
         <a href="#case-studies" id="case-studies-nav">case studies</a>
         <div class="nav-item" id="solutions-item">
@@ -185,13 +170,16 @@
     <!-- HERO SECTION -->
     <section class="hero" id="top">
       <div class="hero-overlay">
-        <h1>we are a <span class="hero-h1-span"> web agency</span></h1>
-        <span id="dictionary">web a‧gen‧cy /web ˈeɪ.dʒən.si/</span>
+        <h1>
+          {{ page.services_entry }}
+          <span class="hero-h1-span"> {{ page.services }} </span>
+        </h1>
 
+        <span id="dictionary">{{ page.dictionary }}</span>
         <div class="hero-grid">
           <div class="hero-left">
             <p>
-              Crafting websites that awe, inspire, and connect.<br />
+              {{page.page_description}}<br />
               We build for
               <span class="hero-span-wrapper">
                 <span class="hero-span" id="hero-span"></span>

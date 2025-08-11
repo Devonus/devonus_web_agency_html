@@ -6,6 +6,7 @@ meta_description: Helping New York brands create standout online experiences.
 page_title: New York Web Design & Development
 page_description: Web development built for NYC speed, style, and scale.
 location: New York, New York, US
+city: New York
 main_image: ../public/new-york.png
 
 box_1_title: Custom Web Design

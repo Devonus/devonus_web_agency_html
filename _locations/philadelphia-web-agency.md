@@ -6,6 +6,7 @@ meta_description: Web design that connects with Philly audiences.
 page_title: Philadelphia Web Design & Development
 page_description: Helping Philadelphia companies launch high-impact digital platforms.
 location: Philadelphia, Pennsylvania, US
+city: Philadelphia
 main_image: ../public/philadelphia.png
 
 box_1_title: Custom Web Design

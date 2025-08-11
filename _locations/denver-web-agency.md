@@ -6,6 +6,7 @@ meta_description: Web design with altitude — made for Denver.
 page_title: Denver Web Design & Development
 page_description: Creating robust digital experiences for fast-moving Denver brands.
 location: Denver, Colorado, US
+city: Denver
 main_image: ../public/denver.png
 
 box_1_title: Custom Web Design

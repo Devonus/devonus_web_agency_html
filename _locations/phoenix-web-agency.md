@@ -6,6 +6,7 @@ meta_description: Websites built to thrive in Phoenix’s heat.
 page_title: Phoenix Web Design & Development
 page_description: Clean, performance-optimized websites for Arizona brands.
 location: Phoenix, Arizona, US
+city: Phoenix
 main_image: ../public/phoenix.png
 
 box_1_title: Custom Web Design

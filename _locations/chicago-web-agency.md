@@ -6,6 +6,7 @@ meta_description: Websites that work as hard as Chicago businesses.
 page_title: Chicago Web Design & Development
 page_description: Building powerful digital platforms for brands across the Windy City.
 location: Chicago, Illinois, US
+city: Chicago
 main_image: ../public/chicago.png
 
 box_1_title: Custom Web Design

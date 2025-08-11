@@ -6,6 +6,7 @@ meta_description: Web design with a Canadian edge.
 page_title: Toronto Web Design & Development
 page_description: Supporting Toronto businesses with fast, responsive, and modern websites.
 location: Toronto, Ontario, CA
+city: Toronto
 main_image: ../public/toronto.jpg
 
 box_1_title: Custom Web Design

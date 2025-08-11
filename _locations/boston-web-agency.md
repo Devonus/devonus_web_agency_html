@@ -6,6 +6,7 @@ meta_description: Classic design, modern tech for Boston companies.
 page_title: Boston Web Design & Development
 page_description: From Back Bay to Cambridge — websites that represent Boston’s best.
 location: Boston, Massachusetts, US
+city: Boston
 main_image: ../public/boston.png
 
 box_1_title: Custom Web Design

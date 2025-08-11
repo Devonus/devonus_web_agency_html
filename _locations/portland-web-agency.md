@@ -6,7 +6,9 @@ meta_description: Smart, sustainable design for Portland brands.
 page_title: Portland Web Design & Development
 page_description: Websites built with clarity, purpose, and personality for Portland companies.
 location: Portland, Oregon, US
+city: Portland
 main_image: ../public/portland.jpg
+id_name: mobile-visible
 
 box_1_title: Custom Web Design
 box_1_description: Creative, purpose-driven design for Portland brands who care about craft and connection.

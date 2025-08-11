@@ -6,6 +6,7 @@ meta_description: Helping Atlanta businesses grow with smart design.
 page_title: Atlanta Web Design & Development
 page_description: Building elegant, high-performance websites for Georgia's capital.
 location: Atlanta, Georgia, US
+city: Atlanta
 main_image: "https://res.cloudinary.com/dvufsifir/image/upload/v1754765662/toronto_ommpsr.webp"
 
 box_1_title: Custom Web Design

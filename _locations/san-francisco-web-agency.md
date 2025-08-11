@@ -6,7 +6,9 @@ meta_description: Digital design for San Francisco startups and innovators.
 page_title: San Francisco Web Design & Development
 page_description: Helping Bay Area companies build sleek, scalable digital experiences.
 location: San Francisco, California, US
+city: San Francisco
 main_image: ../public/san-francisco.png
+id_name: mobile-visible
 
 box_1_title: Custom Web Design
 box_1_description: Modern, clean, and smart — websites for startups and innovators in San Francisco.
