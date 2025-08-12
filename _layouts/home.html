@@ -446,7 +446,10 @@
       <div class="blog-posts">
         {% assign latest_posts = site.posts | sort: 'date' | reverse | slice:
         0,4 %} {% for post in latest_posts %}
-        <article class="blog-post">
+        <article
+          class="blog-post"
+          data-bg="{{ post.image | default: '/public/background.png' }}"
+        >
           <a href="{{ post.url | relative_url }}" class="blog-post-link">
             {% if post.image %}
             <img src="{{ post.image }}" alt="{{ post.title }}" />
@@ -473,6 +476,7 @@
         </article>
         {% endfor %}
       </div>
+
       <div class="view-all-container">
         <a href="/blog" class="view-all-btn">View all of our blogs</a>
       </div>
@@ -503,15 +507,17 @@
               <li>Unlimited Edits Add-On: +$50/month</li>
               <li>Add a Blog: +$250 one-time fee</li>
             </ul>
-            <p class="pricing-card-price">
-              <strong>$3,999<span>.99</span></strong>
-              <span class="sub-price">+ $25/month hosting</span>
-            </p>
-            <a
-              href="https://buy.stripe.com/aFafZi5SX9mZcpY2uN9R604"
-              class="pricing-card-button light"
-              >Get Started</a
-            >
+            <div class="pricing-card-bottom">
+              <p class="pricing-card-price">
+                <strong>$3,999<span>.99</span></strong>
+                <span class="sub-price">+ $25/month hosting</span>
+              </p>
+              <a
+                href="https://buy.stripe.com/aFafZi5SX9mZcpY2uN9R604"
+                class="pricing-card-button light"
+                >Get Started</a
+              >
+            </div>
           </div>
 
           <!-- Monthly -->
@@ -526,15 +532,17 @@
               <li>24/7 Support</li>
               <li>Lifetime Updates</li>
             </ul>
-            <p class="pricing-card-price">
-              <strong>$189<span>.99</span></strong>
-              <span class="sub-price">/month</span>
-            </p>
-            <a
-              href="https://buy.stripe.com/7sY5kE1CHeHjgGe4CV9R605"
-              class="pricing-card-button yellow"
-              >Get Started</a
-            >
+            <div class="pricing-card-bottom">
+              <p class="pricing-card-price">
+                <strong>$189<span>.99</span></strong>
+                <span class="sub-price">/month</span>
+              </p>
+              <a
+                href="https://buy.stripe.com/7sY5kE1CHeHjgGe4CV9R605"
+                class="pricing-card-button yellow"
+                >Get Started</a
+              >
+            </div>
           </div>
 
           <!-- Ecommerce -->
@@ -546,15 +554,17 @@
               <li>SEO Services</li>
               <li>Mobile and Browser</li>
             </ul>
-            <p class="pricing-card-price">
-              <strong>$9,999<span>.99</span></strong>
-              <span class="sub-price">Starting</span>
-            </p>
-            <a
-              href="https://buy.stripe.com/3cIdRa2GL1Uxdu21qJ9R606"
-              class="pricing-card-button light"
-              >Get Started</a
-            >
+            <div class="pricing-card-bottom">
+              <p class="pricing-card-price">
+                <strong>$9,999<span>.99</span></strong>
+                <span class="sub-price">Starting</span>
+              </p>
+              <a
+                href="https://buy.stripe.com/3cIdRa2GL1Uxdu21qJ9R606"
+                class="pricing-card-button light"
+                >Get Started</a
+              >
+            </div>
           </div>
         </div>
       </div>

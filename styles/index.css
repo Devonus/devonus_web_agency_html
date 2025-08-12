@@ -922,9 +922,6 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-decoration: none;
 }
 
-.blog-post-link:hover {
-}
-
 .blog-post {
   background: #fff;
   border-radius: 8px;
@@ -933,11 +930,33 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   flex: 1 1 45%; /* roughly half width with wrapping */
   display: flex;
   flex-direction: column;
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  position: relative; /* needed for z-index */
+  --hover-bg: none; /* CSS variable to hold hover background image */
 }
 
-.blog-post:hover {
-  transform: scale(1.02);
+/* Pseudo-element for the smooth fading background */
+.blog-post::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* Add a black overlay with opacity on top of the image */
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5)), /* black overlay at 50% opacity */
+    var(--hover-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+.blog-post:hover::before {
+  opacity: 1;
 }
 
 .blog-post img {
@@ -945,15 +964,43 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 180px;
   object-fit: cover;
   display: block;
+  transition: opacity 0.8s ease;
+  position: relative; /* so it stays above ::before */
+  z-index: 1;
+}
+
+.blog-post:hover {
+  /* background-image will be controlled by ::before + CSS variable */
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+  transform: scale(1.02); /* subtle zoom */
+  color: white;
+}
+
+.blog-post:hover .blog-title,
+.blog-post:hover .blog-description,
+.blog-post:hover .blog-meta,
+.blog-post:hover time,
+.blog-post:hover .reading-time {
+  color: white;
+}
+
+
+.blog-post:hover img {
+  opacity: 0;
+  transition: opacity 0s ease;
 }
 
 .blog-content {
+  position: relative;
   padding: 1rem 1.5rem 1.5rem;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
+  z-index:20;
 }
 
 .blog-title {
@@ -965,8 +1012,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .blog-title a {
-text-decoration: none;
-
+  text-decoration: none;
 }
 
 .blog-description {
@@ -985,6 +1031,7 @@ text-decoration: none;
   align-items: center;
   font-family: var(--font-1);
 }
+
 
 .view-all-container {
   text-align: right;
@@ -1047,7 +1094,7 @@ text-decoration: none;
 }
 .pricing-header {
   text-align: left;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .pricing-title-mobile {
@@ -1071,6 +1118,7 @@ text-decoration: none;
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr;
+  min-height: 600px;
 }
 
 .pricing-card {
@@ -1099,6 +1147,10 @@ text-decoration: none;
 }
 
 .pricing-card-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5rem;
   list-style: none;
   padding: 0;
   margin: 1rem 0 2rem;
@@ -1117,6 +1169,12 @@ text-decoration: none;
   left: 0;
   color: var(--color-dark);
 }
+
+.pricing-card-bottom {
+  position: absolute;
+  bottom: 2rem;
+}
+
 
 .pricing-card-price {
   font-family: var(--font-1);
@@ -1697,6 +1755,23 @@ text-decoration: none;
     padding-right: 0;
     text-align: left;
   }
+
+/* -------------------------
+|                          |
+|      PRICING SECTION       |
+|                          |
+|--------------------------*/  
+
+.pricing-cards {
+  min-height: inherit;
+}
+
+.pricing-card-bottom {
+  position: inherit;
+  bottom: relative;
+
+}
+
 /* -------------------------
 |                          |
 |      FOOTER SECTION       |

@@ -381,3 +381,18 @@ console.log(
   "color:rgb(204, 133, 2); font-size: 14px;",
   "color: #000000; font-size: 14px; font-weight: bold;"
 );
+
+document.querySelectorAll(".blog-post").forEach((post) => {
+  post.addEventListener("mouseenter", () => {
+    const bg = post.getAttribute("data-bg");
+    post.style.backgroundImage = `url(${bg})`;
+  });
+  post.addEventListener("mouseleave", () => {
+    post.style.backgroundImage = "";
+  });
+});
+
+document.querySelectorAll(".blog-post").forEach((post) => {
+  const bg = post.getAttribute("data-bg") || "";
+  post.style.setProperty("--hover-bg", `url(${bg})`);
+});
