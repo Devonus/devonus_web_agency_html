@@ -81,7 +81,7 @@ code, pre, .mono {
 }
 
 
-@media (min-width: 768px) {  /* md:block */
+@media (min-width: 768px) { 
   #circle {
     display: block;
   }
@@ -168,7 +168,6 @@ code, pre, .mono {
   animation: fadeInH1 0.6s ease-out 0.1s forwards;
 }
 
-/* Nav link styles */
 .nav-links a {
   text-decoration: none;
   color: var(--color-grey);
@@ -197,7 +196,8 @@ code, pre, .mono {
 /* Rotate arrow on hover */
 .nav-item:hover .arrow {
   transform: rotate(180deg);
-}/* Shared dropdown menu styles */
+}
+
 .dropdown,
 #locations-item .dropdown-locations {
   display: none;
@@ -220,7 +220,6 @@ code, pre, .mono {
 |                          |
 |--------------------------*/
 
-/* Shared link styling for both dropdown types */
 .dropdown a,
 #locations-item .dropdown-locations a {
   display: block;
@@ -238,10 +237,9 @@ code, pre, .mono {
   color: white;
 }
 
-/* Base dropdown style */
 .dropdown,
 #locations-item .dropdown-locations {
-  display: none; /* Hidden until hover */
+  display: none;
   background: linear-gradient(
     to bottom,
     rgba(36, 36, 36, 0.75),
@@ -252,7 +250,6 @@ code, pre, .mono {
   border-radius: 4px;
 }
 
-/* Regular dropdown: 2 equal columns */
 .dropdown {
   left: 0;
   min-width: 240px;
@@ -267,7 +264,6 @@ border-color: #333333;
   display: grid;
 }
 
-/* Locations dropdown: 3 equal columns */
 #locations-item .dropdown-locations {
   right: 0;
   left: auto;
@@ -295,8 +291,8 @@ border-color: #333333;
   background: url('https://res.cloudinary.com/dvufsifir/image/upload/v1754772283/background_qfpzhv.webp') center center / cover no-repeat;
   overflow: hidden;
   display: flex;
-  flex-direction: column;      /* stack vertically */
-  align-items: center;         /* center horizontally */
+  flex-direction: column;      
+  align-items: center;        
   box-sizing: border-box;
   justify-content: center;
 }
@@ -342,11 +338,9 @@ border-color: #333333;
 
 .hero-span-wrapper {
   position: relative;
-  /* width based on longest word */
-  width: max-content; /* fallback */
-  /* or set fixed width here, e.g., 13ch */
+  width: max-content; 
   white-space: nowrap;
-  vertical-align: bottom; /* align baseline */
+  vertical-align: bottom;
 }
 
 .hero-span {
@@ -364,10 +358,9 @@ border-color: #333333;
 
 
 #hero-span::after {
-  content: '|';  /* the cursor */
+  content: '|'; 
   font-style: normal;
   color: var(--color-grey);
-  /* adjust vertical positioning as needed */
   animation: blink 1s steps(2, start) infinite;}
 
 @keyframes blink {
@@ -552,7 +545,6 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 0rem 1rem 4rem 1rem;
 }
 
-/* Inner content container */
 .inner-wrapper {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -692,16 +684,14 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center;
   gap: 1rem;
-  align-items: stretch; /* full height */
+  align-items: stretch;
 }
 
 .left-column {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  justify-content: flex-end; /* push cards to bottom */
-  /* Remove margin-top */
-  /* margin-top: 80px;  <-- REMOVE THIS */
+  justify-content: flex-end;
   flex: 1;
 }
 
@@ -710,7 +700,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   flex-direction: column;
   gap: 1rem;
   flex: 1;
-    justify-content: flex-end; /* push cards to bottom */
+    justify-content: flex-end;
 
 }
 
@@ -853,7 +843,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 .insights-section {
   position: relative;
   background: var(--color-dark);
-  min-height: 200px; /* ensures space */
+  min-height: 200px;
   padding: 3rem 1rem;
   color: #242424;
   font-family: Arial, sans-serif;
@@ -1032,7 +1022,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   content: "";
   position: absolute;
   top: 0;
-  left: 0; /* Keep inside button */
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.3);
@@ -1043,12 +1033,10 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   z-index: 0;
 }
 
-/* Slide overlay on hover */
 .view-all-btn:hover::before {
   transform: translateX(100%);
 }
 
-/* Text above overlay */
 .view-all-btn > * {
   position: relative;
   z-index: 1;
@@ -1059,7 +1047,6 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: var(--color-orange);
   border: 1px solid var(--color-dark);}
 
-/* Responsive adjustments */
 @media (max-width: 640px) {
   .blog-posts {
     flex-direction: column;
@@ -1140,7 +1127,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 .pricing-card.dark {
   background-color: var(--color-dark);
   color: var(--color-white);
-  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.6); /* subtle white glow */
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.6);
   transition: box-shadow 0.3s ease;
 }
 
@@ -1151,7 +1138,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 .pricing-card.green {
   background: var(--color-dark);
   border-color: var(--color-light-green);
-  box-shadow: 0 0 12px 3px var(--color-light-green); /* stronger green glow */
+  box-shadow: 0 0 12px 3px var(--color-light-green);
   transition: box-shadow 0.3s ease;
 }
 
@@ -1651,7 +1638,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   .nav-links.open {
     display: flex;
     top: 100%;
-    max-height: 1200px; /* Adjust based on number of links */
+    max-height: 1200px;
     padding-bottom: 1rem;
     background-color: #242424;
   }
@@ -1823,15 +1810,15 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   .carousel {
     display: block;
-    overflow: visible; /* no horizontal scroll */
-    gap: 0; /* gap won't matter for block layout */
+    overflow: visible;
+    gap: 0;
   }
 
   .carousel-item {
-    flex: none; /* disable flex sizing */
+    flex: none;
     width: 100%;
-    margin-bottom: 1.5rem; /* vertical spacing */
-    height: auto; /* let height be defined by image */
+    margin-bottom: 1.5rem;
+    height: auto;
     position: relative;
   }
 
@@ -1840,7 +1827,6 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     height: auto;
   }
 
-  /* Hide carousel navigation on mobile */
   .carousel-btn {
     display: none;
   }
@@ -1889,7 +1875,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 /* -------------------------
 |                          |
-|      PRICING SECTION       |
+|      PRICING SECTION      |
 |                          |
 |--------------------------*/  
 
@@ -1899,8 +1885,6 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 .pricing-card-bottom {
   position: inherit;
-  bottom: relative;
-
 }
 
 
