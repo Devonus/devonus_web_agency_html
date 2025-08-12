@@ -396,3 +396,22 @@ document.querySelectorAll(".blog-post").forEach((post) => {
   const bg = post.getAttribute("data-bg") || "";
   post.style.setProperty("--hover-bg", `url(${bg})`);
 });
+
+//service box accordian
+document.querySelectorAll(".service-box").forEach((box) => {
+  box.addEventListener("click", () => {
+    const info = box.nextElementSibling;
+
+    // Close all others
+    document.querySelectorAll(".service-box").forEach((otherBox) => {
+      if (otherBox !== box) {
+        otherBox.classList.remove("open");
+        otherBox.nextElementSibling.classList.remove("open");
+      }
+    });
+
+    // Toggle the clicked one
+    box.classList.toggle("open");
+    info.classList.toggle("open");
+  });
+});
