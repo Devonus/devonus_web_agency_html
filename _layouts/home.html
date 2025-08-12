@@ -449,7 +449,7 @@
 
         <div class="blog-posts">
           {% assign latest_posts = site.posts | sort: 'date' | reverse | slice:
-          0,4 %} {% for post in latest_posts %}
+          0,3 %} {% for post in latest_posts %}
           <article
             class="blog-post"
             data-bg="{{ post.image | default: '/public/background.png' }}"
@@ -501,7 +501,7 @@
 
         <div class="pricing-cards">
           <!-- Lump Sum -->
-          <div class="pricing-card card-dark">
+          <div class="pricing-card dark">
             <h2 class="pricing-card-title">Lump Sum</h2>
             <ul class="pricing-card-list">
               <li>Custom Design And Development</li>
@@ -549,7 +549,7 @@
           </div>
 
           <!-- Ecommerce -->
-          <div class="pricing-card card-dark">
+          <div class="pricing-card dark">
             <h2 class="pricing-card-title">Ecommerce</h2>
             <ul class="pricing-card-list">
               <li>Bigger ambitions? Contact us today!</li>
@@ -641,26 +641,39 @@
         <div class="footer-top">
           <div class="footer-brand">
             <h2 class="footer-logo">DEVONUS</h2>
-            <p class="footer-subtitle">Web Agency</p>
+            <p class="footer-subtitle">web agency</p>
+            <p class="footer-desc">
+              Crafting websites that awe, inspire, and connect.
+            </p>
           </div>
           <div class="footer-links">
             <div class="footer-column">
-              <h3>Pages</h3>
+              <h3>Solutions</h3>
               <ul>
-                <li><a href="#">Media</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Press</a></li>
+                <li><a href="/web-development">Web Development</a></li>
+                <li><a href="/website-maintenance">Site Maintenance </a></li>
+                <li><a href="/web-design">Web Design</a></li>
+                <li><a href="/seo">SEO Services</a></li>
+                <li><a href="/advertising">Advertising</a></li>
+                <li><a href="/ecommerce-solutions">Ecommerce </a></li>
               </ul>
             </div>
             <div class="footer-column">
-              <h3>Socials</h3>
+              <h3>Pages</h3>
               <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Bluesky</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">LinkedIn</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/coming-soon">Press</a></li>
+                <li><a href="/san-diego-web-agency">Cities</a></li>
+                <li><a href="/coming-soon">Media Kit</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Contact</h3>
+              <ul>
+                <li><a href="#">hello@devonus.com</a></li>
+                <li><a href="#">+1 (619) 739-7928</a></li>
+                <li><a href="#">San Diego,</a></li>
+                <li><a href="#">California</a></li>
               </ul>
             </div>
           </div>
