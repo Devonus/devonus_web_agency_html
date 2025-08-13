@@ -240,10 +240,6 @@ Array.from(sanDiegoHeadings).forEach((el) => {
   sanDiegoObserver.observe(el);
 });
 
-/**
- * Smoothly scrolls the viewport to center the given element.
- * @param {string} selector - The CSS selector for the element to scroll to (e.g., '#contact').
- */
 function scrollToCenter(selector) {
   // 1. Find the target element on the page.
   const element = document.querySelector(selector);
@@ -252,10 +248,6 @@ function scrollToCenter(selector) {
     return;
   }
 
-  // 2. Calculate the exact top position to center the element.
-  //    - Get element's top position relative to the document.
-  //    - Subtract half the viewport's height to move it up.
-  //    - Add half the element's height to move it down.
   const elementTop = element.getBoundingClientRect().top + window.scrollY;
   const elementHeight = element.offsetHeight;
   const viewportHeight = window.innerHeight;
