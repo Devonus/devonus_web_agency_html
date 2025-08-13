@@ -50,8 +50,6 @@ window.addEventListener("scroll", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("DOM fully loaded, script running");
-
   const navItems = document.querySelectorAll(".nav-item");
 
   navItems.forEach((item) => {
