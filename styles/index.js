@@ -415,3 +415,60 @@ document.querySelectorAll(".service-box").forEach((box) => {
     info.classList.toggle("open");
   });
 });
+
+const toggleButton = document.getElementById("darkModeToggle");
+const rootElement = document.documentElement; // <html>
+
+// Update button icon based on mode
+function updateButtonIcon(isDark) {
+  toggleButton.innerHTML = `<img 
+    src="${
+      isDark ? "/public/lightbulb_dark.png" : "/public/lightbulb_light.png"
+    }" 
+    alt="${isDark ? "Light Mode" : "Dark Mode"}" 
+    style="width: 24px; height: 24px;"
+  >`;
+}
+
+// Function to set light mode instead of dark mode
+function setDarkMode(enabled) {
+  if (enabled) {
+    rootElement.classList.remove("light-mode"); // dark mode
+    localStorage.setItem("dark-mode", "true");
+  } else {
+    rootElement.classList.add("light-mode"); // light mode
+    localStorage.setItem("dark-mode", "false");
+  }
+  updateButtonIcon(enabled);
+}
+
+// Toggle light-mode class instead of dark-mode
+toggleButton.addEventListener("click", () => {
+  const isDark = rootElement.classList.toggle("light-mode") === false;
+  localStorage.setItem("dark-mode", isDark ? "true" : "false");
+  updateButtonIcon(isDark);
+});
+
+// On load, apply preference and update icon
+window.addEventListener("DOMContentLoaded", () => {
+  const saved = localStorage.getItem("dark-mode");
+  if (saved === "true") {
+    setDarkMode(true);
+  } else if (saved === "false") {
+    setDarkMode(false);
+  } else {
+    const prefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    setDarkMode(prefersDark);
+  }
+});
+
+// Optional: system preference listener if no saved preference
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", (e) => {
+    if (localStorage.getItem("dark-mode") === null) {
+      setDarkMode(e.matches);
+    }
+  });

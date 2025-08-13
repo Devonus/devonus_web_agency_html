@@ -23,6 +23,22 @@ font-family: 'Fira Mono', Consolas, 'Courier New', Courier, monospace;
   --max-width: 1200px;
     }
 
+.light-mode {
+    --color-white: #242424;        /* Dark text */
+  --color-dark: #FFFAFA;         /* Light background */
+  --color-grey: #555555;
+  --color-orange: #FF8C00;
+  --color-green: #3CAF50;        /* Softer green for light bg */
+  --color-light-green: #DFF0D8;
+  --color-yellow: #FFF4CC;
+
+  --font-1: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  --font-2: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-3: 'Fira Mono', Consolas, 'Courier New', Courier, monospace;
+
+  --max-width: 1200px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -87,6 +103,17 @@ code, pre, .mono {
   }
 }
   
+
+#darkModeToggle {
+  position: fixed;
+  bottom: 20px;   /* distance from bottom */
+  right: 20px;    /* distance from right */
+  z-index: 1000;  /* make sure it’s on top */
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background: var(--color-white);
+}
 
 /* -------------------------
 |                          |
@@ -554,8 +581,8 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 .section-title {
   font-size: 3rem;
   font-weight: bold;
-  margin-top: 2rem;
-  padding-bottom: 3rem;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
   text-align: left;
   font-family: var(--font-1);
   color: var(--color-white);
@@ -577,14 +604,15 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .text-block {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5;
+  font-family: var(--font-3);
   color: var(--color-white);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .service-boxes {
@@ -621,6 +649,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   flex: 1;
 }
 
+
 .service-box:hover {
   background: var(--color-green);
   transform: scale(1.05);
@@ -647,6 +676,10 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 .service-box.open .arrow {
   transform: rotate(180deg);
+}
+
+.service-box:hover .service-title {
+  color: var(--color-dark);
 }
 
 .service-info {
