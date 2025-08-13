@@ -105,14 +105,23 @@ code, pre, .mono {
   
 
 #darkModeToggle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
   position: fixed;
   bottom: 20px;   /* distance from bottom */
   right: 20px;    /* distance from right */
   z-index: 1000;  /* make sure it’s on top */
-  padding: 0.6rem 1.2rem;
+  margin: 1rem 1rem;
   font-size: 1rem;
   cursor: pointer;
   background: var(--color-white);
+  outline: none;       
+  border: none;   
+}
+
+#darkModeToggle:hover {
+  transform: scale(1.05);
 }
 
 /* -------------------------
