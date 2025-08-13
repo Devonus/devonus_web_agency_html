@@ -59,12 +59,26 @@
       <link rel="stylesheet" href="{{ '/styles/index.css' | relative_url }}" />
     </noscript>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="/styles/fonts/playfair-display-v39-latin-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/styles/fonts/lato-v24-latin-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/styles/fonts/fira-mono-v15-latin-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
 
     <!-- Favicon -->
