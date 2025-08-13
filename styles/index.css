@@ -21,8 +21,7 @@ font-family: 'Fira Mono', Consolas, 'Courier New', Courier, monospace;
   --font-3: 'Fira Mono', Consolas, 'Courier New', Courier, monospace;
 
   --max-width: 1200px;
-  --background-image: url('https://res.cloudinary.com/dvufsifir/image/upload/v1755101535/background_light_mscf0l.webp') center center / cover no-repeat;
-  /* --background-image: url('https://res.cloudinary.com/dvufsifir/image/upload/v1754772283/background_qfpzhv.webp') center center / cover no-repeat; */
+  --background-image: url('https://res.cloudinary.com/dvufsifir/image/upload/v1755101535/background_dark.webp') center center / cover no-repeat;
   --background-linear-gradient: linear-gradient(
     to bottom,
     rgba(36, 36, 36, 0.75),
@@ -44,7 +43,7 @@ font-family: 'Fira Mono', Consolas, 'Courier New', Courier, monospace;
   --font-3: 'Fira Mono', Consolas, 'Courier New', Courier, monospace;
 
   --max-width: 1200px;
-  --background-image: url('https://res.cloudinary.com/dvufsifir/image/upload/v1755101534/background_dark_sedytj.webp') center center / cover no-repeat;
+  --background-image: url('https://res.cloudinary.com/dvufsifir/image/upload/v1755101534/background_light.webp') center center / cover no-repeat;
   --background-linear-gradient: linear-gradient(
   to bottom,
   rgba(255, 250, 250, 0.75),
@@ -171,8 +170,8 @@ code, pre, .mono {
 
 .navbar.scrolled {
   background-color: var(--color-dark);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.10);
 }
-
 .nav-container {
   width: 100%;
   margin: 0 auto;
