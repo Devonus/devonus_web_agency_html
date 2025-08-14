@@ -419,6 +419,46 @@ window
 //--------------------//
 //.                   //
 //                    //
+//    contact form    //
+//                    //
+//                    //
+//--------------------//
+
+const successBanner = document.getElementById("form-success");
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+
+  const myForm = event.target;
+  const formData = new FormData(myForm);
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => {
+      // Show success banner
+      successBanner.classList.add("show");
+
+      // Hide after 3 seconds
+      setTimeout(() => {
+        successBanner.classList.remove("show");
+      }, 3000);
+
+      myForm.reset(); // Clear form
+    })
+    .catch((error) => {
+      alert("❌ Oops! Something went wrong: " + error);
+    });
+};
+
+document
+  .querySelector('form[name="contact"]')
+  .addEventListener("submit", handleSubmit);
+//--------------------//
+//.                   //
+//                    //
 //     for fun        //
 //                    //
 //                    //

@@ -294,9 +294,9 @@ code, pre, .mono {
   width: 3.75rem;
   border-radius: 50px;
   position: fixed;
-  bottom: 20px;   /* distance from bottom */
-  right: 20px;    /* distance from right */
-  z-index: 1000;  /* make sure it’s on top */
+  bottom: 20px;  
+  right: 20px;  
+  z-index: 1000; 
   margin: 1rem 1rem;
   font-size: 1rem;
   cursor: pointer;
@@ -369,7 +369,6 @@ code, pre, .mono {
   font-weight: bold;
 }
 
-/* Toggle button (hamburger) */
 .nav-toggle {
   display: none;
   background: none;
@@ -380,7 +379,6 @@ code, pre, .mono {
 }
 
 
-/* Nav links default (desktop) */
 .nav-links {
   display: flex;
   gap: 3rem;
@@ -413,19 +411,16 @@ animation: fadeInH1 0.7s ease-in-out forwards;}
   align-items: center;
 }
 
-/* Dropdown container */
 .nav-item {
   position: relative;
 }
 
-/* Arrow styling */
 .arrow {
   font-size: 0.7rem;
   margin-left: 5px;
   transition: transform 0.3s ease;
 }
 
-/* Rotate arrow on hover */
 .nav-item:hover .arrow {
   transform: rotate(180deg);
 }
@@ -768,9 +763,9 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .inner-wrapper {
-  max-width: 1200px; /* force 1200px max */
+  max-width: 1200px; 
   margin: 0 auto;
-  padding: 0 1rem; /* small padding so it doesn't touch edges */
+  padding: 0 1rem;
 }
 
 .section-title {
@@ -812,7 +807,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 .service-boxes {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 columns */
+  grid-template-columns: 1fr 1fr;
   gap: 14px 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -820,7 +815,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .service-item {
-  position: relative; /* anchor for absolute child */
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -888,13 +883,13 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   position: absolute;
   left: 0;
   right: 0;
-  top: 100%; /* right below the service-box */
+  top: 100%;
   border-radius: 0 0 10px 10px;
   overflow: hidden;
   max-height: 0;
   opacity: 0;
   padding: 0 16px;
-  pointer-events: none; /* prevents accidental interaction when closed */
+  pointer-events: none;
   z-index: 10;
 }
 
@@ -915,10 +910,10 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 @media (max-width: 768px) {
   .service-boxes {
-    grid-template-columns: 1fr; /* stack on small screens */
+    grid-template-columns: 1fr;
   }
   .service-info {
-    grid-column: auto; /* no spanning needed in single column */
+    grid-column: auto;
   }
 }
 
@@ -1052,7 +1047,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 /* -------------------------
 |                          |
-|      CAROUSEL SECTION       |
+|     CAROUSEL SECTION     |
 |                          |
 |--------------------------*/
 .carousel-section {
@@ -1738,6 +1733,53 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-text-stroke-color: var(--color-grey);
 }
 
+  .form-success {
+    position: fixed;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-dark);    
+    color: var(--color-white); /* your dark text */
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-2);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: top 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    z-index: 9999;
+    border: 1px solid rgba(255,255,255,0.4);
+    backdrop-filter: blur(6px);
+  }
+
+  .form-success.show {
+    top: 20px;
+    opacity: 1;
+    transform: translateX(-50%) scale(1.05);
+    animation: bounce 0.5s ease;
+  }
+
+  /* Icon animation */
+  .form-success .icon {
+    font-size: 1.4rem;
+    animation: pop 0.5s ease;
+  }
+
+  @keyframes bounce {
+    0% { transform: translateX(-50%) translateY(-20px) scale(0.95); }
+    50% { transform: translateX(-50%) translateY(0px) scale(1.05); }
+    100% { transform: translateX(-50%) translateY(0px) scale(1); }
+  }
+
+  @keyframes pop {
+    0% { transform: scale(0); }
+    60% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
 
  /* -------------------------
 |                          |
@@ -2037,9 +2079,9 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 @media (max-width: 768px) {
-  /* -------------------------
+/* -------------------------
 |                          |
-|      CIRCLE SECTION       |
+|      CIRCLE SECTION      |
 |                          |
 |--------------------------*/  
   #circle {
@@ -2049,7 +2091,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 /* -------------------------
 |                          |
-|      HERO SECTION       |
+|      HERO SECTION        |
 |                          |
 |--------------------------*/  
   section h1, article h1, aside h1, nav h1 {
@@ -2124,7 +2166,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 /* -------------------------
 |                          |
-|      CAROUSEL SECTION       |
+|      CAROUSEL SECTION    |
 |                          |
 |--------------------------*/
 
@@ -2157,7 +2199,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 /* -------------------------
 |                          |
-|      SOLUTIONS SECTION   |
+|     SOLUTIONS SECTION    |
 |                          |
 |--------------------------*/
 
@@ -2178,7 +2220,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 /* -------------------------
 |                          |
-|      BLOG SECTION       |
+|      BLOG SECTION        |
 |                          |
 |--------------------------*/
 
@@ -2228,7 +2270,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 /* -------------------------
 |                          |
-|      FOOTER SECTION       |
+|      FOOTER SECTION      |
 |                          |
 |--------------------------*/  
 
