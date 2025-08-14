@@ -49,28 +49,6 @@
       <link rel="stylesheet" href="{{ '/styles/index.css' | relative_url }}" />
     </noscript>
 
-    <link
-      rel="preload"
-      href="{{ '/assets/fonts/playfair-display-v39-latin-regular.woff2' | relative_url }}"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="{{ '/assets/fonts/lato-v24-latin-regular.woff2' | relative_url }}"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="{{ '/assets/fonts/fira-mono-v15-latin-regular.woff2' | relative_url }}"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../public/devonus_logo.png" />
 
@@ -153,10 +131,16 @@
         </button>
       </div>
       <nav class="nav-links" id="nav-links">
-        <a href="#home" id="home-nav">home</a>
-        <a href="#about" id="about-nav">about</a>
-        <a href="#case-studies" id="case-studies-nav">case studies</a>
-        <div class="nav-item" id="solutions-item">
+        <div class="link-container">
+          <a href="#home" id="home-nav">home</a>
+        </div>
+        <div class="link-container">
+          <a href="#about" id="about-nav">about</a>
+        </div>
+        <div class="link-container">
+          <a href="#case-studies" id="case-studies-nav">case studies</a>
+        </div>
+        <div class="link-container nav-item" id="solutions-item">
           <a href="#solutions" id="solutions-nav">
             solutions
             <span class="arrow">▼</span>
@@ -170,10 +154,13 @@
             <a href="/website-maintenance">website maintenance</a>
           </div>
         </div>
-        <a href="#blog" id="blog-nav">blog</a>
-
-        <a href="#pricing" id="pricing-nav">pricing</a>
-        <div class="nav-item" id="locations-item">
+        <div class="link-container">
+          <a href="#blog" id="blog-nav">blog</a>
+        </div>
+        <div class="link-container">
+          <a href="#pricing" id="pricing-nav">pricing</a>
+        </div>
+        <div class="link-container nav-item" id="locations-item">
           <a href="#locations" id="locations-nav">
             locations
             <span class="arrow">▼</span>
@@ -181,18 +168,18 @@
           <div class="dropdown dropdown-locations">
             {% for location in site.locations %} {% if location.id_name and
             location.id_name | strip != '' %}
-            <a href="{{ location.permalink }}" id="{{ location.id_name }}"
-              >{{ location.city }}</a
-            >
+            <a href="{{ location.permalink }}" id="{{ location.id_name }}">
+              {{ location.city }}
+            </a>
             {% else %}
             <a href="{{ location.permalink }}">{{ location.city }}</a>
             {% endif %} {% endfor %}
           </div>
         </div>
         <div class="hero-center">
-          <a href="#contact" class="contact-btn bright" id="scroll-to-contact"
-            ><span>get started</span></a
-          >
+          <a href="#contact" class="contact-btn bright" id="scroll-to-contact">
+            <span>get started</span>
+          </a>
         </div>
       </nav>
     </header>
