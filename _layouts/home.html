@@ -696,7 +696,23 @@
         </div>
 
         <!-- Right side: Form -->
-        <form class="contact-form">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="contact-form"
+        >
+          <!-- Required hidden input for Netlify -->
+          <input type="hidden" name="form-name" value="contact" />
+          <!-- Honeypot field for spam bots -->
+          <p style="display: none">
+            <label
+              >Don’t fill this out if you’re human:
+              <input name="bot-field" />
+            </label>
+          </p>
+
           <div class="input-row">
             <input
               type="text"
