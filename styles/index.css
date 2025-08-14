@@ -132,11 +132,11 @@ font-family: 'Fira Mono', Consolas, 'Courier New', Courier, monospace;
 |--------------------------*/
 
 .light-mode {
-  --color-white: #242424;        /* Dark text */
-  --color-dark: #FFFAFA;         /* Light background */
+  --color-white: #242424;      
+  --color-dark: #FFFAFA;        
   --color-grey: #555555;
   --color-orange: #FF8C00;
-  --color-green: #B5F900;        /* Softer green for light bg */
+  --color-green: #B5F900;       
   --color-light-green: #DFF0D8;
   --color-yellow: #FFF4CC;
 
@@ -155,18 +155,64 @@ font-family: 'Fira Mono', Consolas, 'Courier New', Courier, monospace;
 
 }
 
+.light-mode body {
+background: linear-gradient(to bottom, #f7f1e8 0%, #fcf6f6 100%);  
+}
+
 .light-mode .service-item:hover .service-title {
   color: var(--color-white)
 }
 
 .light-mode .service-info {
   background: var(--color-dark);
-  border: 0px 1px 1px 1px;
-    border-style: solid;
-    border-color: rgb(204, 204, 204);}
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+}
+  .light-mode .service-info.open {
+      background: #DDDDDD;
+      color: var(--color-white);
+  }
 
 .light-mode .text-content {
   color: var(--color-dark);
+}
+
+.light-mode .card p {
+
+  color: var(--color-grey);
+}
+
+.light-mode .view-all-btn {
+  background: var(--color-orange);
+  color: var(--color-dark);
+  border-color: var(--color-orange);
+}
+
+.light-mode .pricing-card.dark, 
+.light-mode .pricing-card.green {
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;
+}
+
+.light-mode .pricing-card.green {
+  background: var(--color-light-green);
+  border: 1px solid var(--color-white);
+}
+
+.light-mode .pricing-card-button.yellow {
+  background-color: var(--color-white);
+}
+.light-mode .pricing-card-button.light {
+  background-color: var(--color-yellow);
+}
+
+.light-mode .insights-section,
+.light-mode .pricing-section,
+.light-mode .contact-section,
+.light-mode footer,
+.light-mode .ideas-section,
+.light-mode .under-one-roof {
+  background: none;
 }
 
 
@@ -185,6 +231,7 @@ font-family: 'Fira Mono', Consolas, 'Courier New', Courier, monospace;
 
 body {
   background: var(--color-dark);
+  
 }
 
 h1, h2, h3, h4, h5, h6 {  
@@ -284,7 +331,7 @@ code, pre, .mono {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
   z-index: 1000;
   transition: background-color 0.7s ease-out;
 }
@@ -842,18 +889,20 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   left: 0;
   right: 0;
   top: 100%; /* right below the service-box */
-  background: var(--color-white);
   border-radius: 0 0 10px 10px;
   overflow: hidden;
   max-height: 0;
   opacity: 0;
   padding: 0 16px;
-  transition: background 0.3s ease, transform 0.3s ease;
   pointer-events: none; /* prevents accidental interaction when closed */
   z-index: 10;
 }
 
 .service-info.open {
+  display:flex;
+  background: var(--color-white);
+  color: var(--color-dark);
+  align-items: center;
   height: 100px;
   max-height: 400px; 
   opacity: 1;
@@ -1342,7 +1391,9 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 .pricing-title-desktop {
   display: none;
     font-size: 3rem;
-
+  }
+.pricing-title-desktop span {
+  
 }
 
 .text-orange {
@@ -1374,6 +1425,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 .pricing-card.dark:hover {
   box-shadow: 0 0 14px 4px rgba(255, 255, 255, 0.9);
+  transform: scale(1.05);
 }
 
 .pricing-card.green {
@@ -1385,6 +1437,8 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 .pricing-card.green:hover {
   box-shadow: 0 0 20px 6px var(--color-light-green);
+    transform: scale(1.05);
+
 }
 
 
@@ -2118,6 +2172,10 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   .ideas-heading{
     margin-bottom: 3rem;
   }
+
+#card-space {
+  margin-bottom: 1rem;
+}
 /* -------------------------
 |                          |
 |      BLOG SECTION       |

@@ -79,7 +79,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//change words
+//--------------------//
+//.                   //
+//                    //
+//    change words    //
+//                    //
+//                    //
+//--------------------//
 const words = [
   " performance.",
   " precision.",
@@ -132,7 +138,13 @@ function typeLoop() {
 // Start typing loop
 typeLoop();
 
-//button rainbow
+//--------------------//
+//.                   //
+//                    //
+//    rainbow btn     //
+//                    //
+//                    //
+//--------------------//
 const buttons = document.querySelectorAll(".contact-btn");
 
 buttons.forEach((button) => {
@@ -184,6 +196,13 @@ function scrollToCenter(selector) {
   });
 }
 
+//--------------------//
+//.                   //
+//                    //
+//    link scroll     //
+//                    //
+//                    //
+//--------------------//
 document.addEventListener("DOMContentLoaded", () => {
   // Find the button that triggers the scroll
   const scrollButton = document.getElementById("home-nav");
@@ -286,17 +305,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//fun console
-console.log(
-  "\r\n      _                                 \r\n     | |                                \r\n   __| | _____   _____  _ __  _   _ ___ \r\n  / _` |/ _ \\ \\ / / _ \\| '_ \\| | | / __|\r\n | (_| |  __/\\ V | (_) | | | | |_| \\__ \\\r\n  \\__,_|\\___| \\_/ \\___/|_| |_|\\__,_|___/\r\n              | |                       \r\n __      _____| |__                     \r\n \\ \\ /\\ / / _ | '_ \\                    \r\n  \\ V  V |  __| |_) |                   \r\n   \\_/\\_/ \\___|_.__/                    \r\n   __ _  __ _  ___ _ __   ___ _   _     \r\n  / _` |/ _` |/ _ | '_ \\ / __| | | |    \r\n | (_| | (_| |  __| | | | (__| |_| |    \r\n  \\__,_|\\__, |\\___|_| |_|\\___|\\__, |    \r\n         __/ |                 __/ |    \r\n        |___/                 |___/     \r\n"
-);
-
-console.log(
-  "%c💻 Looking for a beautiful website? Let's talk: %chello@devonus.com",
-  "color:rgb(204, 133, 2); font-size: 14px;",
-  "color: #000000; font-size: 14px; font-weight: bold;"
-);
-
+//--------------------//
+//.                   //
+//                    //
+//  blog image cover  //
+//                    //
+//                    //
+//--------------------//
 document.querySelectorAll(".blog-post").forEach((post) => {
   post.addEventListener("mouseenter", () => {
     const bg = post.getAttribute("data-bg");
@@ -312,7 +327,13 @@ document.querySelectorAll(".blog-post").forEach((post) => {
   post.style.setProperty("--hover-bg", `url(${bg})`);
 });
 
-//service box accordian
+//--------------------//
+//.                   //
+//                    //
+//    accordian       //
+//                    //
+//                    //
+//--------------------//
 document.querySelectorAll(".service-box").forEach((box) => {
   box.addEventListener("click", () => {
     const info = box.nextElementSibling;
@@ -331,6 +352,13 @@ document.querySelectorAll(".service-box").forEach((box) => {
   });
 });
 
+//--------------------//
+//.                   //
+//                    //
+//    dark mode.      //
+//                    //
+//                    //
+//--------------------//
 const toggleButton = document.getElementById("darkModeToggle");
 const rootElement = document.documentElement; // <html>
 
@@ -387,3 +415,20 @@ window
       setDarkMode(e.matches);
     }
   });
+
+//--------------------//
+//.                   //
+//                    //
+//     for fun        //
+//                    //
+//                    //
+//--------------------//
+console.log(
+  "\r\n      _                                 \r\n     | |                                \r\n   __| | _____   _____  _ __  _   _ ___ \r\n  / _` |/ _ \\ \\ / / _ \\| '_ \\| | | / __|\r\n | (_| |  __/\\ V | (_) | | | | |_| \\__ \\\r\n  \\__,_|\\___| \\_/ \\___/|_| |_|\\__,_|___/\r\n              | |                       \r\n __      _____| |__                     \r\n \\ \\ /\\ / / _ | '_ \\                    \r\n  \\ V  V |  __| |_) |                   \r\n   \\_/\\_/ \\___|_.__/                    \r\n   __ _  __ _  ___ _ __   ___ _   _     \r\n  / _` |/ _` |/ _ | '_ \\ / __| | | |    \r\n | (_| | (_| |  __| | | | (__| |_| |    \r\n  \\__,_|\\__, |\\___|_| |_|\\___|\\__, |    \r\n         __/ |                 __/ |    \r\n        |___/                 |___/     \r\n"
+);
+
+console.log(
+  "%c💻 Looking for a beautiful website? Let's talk: %chello@devonus.com",
+  "color:rgb(204, 133, 2); font-size: 14px;",
+  "color: #000000; font-size: 14px; font-weight: bold;"
+);
