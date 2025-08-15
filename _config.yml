@@ -44,6 +44,10 @@ collections:
     output: true
     permalink: /title/
 
+# sitemap generator
+plugins:
+  - jekyll-sitemap
+
 
 # title: Your awesome title
 # email: your-email@example.com

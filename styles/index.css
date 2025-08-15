@@ -1036,6 +1036,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 .card h3 {
   color: var(--color-white);
+  padding-bottom: 0.75rem;
 }
 
 
