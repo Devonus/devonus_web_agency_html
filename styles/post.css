@@ -1,0 +1,80 @@
+
+
+/* -------------------------
+|                          |
+|      LIGHT MODE          |
+|                          |
+|--------------------------*/
+.light-mode .navbar:hover a, .light-mode .navbar:hover .logo {
+    color: #242424;
+}
+
+.light-mode .post-container p {
+    color: #242424;
+}
+
+
+/* -------------------------
+|                          |
+|      HERO SECTION       |
+|                          |
+|--------------------------*/
+
+
+.hero {
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    var(--background-image);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay h1 {
+  font-size: 2rem;
+
+}
+
+.hero-overlay h1, .hero-left p,
+.nav-links a, .post-container p,
+.logo {
+        color: #FFFAFA;
+
+}
+
+.navbar:hover a {
+  color: #FFFAFA;
+}
+
+
+#dictionary {
+    color: var(--color-orange)
+}
+
+
+/* -------------------------
+|                          |
+|      POST SECTION        |
+|                          |
+|--------------------------*/
+
+.post-container {
+    margin: 1rem auto;
+    max-width: var(--max-width);
+    padding: 1rem 2rem;
+
+}
+
+.post-container p {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+
+
+
+@media (max-width: 1020px) {
+
+    .nav-links a {
+        color: var(--color-white)
+    }
+    
+}

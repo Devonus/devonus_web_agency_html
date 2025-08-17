@@ -105,6 +105,9 @@ let currentText = "";
 let adding = true; // true = adding letters, false = deleting letters
 
 function typeLoop() {
+  // Stop if #hero-span is missing
+  if (!el) return;
+
   const fullWord = words[currentWordIndex];
 
   if (adding) {
@@ -115,9 +118,9 @@ function typeLoop() {
     if (currentText === fullWord) {
       // Finished typing the full word, wait then start deleting
       adding = false;
-      setTimeout(typeLoop, 3000); // pause 1 second before deleting
+      setTimeout(typeLoop, 3000);
     } else {
-      setTimeout(typeLoop, 50); // speed of typing letters
+      setTimeout(typeLoop, 50);
     }
   } else {
     // Delete one letter
@@ -128,15 +131,17 @@ function typeLoop() {
       // Move to next word after deleting
       adding = true;
       currentWordIndex = (currentWordIndex + 1) % words.length;
-      setTimeout(typeLoop, 100); // short pause before next word
+      setTimeout(typeLoop, 100);
     } else {
-      setTimeout(typeLoop, 100); // speed of deleting letters
+      setTimeout(typeLoop, 100);
     }
   }
 }
 
-// Start typing loop
-typeLoop();
+// ✅ Only start the loop if the element exists
+if (el) {
+  typeLoop();
+}
 
 //--------------------//
 //.                   //
@@ -176,7 +181,6 @@ Array.from(sanDiegoHeadings).forEach((el) => {
 });
 
 function scrollToCenter(selector) {
-  // 1. Find the target element on the page.
   const element = document.querySelector(selector);
   if (!element) {
     console.warn(`Scroll target not found: ${selector}`);
@@ -187,9 +191,21 @@ function scrollToCenter(selector) {
   const elementHeight = element.offsetHeight;
   const viewportHeight = window.innerHeight;
 
-  const scrollTarget = elementTop - viewportHeight / 2 + elementHeight / 2;
+  // Get header height dynamically
+  const header = document.querySelector("header"); // adjust selector if different
+  const headerHeight = header ? header.offsetHeight : 0;
 
-  // 3. Perform the smooth scroll.
+  let scrollTarget;
+
+  if (window.innerWidth <= 768) {
+    // On small screens, scroll to top of the section minus header
+    scrollTarget = elementTop - headerHeight;
+  } else {
+    // On larger screens, center the section
+    scrollTarget =
+      elementTop - viewportHeight / 2 + elementHeight / 2 - headerHeight / 2;
+  }
+
   window.scrollTo({
     top: scrollTarget,
     behavior: "smooth",
@@ -203,94 +219,49 @@ function scrollToCenter(selector) {
 //                    //
 //                    //
 //--------------------//
-document.addEventListener("DOMContentLoaded", () => {
-  // Find the button that triggers the scroll
-  const scrollButton = document.getElementById("home-nav");
-
-  if (scrollButton) {
-    scrollButton.addEventListener("click", (e) => {
-      // Prevent the link from jumping instantly (its default behavior)
-      e.preventDefault();
-
-      // Call our new function to perform the centered scroll
-      scrollToCenter("#top");
-    });
-  }
-});
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Find the button that triggers the scroll
-  const scrollButton = document.getElementById("about-nav");
+  // Function to smooth scroll to a hash if present on page load
+  const scrollOnLoad = () => {
+    const hash = window.location.hash;
+    if (hash) {
+      const target = document.querySelector(hash);
+      if (target) {
+        setTimeout(() => scrollToCenter(hash), 50);
+      }
+    }
+  };
 
-  if (scrollButton) {
-    scrollButton.addEventListener("click", (e) => {
-      // Prevent the link from jumping instantly (its default behavior)
-      e.preventDefault();
+  scrollOnLoad();
 
-      // Call our new function to perform the centered scroll
-      scrollToCenter("#about");
+  // Map of nav button IDs to target anchors
+  const navMap = {
+    "home-nav": "#top",
+    "about-nav": "#about",
+    "solutions-nav": "#solutions",
+    "blog-nav": "#blog",
+    "case-studies-nav": "#case-studies",
+    "pricing-nav": "#pricing",
+  };
+
+  Object.keys(navMap).forEach((id) => {
+    const button = document.getElementById(id);
+    if (!button) return;
+
+    button.addEventListener("click", (e) => {
+      // Only prevent default if we are on the homepage
+      const onHomePage =
+        window.location.pathname === "/" ||
+        window.location.pathname === "/index.html";
+
+      if (onHomePage) {
+        e.preventDefault();
+        scrollToCenter(navMap[id]);
+      }
+      // If on another page, browser navigates to /#target
+      // scrollOnLoad will handle smooth scrolling after navigation
     });
-  }
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  // Find the button that triggers the scroll
-  const scrollButton = document.getElementById("solutions-nav");
-
-  if (scrollButton) {
-    scrollButton.addEventListener("click", (e) => {
-      // Prevent the link from jumping instantly (its default behavior)
-      e.preventDefault();
-
-      // Call our new function to perform the centered scroll
-      scrollToCenter("#solutions");
-    });
-  }
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  // Find the button that triggers the scroll
-  const scrollButton = document.getElementById("blog-nav");
-
-  if (scrollButton) {
-    scrollButton.addEventListener("click", (e) => {
-      // Prevent the link from jumping instantly (its default behavior)
-      e.preventDefault();
-
-      // Call our new function to perform the centered scroll
-      scrollToCenter("#blog");
-    });
-  }
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  // Find the button that triggers the scroll
-  const scrollButton = document.getElementById("case-studies-nav");
-
-  if (scrollButton) {
-    scrollButton.addEventListener("click", (e) => {
-      // Prevent the link from jumping instantly (its default behavior)
-      e.preventDefault();
-
-      // Call our new function to perform the centered scroll
-      scrollToCenter("#case-studies");
-    });
-  }
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  // Find the button that triggers the scroll
-  const scrollButton = document.getElementById("pricing-nav");
-
-  if (scrollButton) {
-    scrollButton.addEventListener("click", (e) => {
-      // Prevent the link from jumping instantly (its default behavior)
-      e.preventDefault();
-
-      // Call our new function to perform the centered scroll
-      scrollToCenter("#pricing");
-    });
-  }
+  });
 });
 
 document.addEventListener("DOMContentLoaded", () => {

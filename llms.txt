@@ -1,0 +1,54 @@
+# Devonus Web Agency
+
+> Custom websites, SEO, and digital solutions for businesses worldwide.
+
+## Key Pages
+- [Home](https://devonus.com/)
+- [About](https://devonus.com/about/)
+- [Services – Web Design](https://devonus.com/web-design/)
+- [Services – Web Development](https://devonus.com/web-development/)
+- [Services – SEO](https://devonus.com/seo/)
+- [Services – E-commerce Solutions](https://devonus.com/ecommerce-solutions/)
+- [Services – Advertising](https://devonus.com/advertising/)
+- [Services – Tech Strategy & Guidance](https://devonus.com/tech-strategy-and-guidance/)
+- [Services – Website Maintenance](https://devonus.com/website-maintenance/)
+
+## City Landing Pages
+- [Atlanta Web Agency](https://devonus.com/atlanta-web-agency/)
+- [Austin Web Agency](https://devonus.com/austin-web-agency/)
+- [Boston Web Agency](https://devonus.com/boston-web-agency/)
+- [Chicago Web Agency](https://devonus.com/chicago-web-agency/)
+- [Dallas Web Agency](https://devonus.com/dallas-web-agency/)
+- [Denver Web Agency](https://devonus.com/denver-web-agency/)
+- [Las Vegas Web Agency](https://devonus.com/las-vegas-web-agency/)
+- [London Web Agency](https://devonus.com/london-web-agency/)
+- [Los Angeles Web Agency](https://devonus.com/los-angeles-web-agency/)
+- [Miami Web Agency](https://devonus.com/miami-web-agency/)
+- [New York Web Agency](https://devonus.com/new-york-web-agency/)
+- [Philadelphia Web Agency](https://devonus.com/philadelphia-web-agency/)
+- [Phoenix Web Agency](https://devonus.com/phoenix-web-agency/)
+- [Portland Web Agency](https://devonus.com/portland-web-agency/)
+- [San Diego Web Agency](https://devonus.com/san-diego-web-agency/)
+- [San Francisco Web Agency](https://devonus.com/san-francisco-web-agency/)
+- [Seattle Web Agency](https://devonus.com/seattle-web-agency/)
+- [Singapore Web Agency](https://devonus.com/singapore-web-agency/)
+- [Sydney Web Agency](https://devonus.com/sydney-web-agency/)
+- [Toronto Web Agency](https://devonus.com/toronto-web-agency/)
+
+## Blog
+- [How to Choose the Right Web Agency for Your Business](https://devonus.com/blog/how-to-choose-the-right-web-agency-for-your-business/)
+- [Mobile-First Design: Why It’s Non-Negotiable in 2025](https://devonus.com/blog/mobile-first-design-why-its-non-negotiable-in-2025/)
+- [Why You Need a Monthly Website Maintenance Plan](https://devonus.com/blog/why-you-need-a-monthly-website-maintenance-plan/)
+- [Bring Your Website to the Top of Google with One Simple Trick](https://devonus.com/blog/bring-your-website-to-the-top-of-google-with-one-simple-trick/)
+- [Your Website Sucks: Why Cookie Cutter Sites Kill Growth](https://devonus.com/blog/your-website-sucks-why-cookie-cutter-sites-kill-your-growth/)
+- [Your First Website: A Step-by-Step Guide](https://devonus.com/blog/your-first-website-a-step-by-step-guide/)
+- [Apple’s Liquid Glass Design](https://devonus.com/blog/apples-liquid-glass-design/)
+- [Local SEO: Bring More Customers to Your Restaurant in North Park, San Diego](https://devonus.com/blog/how-local-seo-can-bring-you-more-customers-to-your-restaurant-in-north-park-san-diego/)
+- [Web Design in San Diego: How to Get a Custom Website](https://devonus.com/blog/web-design-in-san-diego-how-to-get-a-custom-website-as-a-business/)
+- [Why Startups in San Diego Need a Website](https://devonus.com/blog/why-startups-in-san-diego-need-a-website-and-how-it-can-grow-your-business/)
+- [SEO Services for AI](https://devonus.com/blog/seo-services-for-ai/)
+- [Take Control of Your Website: Get a Custom-Built Website](https://devonus.com/blog/take-control-of-your-website-get-a-custom-built-website.md/)
+
+## Legal
+- [Privacy Policy](https://devonus.com/privacy-policy/)
+- [Terms & Conditions](https://devonus.com/terms-and-conditions/)

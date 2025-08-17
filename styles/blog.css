@@ -1,0 +1,11 @@
+
+
+.blog-posts {
+    flex-wrap: wrap;
+}
+
+.blog-post {
+  flex: 1 1 calc(30.333% - 1.33rem); 
+  min-width: 250px;                 
+  box-sizing: border-box;
+}
