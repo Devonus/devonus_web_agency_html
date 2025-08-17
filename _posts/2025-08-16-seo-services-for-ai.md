@@ -37,97 +37,55 @@ Buyers are researcing using AI before they even search on Google.
 This is a massive opportunity for your company. If it's cited in AI searched, it has the potential to be shown to millions of people. You will stand out in front of your competitors. 
 
 ## How do we Track AI SEO Analytics?
-One of the biggest issues in AI SEO is that AI search engines don't have normal dashboards like other analytics like Google. That's where we come in. We have a LLM visibility audit that shows which prompts lead to ChatGPT LLM visibility audit showing which prompts lead to ChatGPT citations, which sources are referenced, and how company is positioned.
+One of the biggest issues in AI SEO is that AI search engines don't have normal dashboards like other analytics like Google. That's where we come in.
 
 
+1. Research and Strategy
+- We do Market and Competitor citation audits
+- prompt testing to see how LLMs answer industry questions
+- keyword and AI query clustering for high-intent opportunities
+
+2. Technical AI SEO optimization
+- we set up your LLMs.txt for you to guide AI crawlers
+- we set up structured data and Schema for AI crawlers
+- we do website performance, crawlability and UX improvements
+
+3. Content and Asset Production
+- AI citation ready blog articles, landing pages, and product breakdowns
+- Q&A, TL;DR and semantic structures that LLMs prefer
+- Internal linking and content clustering to signal authority
+- backlinking from domains already cited by AI
+
+4. Analytics & Ongoing Optimzation
+- AI citation tracking dashboards
+- Session behaior analysis of AI-referred traffic
+- generative search reporting
+- iterative content testing with real AI prompts
 
 
+## What Results can you expect from AI SEO Services?
+
+Most companies will start to see AI visibility withing 2-3 months. Consistent ChatGPT citations and improved Google rankings will occur generally within 6-12 months. 
+
+We don't just execute AI SEO tactics, we measure and prove what's working with analytics that track AI citations.
+
+We fill in our clients on what prompts lead to citations, where competitors are outperforming, which formats are LLM-friendly, how AI visibility correlates with actual conversions. 
+
+## Why Should you partner with an AI SEO web agency instead of doing it Yourself?
+AI SEO is a very new and experimental field. Most in-house teams have never attempted to track AI search visibility, let alone optimze for it.
+
+We bring a balance of SEO fundamentals and AI-specific optimzation, we understand the tech involved, how to stay ahead of LLM updates, and we allow clients to skip the trial-and-error phase and focus on fundamental SEO and AI SEO growth. 
 
 
+We believe that SEO requires a multi-channel approach:
 
-Here’s what our AI SEO services include:
+Google SEO for traffic
 
-1. Research & Strategy
+AI SEO for authority, trust and early-stage discover.
 
-Market and competitor citation audit.
+We can help you track, measure and grow in all SEO.
 
-Prompt testing to see how LLMs answer industry questions.
+<a href="https://devonus.com/#contact" target="_blank" rel="noopener noreferrer">
+  Contact us today.
+</a>
 
-Keyword + AI query clustering for high-intent opportunities.
-
-Funnel mapping for both SEO and LLM SEO.
-
-2. Technical AI SEO Optimization
-
-LLMs.txt setup to guide AI crawlers.
-
-Structured data & schema for machine parsing.
-
-Website performance, crawlability, and UX improvements.
-
-3. Content & Asset Production
-
-AI citation-ready blog articles, landing pages, and product breakdowns.
-
-Q&A, TL;DR, and semantic structures that LLMs prefer.
-
-Internal linking and content clustering to signal authority.
-
-Source-based backlinking from domains already cited by AI.
-
-4. Analytics & Ongoing Optimization
-
-AI citation tracking dashboards (prompt-level).
-
-Session behavior analysis of AI-referred traffic.
-
-Generative search reporting (citations, inclusions, drop-offs).
-
-Iterative content testing with real AI prompts.
-
-What results can clients expect from AI SEO services?
-
-Most SaaS and Fintech companies begin seeing early AI visibility within 2–3 months. Full-scale results, including consistent ChatGPT citations and improved Google rankings, generally occur within 6–12 months.
-
-The difference with our agency is that we don’t just execute AI SEO tactics—we measure and prove what’s working with analytics that track AI citations in real time.
-
-This gives our clients clarity on:
-
-Which prompts lead to citations.
-
-Where competitors are outperforming.
-
-Which content formats are most LLM-friendly.
-
-How AI visibility correlates with actual conversions.
-
-Why partner with an AI SEO agency instead of handling it in-house?
-
-AI SEO is a new, experimental field. Most in-house teams don’t have the tools or frameworks to track AI search visibility, let alone optimize for it.
-
-Our agency solves this by bringing:
-
-Proprietary AI search analytics tools.
-
-A proven framework tested across SaaS and Fintech industries.
-
-A balance of SEO fundamentals + AI-specific optimization.
-
-A research-driven approach to stay ahead of constant LLM updates.
-
-This allows our clients to skip the trial-and-error phase and focus on measurable AI SEO growth.
-
-Final Thoughts: The Future of SEO is Multi-Channel
-
-Google is still critical. But AI search engines are becoming just as important. The brands that invest in AI SEO services today will gain a first-mover advantage, owning citations and visibility before competitors even realize what’s happening.
-
-At our agency, we believe the future of SEO is multi-channel:
-
-Google SEO for traffic.
-
-AI SEO for trust, authority, and early-stage discovery.
-
-And with our AI SEO analytics system, SaaS and Fintech companies can finally track, measure, and grow in both worlds.
-
-✅ Takeaway: Traditional SEO shows you rankings. AI SEO shows you citations.
-We help you win both.
