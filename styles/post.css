@@ -69,14 +69,21 @@
 
 }
 
-.post-container p, .post-container li {
-    font-size: 1.3rem;
-    padding: 1rem 0;
+.post-container p {
+    font-size: 1.1rem;
+    padding: 0.7rem 0;
+    font-family: var(--font-3);
+}
+
+.post-container li {
+        font-size: 1.1rem;
+    padding: 0.2rem 0;
+    font-family: var(--font-3);
 }
 
 
 .post-container h2 {
-    padding-top: 1rem;
+    padding-top: 3rem;
 }
 
 
