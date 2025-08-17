@@ -9,6 +9,10 @@
     color: #242424;
 }
 
+.light-mode .post-container {
+    color: #242424;
+}
+
 .light-mode .post-container p {
     color: #242424;
 }
@@ -61,14 +65,19 @@
     margin: 1rem auto;
     max-width: var(--max-width);
     padding: 1rem 2rem;
+    color:#FFFAFA;
 
 }
 
-.post-container p {
+.post-container p, .post-container li {
     font-size: 1.3rem;
     padding: 1rem 0;
 }
 
+
+.post-container h2 {
+    padding-top: 1rem;
+}
 
 
 @media (max-width: 1020px) {
