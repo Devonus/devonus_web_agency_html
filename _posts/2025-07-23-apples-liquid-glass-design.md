@@ -7,7 +7,8 @@ keywords: "Apple design history, Snow White design language, Apple UI trends, Li
 image: "https://res.cloudinary.com/dvufsifir/image/upload/v1754724238/apples-liquid-glass_q4rujj.webp"
 readTime: 5
 ---
-
+# Apple’s Liquid Glass Design: A Bold Return to Translucency and the Internet’s Mixed Reaction
+**{{ page.date | date: "%B %d, %Y" }}**
 
 Apple has been at the forefront of innovation and design since the beginning of their existence. Steve Jobs and Jon Ive since the beginning of 1997 had radically altered the previous Apple computer designs
 

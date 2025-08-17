@@ -7,6 +7,8 @@ keywords: "North Park San Diego SEO, restaurant SEO, local SEO for restaurants, 
 image: "https://res.cloudinary.com/dvufsifir/image/upload/v1754726055/how-local-seo_rgtgxb.webp"
 readTime: 4
 ---
+# How Local SEO Can Bring You More Customers to Your Restaurant in North Park, San Diego
+**{{ page.date | date: "%B %d, %Y" }}**
 
 If you own a restaurant in North Park, San Diego you know firsthand how competitive the food scene is here. This beautiful neighborhood is full of fantastic food spots and passionate foodies ready to eat at any moments notice. With so much to choose from, how do you stand out and make sure hungry guests choose your restaurant over others?
 

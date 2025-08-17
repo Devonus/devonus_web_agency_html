@@ -7,6 +7,9 @@ keywords: "website not getting leads, why no traffic website, website analytics 
 image: "https://res.cloudinary.com/dvufsifir/image/upload/v1754724238/your-website-sucks_zajlsw.webp"
 readTime: 2
 ---
+# Your Website Sucks: Why Cookie-Cutter Sites Kill Your Growth
+**{{ page.date | date: "%B %d, %Y" }}**
+
 Congrats on launching your website! You’re expecting leads, but get crickets. Now what? There are millions of websites. What makes yours special? Let’s figure out why your site is failing:
 
 

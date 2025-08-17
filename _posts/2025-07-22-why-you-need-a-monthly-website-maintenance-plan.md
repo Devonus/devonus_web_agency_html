@@ -7,6 +7,8 @@ keywords: "website maintenance, website support services, monthly website update
 image: "https://res.cloudinary.com/dvufsifir/image/upload/v1754724238/why-you-need-a-monthly_tdiiyi.webp"
 readTime: 5
 ---
+# Why You Need a Monthly Website Maintenance Plan
+**{{ page.date | date: "%B %d, %Y" }}**
 
 You should be changing and updating your website constantly. Just like a car or a phone, it requires regular maintenance and updates to stay secure and support your business goals. That’s why it is so important to have a monthly website maintenance plan.
 

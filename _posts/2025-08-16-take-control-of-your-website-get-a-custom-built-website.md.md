@@ -8,6 +8,8 @@ image: 'https://res.cloudinary.com/dvufsifir/image/upload/v1755367005/hidden_it3
 readTime: 5
 ---
 
+# Take Control of Your Website: Get a Custom Built Site
+**{{ page.date | date: "%B %d, %Y" }}**
 
 Have you ever tried starting a website but get completely lost? You buy the domain and it suggests you a website package and you're excited to build. 
 

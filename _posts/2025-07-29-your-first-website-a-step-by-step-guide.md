@@ -7,6 +7,8 @@ keywords: "how to build a website, website building basics, choosing a domain na
 image: "https://res.cloudinary.com/dvufsifir/image/upload/v1754726073/your-website-a-guide_l2vbbv.webp"
 readTime: 8
 ---
+# Your Website: A Step by Step Guide
+**{{ page.date | date: "%B %d, %Y" }}**
 
 
 ## Understanding the Purpose of Your Website

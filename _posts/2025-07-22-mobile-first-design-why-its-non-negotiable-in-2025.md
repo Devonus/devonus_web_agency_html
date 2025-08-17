@@ -8,7 +8,9 @@ image: "https://res.cloudinary.com/dvufsifir/image/upload/v1754724237/mobile-fir
 readTime: 5
 ---
 
-Mobile-First Design Isn’t An Option, Its A Must In 2025
+# Mobile-First Design Isn’t An Option, Its A Must In 2025
+**{{ page.date | date: "%B %d, %Y" }}**
+
 
 “Google uses the mobile version of a site’s content, crawled with the smartphone agent, for indexing and ranking. This is called Mobile-first indexing”
 
