@@ -2,54 +2,94 @@
 <html lang="en" class="justify-center bg-devonus-black">
   <head>
     <meta charset="UTF-8" />
-    <title>{{ page.title }} | Devonus</title>
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-    <meta name="description" content="{{ page.description }}" />
+    <title>{{ page.title | default: site.title }} | Devonus</title>
+
+    <!-- Canonical URL -->
+    {% assign canonical_url = site.url %} {% if page.url %} {% assign
+    canonical_url = site.url | append: page.url %} {% elsif page.title %} {%
+    assign canonical_url = site.url | append: '/blog/' | append: page.title |
+    slugify | append: '/' %} {% endif %}
+    <link rel="canonical" href="{{ canonical_url }}" />
+
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="{{ page.description | default: site.description }}"
+    />
+    <meta
+      name="keywords"
+      content="{{ page.keywords | default: site.keywords }}"
+    />
+
+    <!-- Viewport -->
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="keywords" content="{{page.keywords}}" />
-    <meta property="og:title" content="{{ page.title }} | Devonus" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ site.url }}" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="{{ page.title | default: site.title }} | Devonus"
+    />
+    <meta
+      property="og:description"
+      content="{{ page.description | default: site.description }}"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ canonical_url }}" />
     <meta
       property="og:image"
-      content="{{ page.image | default: '/public/devonus_logo.png' }}"
+      content="{{ page.image | default: site.url | append: '/devonus_logo.png' }}"
     />
-    <meta property="og:description" content="{{ page.description }}" />
     <meta property="og:site_name" content="Devonus Web Agency" />
     <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@devonus" />
     <meta name="twitter:creator" content="@devonus" />
-    <meta name="twitter:title" content="{{ page.title }} | Devonus" />
-    <meta name="twitter:description" content="{{page.description}}" />
+    <meta
+      name="twitter:title"
+      content="{{ page.title | default: site.title }} | Devonus"
+    />
+    <meta
+      name="twitter:description"
+      content="{{ page.description | default: site.description }}"
+    />
     <meta
       name="twitter:image"
-      content="{{ page.image | default: '/public/devonus_logo.png' }}"
+      content="{{ page.image | default: site.url | append: '/devonus_logo.png' }}"
     />
+
+    <!-- Favicon / Apple Touch Icon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="{{ page.image | default: '/public/devonus_logo.png' }}"
+      href="{{ page.image | default: site.url | append: '/devonus_logo.png' }}"
     />
-    <link rel="stylesheet" href="/styles/index.css" />
-    <link rel="stylesheet" href="/styles/blog.css" />
-    <link rel="stylesheet" href="/styles/post.css" />
     <link
       rel="icon"
       type="image/png"
-      href="{{ page.image | default: '/public/devonus_logo.png' }}"
+      href="{{ page.image | default: site.url | append: '/devonus_logo.png' }}"
     />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/blog.css" />
+    <link rel="stylesheet" href="/styles/post.css" />
   </head>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W1FB34BM90"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-W1FB34BM90"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-W1FB34BM90');
-</script>
-
+    gtag("config", "G-W1FB34BM90");
+  </script>
 
   <body>
     <div id="circle"></div>
@@ -134,7 +174,7 @@
       style="--background-image: url('{{ page.image }}');"
     >
       <div class="hero-overlay">
-        <h1>{{page.title}}</span></h1>
+        <h1>{{page.title}}</h1>
         <span id="dictionary">{{page.dictionary_entry}}</span>
 
         <div class="hero-grid">
@@ -163,9 +203,12 @@
       </div>
     </section>
 
-<section class="post-container">
-  {{page.content}}
-</section>
+    <section class="post-container">{{page.content}}</section>
+    <div>
+      <a href="#contact" class="contact-btn" id="scroll-to-contact"
+        ><span>Contact</span></a
+      >
+    </div>
 
     <!--BLOG SECTION-->
     <section class="insights-section" id="blog">

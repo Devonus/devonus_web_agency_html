@@ -32,6 +32,36 @@
     color: #FFFAFA; 
 }
 
+.light-mode .post-container pre {
+    background-color: #f6f6f6;
+    color: #333;
+    border: 1px solid #ddd;
+    box-shadow: none;
+}
+
+.light-mode .post-container pre code {
+    color: inherit;
+    background-color: transparent;
+}
+
+.light-mode .post-container table {
+    color: #242424;
+}
+
+.light-mode .post-container th {
+    background-color: #e6e6e6;
+    color: #242424;
+}
+
+.light-mode .post-container td {
+    border-bottom: 1px solid #ccc;
+}
+
+.light-mode .post-container tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+
 
 /* -------------------------
 |                          |
@@ -95,9 +125,9 @@
 
 .post-container p {
     font-size: 1.1rem;
-    line-height: 1.7; /* Increased for better readability */
-    padding: 0; /* Removed padding to use margin instead */
-    margin-bottom: 1.5rem; /* Added space after paragraphs */
+    line-height: 1.7;
+    padding: 0; 
+    margin-bottom: 1.5rem;
     font-family: var(--font-3);
 }
 
@@ -110,21 +140,20 @@
 }
 
 .post-container ul {
-    list-style: none; /* Removed default bullets */
+    list-style: none;
     padding-left: 1.5rem;
 }
 
 .post-container li::before {
-    content: '\2022'; /* Unicode for a bullet point */
-    color: var(--color-orange); /* Use your accent color */
+    content: '\2022';
+    color: var(--color-orange);
     font-weight: bold;
     display: inline-block;
     width: 1em;
-    margin-left: -1.5em; /* Pull the bullet back */
+    margin-left: -1.5em;
 }
 
 
-/* Blockquote Style */
 blockquote {
     font-style: italic;
     font-size: 1.25rem;
@@ -136,42 +165,28 @@ blockquote {
     line-height: 1.5;
 }
 
-/* Code block styling */
 .post-container pre {
-    background-color: #2b2b2b; /* Dark background for code blocks */
-    color: #f8f8f2; /* Light text for readability */
+    background-color: #2b2b2b; 
+    color: #f8f8f2; 
     padding: 1.5rem;
     border-radius: 8px;
-    overflow-x: auto; /* Enables horizontal scrolling for long lines */
+    overflow-x: auto; 
     font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
     font-size: 0.95em;
     line-height: 1.5;
-    margin: 2rem 0; /* Space above and below the code block */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    margin: 2rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .post-container pre code {
-    /* Reset padding and background from inline code if applied here */
     background-color: transparent;
-    color: inherit; /* Inherit color from pre */
-    padding: 0;
-    font-size: 1em; /* Keep it consistent with pre font size */
-}
-
-/* Specific styling for light mode code blocks */
-.light-mode .post-container pre {
-    background-color: #f6f6f6;
-    color: #333;
-    border: 1px solid #ddd;
-    box-shadow: none;
-}
-
-.light-mode .post-container pre code {
     color: inherit;
-    background-color: transparent;
+    padding: 0;
+    font-size: 1em;
 }
 
-/* Call to Action Button Style */
+
+
 .cta-button {
     display: inline-block;
     background-color: var(--color-orange);
@@ -191,8 +206,81 @@ blockquote {
     transform: translateY(-2px);
 }
 
+
+.post-container table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin: 2rem 0; 
+    color: #FFFAFA;
+}
+
+.post-container th,
+.post-container td {
+    padding: 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.post-container th {
+    background-color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.post-container tr:nth-child(even) {
+    background-color: #2b2b2b;
+}
+
 @media (max-width: 1020px) {
     .nav-links a {
         color: var(--color-white);
+    }
+
+    .post-container table,
+    .post-container thead,
+    .post-container tbody,
+    .post-container th,
+    .post-container td,
+    .post-container tr {
+        display: block; 
+    }
+
+    .post-container thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .post-container tr {
+        border: 1px solid #555;
+        margin-bottom: 1.5rem;
+        border-radius: 8px;
+    }
+    
+    .light-mode .post-container tr {
+        border: 1px solid #ddd;
+    }
+
+    .post-container td {
+        border: none;
+        border-bottom: 1px solid #555;
+        position: relative;
+        text-align: center;
+    }
+
+    .light-mode .post-container td {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .post-container td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 1rem;
+        font-weight: bold;
+        text-align: left;
+        color: var(--color-orange);
     }
 }
