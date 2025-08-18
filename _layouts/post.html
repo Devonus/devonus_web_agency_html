@@ -37,7 +37,7 @@
     <meta property="og:url" content="{{ canonical_url }}" />
     <meta
       property="og:image"
-      content="{{ page.image | default: site.url | append: '/devonus_logo.png' }}"
+      content="{% if page.image %}{{ page.image }}{% else %}{{ site.url }}/devonus_logo.png{% endif %}"
     />
 
     <meta property="og:site_name" content="Devonus Web Agency" />
