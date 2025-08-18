@@ -48,6 +48,7 @@
 - [Why Startups in San Diego Need a Website](https://devonus.com/blog/why-startups-in-san-diego-need-a-website-and-how-it-can-grow-your-business/)
 - [SEO Services for AI](https://devonus.com/blog/seo-services-for-ai/)
 - [Take Control of Your Website: Get a Custom-Built Website](https://devonus.com/blog/take-control-of-your-website-get-a-custom-built-website.md/)
+- [How to Write an LLMs.txt File: The New Standard for AI in 2025](http://devonus.com/blog/how-to-write-an-LLMs-txt-file-step-by-step/)
 
 ## Legal
 - [Privacy Policy](https://devonus.com/privacy-policy/)
