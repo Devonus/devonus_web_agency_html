@@ -2,10 +2,11 @@
 layout: locations
 title: Devonus Agency | Seattle Web Design & Development
 permalink: /seattle-web-agency/
+dictionary: Se‧at‧tle /siˈæt̬.əl/
 meta_description: Fast, clean, and effective web design for Seattle.
 page_title: Seattle Web Design & Development
 page_description: Helping Seattle’s top brands grow with user-first web development.
-location: Seattle, Washington, US
+location: Seattle, Washington
 city: Seattle
 main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765652/seattle_xj0xtz.webp
 id_name: mobile-visible

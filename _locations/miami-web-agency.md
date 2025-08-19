@@ -2,10 +2,11 @@
 layout: locations
 title: Devonus Agency | Miami Web Design & Development
 permalink: /miami-web-agency/
+dictionary: Mi‧a‧mi /maɪˈæm.i/
 meta_description: Bright, bold web design for Miami brands.
 page_title: Miami Web Design & Development
 page_description: Stylish, mobile-first websites made for Miami’s vibrant business scene.
-location: Miami, Florida, US
+location: Miami, Florida
 city: Miami
 main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765649/miami_gaupux.webp
 

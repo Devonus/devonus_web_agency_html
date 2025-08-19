@@ -2,10 +2,11 @@
 layout: locations
 title: Devonus Agency | San Francisco Web Design & Development
 permalink: /san-francisco-web-agency/
+dictionary: San Fran‧cis‧co /ˌsæn frænˈsɪs.koʊ/
 meta_description: Digital design for San Francisco startups and innovators.
 page_title: San Francisco Web Design & Development
 page_description: Helping Bay Area companies build sleek, scalable digital experiences.
-location: San Francisco, California, US
+location: San Francisco, California
 city: San Francisco
 main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765651/san-francisco_rfnpah.webp
 id_name: mobile-visible

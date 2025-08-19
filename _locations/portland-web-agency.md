@@ -2,10 +2,11 @@
 layout: locations
 title: Devonus Agency | Portland Web Design & Development
 permalink: /portland-web-agency/
+dictionary: Port‧land /ˈpɔːrt.lənd/
 meta_description: Smart, sustainable design for Portland brands.
 page_title: Portland Web Design & Development
 page_description: Websites built with clarity, purpose, and personality for Portland companies.
-location: Portland, Oregon, US
+location: Portland, Oregon
 city: Portland
 main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765643/portland_aepfby.webp
 id_name: mobile-visible

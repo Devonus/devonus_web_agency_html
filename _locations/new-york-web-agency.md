@@ -2,10 +2,11 @@
 layout: locations
 title: Devonus Agency | New York Web Design & Development
 permalink: /new-york-web-agency/
+dictionary: New York /nuː ˈjɔːrk/
 meta_description: Helping New York brands create standout online experiences.
 page_title: New York Web Design & Development
 page_description: Web development built for NYC speed, style, and scale.
-location: New York, New York, US
+location: New York, New York
 city: New York
 main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765654/new-york_d0urmz.webp
 

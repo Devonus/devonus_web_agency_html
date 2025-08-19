@@ -1388,9 +1388,7 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: none;
     font-size: 3rem;
   }
-.pricing-title-desktop span {
-  
-}
+
 
 .text-orange {
   color: var(--color-dark);

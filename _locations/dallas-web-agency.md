@@ -2,10 +2,11 @@
 layout: locations
 title: Devonus Agency | Dallas Web Design & Development
 permalink: /dallas-web-agency/
+dictionary: Dal‧las /ˈdæl.əs/
 meta_description: Web design solutions built for Dallas scale.
 page_title: Dallas Web Design & Development
 page_description: Helping businesses across Dallas launch sleek, modern websites.
-location: Dallas, Texas, US
+location: Dallas, Texas
 city: Dallas
 main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765650/dallas_oujo5l.webp
 

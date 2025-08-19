@@ -2,10 +2,11 @@
 layout: locations
 title: Devonus Agency | Toronto Web Design & Development
 permalink: /toronto-web-agency/
+dictinary: To‧ron‧to /təˈrɑːn.toʊ/
 meta_description: Web design with a Canadian edge.
 page_title: Toronto Web Design & Development
 page_description: Supporting Toronto businesses with fast, responsive, and modern websites.
-location: Toronto, Ontario, CA
+location: Toronto, Canada
 city: Toronto
 main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765662/toronto_ommpsr.webp
 

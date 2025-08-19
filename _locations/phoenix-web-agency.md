@@ -2,10 +2,11 @@
 layout: locations
 title: Devonus Agency | Phoenix Web Design & Development
 permalink: /phoenix-web-agency/
+dictionary: Phoe‧nix /ˈfiː.nɪks/
 meta_description: Websites built to thrive in Phoenix’s heat.
 page_title: Phoenix Web Design & Development
 page_description: Clean, performance-optimized websites for Arizona brands.
-location: Phoenix, Arizona, US
+location: Phoenix, Arizona
 city: Phoenix
 main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765640/phoenix_rywmwf.webp
 

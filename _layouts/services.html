@@ -2,54 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>{{page.title}}</title>
-    <link rel="canonical" href="{{site.url}}{{ page.permalink }}" />
-    <meta name="description" content="{{page.meta_description}}" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ page.title | default: site.title }} | Devonus</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ site.url }}{{ page.permalink }}" />
+
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="{{ page.meta_description | default: site.description }}"
+    />
     <meta
       name="keywords"
       content="web agency, web design, web development, digital strategy, UX design, custom websites, branding, frontend development, backend development, SEO agency, Devonus"
     />
-    <meta property="og:title" content="{{page.title}}" />
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="{{ page.title | default: site.title }} | Devonus"
+    />
+    <meta
+      property="og:description"
+      content="{{ page.meta_description | default: site.description }}"
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{site.url}}{{ page.permalink }}" />
-    <meta property="og:image" content="../public/devonus_logo.png" />
-    <meta property="og:description" content="{{page.meta_description}}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.permalink }}" />
+    <meta
+      property="og:image"
+      content="{% if page.image %}{{ page.image }}{% else %}{{ site.url }}/devonus_logo.png{% endif %}"
+    />
     <meta property="og:site_name" content="Devonus Web Agency" />
     <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@devonus" />
     <meta name="twitter:creator" content="@devonus" />
-    <meta name="twitter:title" content="{{page.title}}" />
-    <meta name="twitter:description" content="{{page.meta_description}}" />
-    <meta name="twitter:image" content="../public/devonus_logo.png" />
+    <meta
+      name="twitter:title"
+      content="{{ page.title | default: site.title }} | Devonus"
+    />
+    <meta
+      name="twitter:description"
+      content="{{ page.meta_description | default: site.description }}"
+    />
+    <meta
+      name="twitter:image"
+      content="{{ page.image | default: site.url | append: '/devonus_logo.png' }}"
+    />
+
+    <!-- Favicon / Apple Touch Icon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../public/devonus_logo.png"
+      href="{{ page.image | default: site.url | append: '/devonus_logo.png' }}"
     />
-    <link rel="stylesheet" href="{{ '/styles/index.css' | relative_url }}" />
-    <noscript>
-      <link rel="stylesheet" href="{{ '/styles/index.css' | relative_url }}" />
-    </noscript>
-    <link rel="stylesheet" href="{{ '/styles/services.css' | relative_url }}" />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="{{ '/styles/services.css' | relative_url }}"
-      />
-    </noscript>
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ page.image | default: site.url | append: '/devonus_logo.png' }}"
+    />
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ '/styles/index.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/styles/services.css' | relative_url }}" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../public/devonus_logo.png" />
 
     <script type="application/ld+json">
       {
@@ -371,9 +399,18 @@
               <h3>Socials</h3>
               <ul>
                 <li><a href="#">Facebook</a></li>
-                <li><a href="#">Bluesky</a></li>
+                <li>
+                  <a
+                    href="https://bsky.app/profile/devonuswebagency.bsky.social"
+                    >Bluesky</a
+                  >
+                </li>
                 <li><a href="#">Instagram</a></li>
-                <li><a href="#">LinkedIn</a></li>
+                <li>
+                  <a href="https://www.linkedin.com/company/devonus/"
+                    >LinkedIn</a
+                  >
+                </li>
               </ul>
             </div>
           </div>

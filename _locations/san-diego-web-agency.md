@@ -2,10 +2,11 @@
 layout: locations
 title: Devonus Agency | San Diego Web Design & Development
 permalink: /san-diego-web-agency/
+dictionary: San Di‧e‧go /ˌsæn diˈeɪ.ɡoʊ/
 meta_description: Tailored web solutions for San Diego businesses.
 page_title: San Diego Web Design & Development
 page_description: Crafting custom websites that help San Diego brands stand out online.
-location: San Diego, California, US
+location: San Diego, California
 city: San Diego
 main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765646/san-diego_qaoewo.webp
 id_name: mobile-visible

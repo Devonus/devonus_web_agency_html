@@ -2,10 +2,11 @@
 layout: locations
 title: Devonus Agency | Atlanta Web Design & Development
 permalink: /atlanta-web-agency/
+dictionary: At‧lan‧ta /ætˈlæn.t̬ə/
 meta_description: Helping Atlanta businesses grow with smart design.
 page_title: Atlanta Web Design & Development
 page_description: Building elegant, high-performance websites for Georgia's capital.
-location: Atlanta, Georgia, US
+location: Atlanta, Georgia
 city: Atlanta
 main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765644/atlanta_wo2ie6.webp
 

@@ -2,10 +2,11 @@
 layout: locations
 title: Devonus Agency | Singapore Web Design & Development
 permalink: /singapore-web-agency/
+dictionary: Sing‧a‧pore /ˈsɪŋ.ə.pɔːr/
 meta_description: Websites built for Southeast Asia’s most dynamic brands.
 page_title: Singapore Web Design & Development
 page_description: Helping Singapore companies grow global with strategic, scalable web solutions.
-location: Singapore, SG
+location: Singapore
 city: Singapore
 main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765660/singapore_keedmq.webp
 

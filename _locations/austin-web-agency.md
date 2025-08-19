@@ -2,10 +2,11 @@
 layout: locations
 title: Devonus Agency | Austin Web Design & Development
 permalink: /austin-web-agency/
+dictionary: Aus‧tin /ˈɑː.stɪn/
 meta_description: Custom digital solutions for Austin businesses.
 page_title: Austin Web Design & Development
 page_description: Creative, responsive web design for startups and companies across Austin.
-location: Austin, Texas, US
+location: Austin, Texas
 city: Austin
 main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765654/austin_xlc8e1.webp
 

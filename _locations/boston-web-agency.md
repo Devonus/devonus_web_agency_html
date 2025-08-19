@@ -2,10 +2,11 @@
 layout: locations
 title: Devonus Agency | Boston Web Design & Development
 permalink: /boston-web-agency/
+dictionary: Bos‧ton /ˈbɑː.stən/
 meta_description: Classic design, modern tech for Boston companies.
 page_title: Boston Web Design & Development
 page_description: From Back Bay to Cambridge — websites that represent Boston’s best.
-location: Boston, Massachusetts, US
+location: Boston, Massachusetts
 city: Boston
 main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765642/boston_u33yvs.webp
 

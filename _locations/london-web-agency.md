@@ -2,10 +2,11 @@
 layout: locations
 title: Devonus Agency | London Web Design & Development
 permalink: /london-web-agency/
+dictionary: Lon‧don /ˈlʌn.dən/
 meta_description: Custom web solutions helping London businesses grow.
 page_title: London Web Design & Development
 page_description: Helping London businesses dominate online with custom websites.
-location: London, England, GB
+location: London, England
 city: London
 main_image: https://res.cloudinary.com/dvufsifir/image/upload/v1754765648/london_bzy0k2.webp
 

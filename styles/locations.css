@@ -1,0 +1,177 @@
+/* -------------------------
+|                          |
+|    PROJECT HERO SECTION  |
+|                          |
+|--------------------------*/
+.project-hero-section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.project-hero-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.project-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #FFFAFA;
+}
+
+.project-description {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    color: #FFFAFA;
+}
+
+.project-cta {
+    /* Inherits styling from .cta-button */
+}
+
+/* Light mode styles */
+.light-mode .project-title,
+.light-mode .project-description {
+    color: #242424;
+}
+
+.btn-container {
+margin: 3rem auto 0rem auto;
+
+
+}
+/* -------------------------
+|                          |
+|     SERVICES GRID        |
+|                          |
+|--------------------------*/
+/* -------------------------
+|                          |
+|     SERVICES GRID        |
+|                          |
+|--------------------------*/
+.services-grid-section {
+    padding: 2rem;
+    background-color: #1e1e1e; /* A slightly different dark color for contrast */
+}
+
+.services-grid-container {
+    display: grid;
+    /* Updated grid layout for 3 columns on larger screens */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+@media (min-width: 1020px) {
+    .services-grid-container {
+        grid-template-columns: repeat(3, 1fr); /* Forces a 3-column layout on desktop */
+    }
+}
+
+.service-box {
+    display: block;
+    align-content: center;
+    background-color: #2b2b2b;
+    padding: 2rem; /* Increased padding to make the boxes feel less cramped */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Center-align the text for a cleaner look */
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.service-box-title {
+    font-size: 1.5rem; /* Increased font size for title */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--color-orange);
+}
+
+.service-box-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #FFFAFA;
+}
+
+/* Light mode styles */
+.light-mode .services-grid-section {
+    background-color: #f0f0f0;
+}
+
+.light-mode .service-box {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .service-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.light-mode .service-box-description {
+    color: #242424;
+}
+/* -------------------------
+|                          |
+|     CITIES SECTION       |
+|                          |
+|--------------------------*/
+.cities-section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.cities-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #FFFAFA;
+}
+
+.cities-list-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cities-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cities-list-item {
+    padding: 0.5rem 0;
+}
+
+.cities-list-item a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #FFFAFA;
+    transition: color 0.3s ease;
+}
+
+.cities-list-item a:hover {
+    color: var(--color-orange);
+}
+
+/* Light mode styles */
+.light-mode .cities-title,
+.light-mode .cities-list-item a {
+    color: #242424;
+}
+
+.light-mode .cities-list-item a:hover {
+    color: var(--color-orange);
+}
