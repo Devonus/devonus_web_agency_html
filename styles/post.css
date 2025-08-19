@@ -232,6 +232,9 @@ blockquote {
     background-color: #2b2b2b;
 }
 
+
+/* ================================================== RESPONSIVE STYLES ================================================== */
+
 @media (max-width: 1020px) {
     .nav-links a {
         color: var(--color-white);

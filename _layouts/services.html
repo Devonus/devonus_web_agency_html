@@ -343,7 +343,7 @@
 
       <div class="blog-posts">
         {% assign latest_posts = site.posts | sort: 'date' | reverse | slice:
-        0,4 %} {% for post in latest_posts %}
+        0,3 %} {% for post in latest_posts %}
         <article class="blog-post">
           <a href="{{ post.url | relative_url }}" class="blog-post-link">
             {% if post.image %}
