@@ -197,110 +197,52 @@
       <div class="project-hero-container">
         <h2 class="project-title">{{page.project_title}}</h2>
         <p class="project-description">{{page.content}}</p>
-        <div class="btn-container">
-          <a href="#contact" class="contact-btn" id="locations-contact"
-            ><span>Contact</span></a
-          >
-        </div>
-      </div>
-    </section>
 
-    <section class="services-grid-section">
-      <div class="services-grid-container">
-        <div class="service-box">
-          <h3 class="service-box-title">{{page.box_1_title}}</h3>
-          <p class="service-box-description">{{page.box_1_description}}</p>
+        <div class="service-block">
+          <h3 class="service-block-title">{{page.box_1_title}}</h3>
+          <p class="service-block-description">{{page.box_1_description}}</p>
         </div>
-        <div class="service-box">
-          <h3 class="service-box-title">{{page.box_2_title}}</h3>
-          <p class="service-box-description">{{page.box_2_description}}</p>
+
+        <div class="service-block">
+          <h3 class="service-block-title">{{page.box_2_title}}</h3>
+          <p class="service-block-description">{{page.box_2_description}}</p>
         </div>
-        <div class="service-box">
-          <h3 class="service-box-title">{{page.box_3_title}}</h3>
-          <p class="service-box-description">{{page.box_3_description}}</p>
+
+        <div class="service-block">
+          <h3 class="service-block-title">{{page.box_3_title}}</h3>
+          <p class="service-block-description">{{page.box_3_description}}</p>
         </div>
-        <div class="service-box">
-          <h3 class="service-box-title">{{page.box_4_title}}</h3>
-          <p class="service-box-description">{{page.box_4_description}}</p>
+
+        <div class="service-block">
+          <h3 class="service-block-title">{{page.box_4_title}}</h3>
+          <p class="service-block-description">{{page.box_4_description}}</p>
         </div>
-        <div class="service-box">
-          <h3 class="service-box-title">{{page.box_5_title}}</h3>
-          <p class="service-box-description">{{page.box_5_description}}</p>
+
+        <div class="service-block">
+          <h3 class="service-block-title">{{page.box_5_title}}</h3>
+          <p class="service-block-description">{{page.box_5_description}}</p>
         </div>
-        <div class="service-box">
-          <h3 class="service-box-title">{{page.box_6_title}}</h3>
-          <p class="service-box-description">{{page.box_6_description}}</p>
+
+        <div class="service-block">
+          <h3 class="service-block-title">{{page.box_6_title}}</h3>
+          <p class="service-block-description">{{page.box_6_description}}</p>
         </div>
       </div>
     </section>
 
     <div class="cities-section">
       <h2 class="cities-title">Proudly Serving These Cities</h2>
-      <div class="cities-list-container">
-        <ul class="cities-list">
-          <li class="cities-list-item">
-            <a href="/san-diego-web-agency">San Diego</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/los-angeles-web-agency">Los Angeles</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/san-francisco-web-agency">San Francisco</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/new-york-web-agency">New York</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/chicago-web-agency">Chicago</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/las-vegas-web-agency">Las Vegas</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/seattle-web-agency">Seattle</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/austin-web-agency">Austin</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/miami-web-agency">Miami</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/atlanta-web-agency">Atlanta</a>
-          </li>
-        </ul>
-        <ul class="cities-list">
-          <li class="cities-list-item">
-            <a href="/denver-web-agency">Denver</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/dallas-web-agency">Dallas</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/boston-web-agency">Boston</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/phoenix-web-agency">Phoenix</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/philadelphia-web-agency">Philadelphia</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/portland-web-agency">Portland</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/toronto-web-agency">Toronto</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/london-web-agency">London</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/singapore-web-agency">Singapore</a>
-          </li>
-          <li class="cities-list-item">
-            <a href="/sydney-web-agency">Sydney</a>
-          </li>
-        </ul>
+      <div class="cities-grid-container">
+        {% for location in site.locations %}
+        <div
+          class="city-card"
+          style="--city-image: url('{{ location.main_image }}');"
+        >
+          <a href="{{ city.url }}" class="city-card-link">
+            <span class="city-card-text">{{ location.city }}</span>
+          </a>
+        </div>
+        {% endfor %}
       </div>
     </div>
 

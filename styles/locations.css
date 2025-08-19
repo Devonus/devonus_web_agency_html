@@ -1,17 +1,64 @@
 /* -------------------------
 |                          |
-|    PROJECT HERO SECTION  |
+|      LIGHT MODE          |
+|                          |
+|--------------------------*/
+.light-mode .navbar:hover a, .light-mode .navbar:hover .logo {
+    color: #242424;
+}
+
+.light-mode .post-container {
+    color: #242424;
+}
+
+.light-mode .post-container p {
+    color: #242424;
+}
+
+/* -------------------------
+|                          |
+|      HERO SECTION       |
+|                          |
+|--------------------------*/
+.hero {
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    var(--background-image);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay h1 {
+  font-size: 2rem;
+}
+
+.hero-overlay h1, .hero-left p,
+.nav-links a, .post-container p,
+.logo {
+    color: #FFFAFA;
+}
+
+.navbar:hover a {
+    color: #FFFAFA;
+}
+
+#dictionary {
+    color: var(--color-orange);
+}
+
+/* -------------------------
+|                          |
+|    COMBINED SECTION      |
 |                          |
 |--------------------------*/
 .project-hero-section {
     padding: 3rem 2rem;
-    text-align: center;
+    text-align: left;
 }
 
 .project-hero-container {
     max-width: var(--max-width);
     margin: 0 auto;
-    font-size: 1.2rem;
 }
 
 .project-title {
@@ -24,101 +71,64 @@
 .project-description {
     font-size: 1.2rem;
     line-height: 1.7;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     color: #FFFAFA;
 }
 
-.project-cta {
-    /* Inherits styling from .cta-button */
+.service-block {
+    border-left: 4px solid var(--color-orange);
+    padding: 1rem 0 1rem 1.5rem;
+    margin-bottom: 2rem;
 }
 
-/* Light mode styles */
-.light-mode .project-title,
-.light-mode .project-description {
-    color: #242424;
-}
-
-.btn-container {
-margin: 3rem auto 0rem auto;
-
-
-}
-/* -------------------------
-|                          |
-|     SERVICES GRID        |
-|                          |
-|--------------------------*/
-/* -------------------------
-|                          |
-|     SERVICES GRID        |
-|                          |
-|--------------------------*/
-.services-grid-section {
-    padding: 2rem;
-    background-color: #1e1e1e; /* A slightly different dark color for contrast */
-}
-
-.services-grid-container {
-    display: grid;
-    /* Updated grid layout for 3 columns on larger screens */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    max-width: var(--max-width);
-    margin: 0 auto;
-}
-
-@media (min-width: 1020px) {
-    .services-grid-container {
-        grid-template-columns: repeat(3, 1fr); /* Forces a 3-column layout on desktop */
-    }
-}
-
-.service-box {
-    display: block;
-    align-content: center;
-    background-color: #2b2b2b;
-    padding: 2rem; /* Increased padding to make the boxes feel less cramped */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center; /* Center-align the text for a cleaner look */
-}
-
-.service-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-
-.service-box-title {
-    font-size: 1.5rem; /* Increased font size for title */
+.service-block-title {
+    font-size: 1.5rem;
     font-weight: 600;
+    color: #FFFAFA;
     margin-bottom: 0.5rem;
-    color: var(--color-orange);
 }
 
-.service-box-description {
+.service-block-description {
     font-size: 1rem;
     line-height: 1.6;
     color: #FFFAFA;
 }
 
 /* Light mode styles */
-.light-mode .services-grid-section {
-    background-color: #f0f0f0;
-}
-
-.light-mode .service-box {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.light-mode .service-box:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.light-mode .service-box-description {
+.light-mode .project-title,
+.light-mode .project-description,
+.light-mode .service-block-title,
+.light-mode .service-block-description {
     color: #242424;
 }
+/* -------------------------
+|                          |
+|      POST SECTION        |
+|                          |
+|--------------------------*/
+.post-container {
+    margin: 1rem auto;
+    max-width: var(--max-width);
+    padding: 1rem 2rem;
+    color: #FFFAFA;
+}
+
+.post-container p {
+    font-size: 1.1rem;
+    padding: 0.7rem 0;
+    font-family: var(--font-3);
+}
+
+.post-container li {
+    font-size: 1.1rem;
+    padding: 0.2rem 0;
+    font-family: var(--font-3);
+}
+
+.post-container h2 {
+    padding-top: 3rem;
+}
+
 /* -------------------------
 |                          |
 |     CITIES SECTION       |
@@ -174,4 +184,105 @@ margin: 3rem auto 0rem auto;
 
 .light-mode .cities-list-item a:hover {
     color: var(--color-orange);
+}
+
+
+
+/* -------------------------
+|                          |
+|     CITIES SECTION       |
+|                          |
+|--------------------------*/
+/* -------------------------
+|                          |
+|     CITIES SECTION       |
+|                          |
+|--------------------------*/
+.cities-section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.cities-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #FFFAFA;
+}
+
+.cities-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.city-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    min-height: 300px;
+    background-image: var(--city-image);
+    background-size: cover;
+    background-position: center;
+}
+
+/* This is the overlay pseudo-element */
+.city-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Use a solid color for the overlay */
+    transition: opacity 0.3s ease-in-out; /* Add transition for a smooth effect */
+    z-index: 1;
+}
+
+.city-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.city-card:hover::before {
+    opacity: 0.2; /* Fades the overlay to make the image more visible */
+}
+
+.city-card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    text-decoration: none;
+    z-index: 2;
+    color: #FFFAFA;
+}
+
+.city-card-text {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+/* Light mode styles */
+.light-mode .cities-title {
+    color: #242424;
+}
+
+.light-mode .city-card-link {
+    color: #FFFAFA;
+}
+
+@media (max-width: 1020px) {
+    .nav-links a {
+        color: var(--color-white);
+    }
 }
