@@ -4,6 +4,7 @@ title: Devonus Agency | Chicago Web Design & Development
 permalink: /chicago-web-agency/
 dictionary: Chi‧ca‧go /ʃɪˈkɑː.ɡoʊ/
 meta_description: Websites that work as hard as Chicago businesses.
+keywords: custom web design, web development, seo optimization, website maintenance, chicago web design, chicago Illinois
 page_title: Chicago Web Design & Development
 page_description: Building powerful digital platforms for brands across the Windy City.
 location: Chicago, Illinois

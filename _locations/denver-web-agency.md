@@ -4,6 +4,7 @@ title: Devonus Agency | Denver Web Design & Development
 permalink: /denver-web-agency/
 dictionary: Den‧ver /ˈden.vɚ/
 meta_description: Web design with altitude — made for Denver.
+keywords: custom web design, web development, seo optimization, website maintenance, denver web design, denver colorado
 page_title: Denver Web Design & Development
 page_description: Creating robust digital experiences for fast-moving Denver brands.
 location: Denver, Colorado

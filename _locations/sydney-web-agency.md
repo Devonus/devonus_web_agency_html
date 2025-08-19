@@ -4,6 +4,7 @@ title: Devonus Agency | Sydney Web Design & Development
 permalink: /sydney-web-agency/
 dictionary: Syd‧ney /ˈsɪd.ni/
 meta_description: Digital design for modern Australian businesses.
+keywords: custom web design, web development, seo optimization, website maintenance, sydney web design, sydney australia
 page_title: Sydney Web Design & Development
 page_description: Helping Sydney companies shine online with tailored design and development.
 location: Sydney, Australia

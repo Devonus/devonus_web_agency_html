@@ -4,6 +4,7 @@ title: Devonus Agency | Philadelphia Web Design & Development
 permalink: /philadelphia-web-agency/
 dictionary: Phil‧a‧del‧phia /ˌfɪl.əˈdel.fi.ə/
 meta_description: Web design that connects with Philly audiences.
+keywords: custom web design, web development, seo optimization, website maintenance, philadelphia web design, philadelphia pennsylvania
 page_title: Philadelphia Web Design & Development
 page_description: Helping Philadelphia companies launch high-impact digital platforms.
 location: Philadelphia, Pennsylvania

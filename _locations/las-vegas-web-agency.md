@@ -4,6 +4,7 @@ title: Devonus Agency | Las Vegas Web Design & Development
 permalink: /las-vegas-web-agency/
 dictionary: Las Ve‧gas /lɑːs ˈveɪ.ɡəs/
 meta_description: Stunning web solutions for Las Vegas entrepreneurs.
+keywords: custom web design, web development, seo optimization, website maintenance, las vegas web design, las vegas nevada
 page_title: Las Vegas Web Design & Development
 page_description: Make your online presence shine in Vegas with bold, custom web design.
 location: Las Vegas, Nevada

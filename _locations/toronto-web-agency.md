@@ -4,6 +4,7 @@ title: Devonus Agency | Toronto Web Design & Development
 permalink: /toronto-web-agency/
 dictinary: To‧ron‧to /təˈrɑːn.toʊ/
 meta_description: Web design with a Canadian edge.
+keywords: custom web design, web development, seo optimization, website maintenance, toronto web design, toronto canada
 page_title: Toronto Web Design & Development
 page_description: Supporting Toronto businesses with fast, responsive, and modern websites.
 location: Toronto, Canada

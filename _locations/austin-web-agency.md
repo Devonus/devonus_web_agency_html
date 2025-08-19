@@ -4,6 +4,7 @@ title: Devonus Agency | Austin Web Design & Development
 permalink: /austin-web-agency/
 dictionary: Aus‧tin /ˈɑː.stɪn/
 meta_description: Custom digital solutions for Austin businesses.
+keywords: custom web design, web development, seo optimization, website maintenance, austin web design, austin texas
 page_title: Austin Web Design & Development
 page_description: Creative, responsive web design for startups and companies across Austin.
 location: Austin, Texas
